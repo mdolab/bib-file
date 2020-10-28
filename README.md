@@ -4,6 +4,8 @@ This is the reference BibTeX bibliographic database for the MDO Lab. Please obse
 
 * I do not provide write access to this file (in part because the software I use to handle the bib file (BibDesk) is picky and changes that would normally work might break it, and there are other reasons).
 
+* This file is a clean version of the bib file I keep in BibDesk. I use a Python script that removes BibDesk custom fields and notes.
+
 * If you have corrections to mdolab.bib, message or email them to me <jrram@umich.edu>. If you have a lot of changes, please make clear which entries are new and which entries are edits to existing ones. Please make sure that you do not send me duplicates.
 
 * Please update as soon as you publish a new paper.
@@ -22,10 +24,8 @@ This is the reference BibTeX bibliographic database for the MDO Lab. Please obse
 
 * For the month, spell the month in full, e.g., "November".
 
-* When using this file, create a soft link to it in the paper directory (I have an alias defined in my .bash_profile for this: alias lnsbib='ln -s ~/_jrram/mdolab_publishing/bibtex/mdolab.bib .' ). This soft link should not be tracked in a repo.
+* When using this file, create a soft link to it in the paper directory (I have an alias defined in my .bash_profile for this: alias lnsbib='ln -s ~/_jrram/mdolab_publishing/bibtex/mdolab.bib mdolab-link.bib' ). This soft link should not be tracked in a repo.
 
-* When the paper is finalized and submitted, remove the mdolab.bib soft link, copy the actual file and add it to the paper repo, but using a *different name*, e.g., mdolab_copy.bib. This will ensure that the document can be recompiled with not reference issues in the future.
+* When the paper is finalized and submitted, remove the mdolab.bib soft link, copy the actual file and add it to the paper repo, but using a *different name*, e.g., mdolab-copy.bib. This will ensure that the document can be recompiled with not reference issues in the future.
 
 * As soon as you submit your final paper to a conference or your journal paper is accepted, please send the BibTeX entry to me. It is your responsibility to make sure that all the papers you co-author are correctly and completely represented in mdolab.bib.
-
-* Many entries in this file include a long ugly string. This is the way BibDesk keeps links to the PDFs of these papers in my system.

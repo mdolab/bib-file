@@ -24,7 +24,7 @@ This is the reference BibTeX bibliographic database for the MDO Lab. Please obse
 
 * For the month, spell the month in full, e.g., "November".
 
-* When using this file, create a soft link to it in the paper directory (I have an alias defined in my .bash_profile for this: alias lnsbib='ln -s ~/_jrram/mdolab_publishing/bibtex/mdolab.bib mdolab-link.bib' ). This soft link should not be tracked in a repo.
+* When using this file, create a soft link to it in the paper directory (I have an alias defined in my .bash_profile for this: alias lnsbib='ln -s ~/_jrram/bib-file/mdolab.bib mdolab-link.bib' ). This soft link should not be tracked in a repo.
 
 * When the paper is finalized and submitted, remove the mdolab.bib soft link, copy the actual file and add it to the paper repo, but using a *different name*, e.g., mdolab-copy.bib. This will ensure that the document can be recompiled with not reference issues in the future.
 

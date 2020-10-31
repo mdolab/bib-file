@@ -3743,6 +3743,7 @@ We start with a rectangular wing and optimize the aerodynamic shape and the sizi
 }
 
 @article{Bouhlel2020a,
+ abstract = {Airfoil shape design is one of the most fundamental elements in aircraft design. Existing airfoil design tools require at least a few minutes to analyze a new shape and hours to perform shape optimization. To drastically reduce the computational time of both analysis and design optimization, we use machine learning to create a model of a wide range of possible airfoils at a range of flight conditions, making it possible to perform airfoil design optimization in a few seconds. The machine learning consists of gradient-enhanced artificial neural networks where the gradient information is phased in gradually. This new gradient-enhanced artificial neural network approach is trained to model the aerodynamic force coefficients of airfoils in both subsonic and transonic regimes. The aerodynamics is modeled with Reynolds-averaged Navier--Stokes (RANS) based computational fluid dynamics (CFD). The proposed approach outperforms an existing airfoil model that uses a mixture of experts technique combined with a gradient-based Kriging surrogate model. The approach yields to similar airfoil shape optimization solutions than high-fidelity CFD optimization solutions with a difference of 0.01 count and 0.12 count for C d in subsonic and transonic regimes, respectively. Airfoil optimization problems are solved in a few seconds (instead of hours using CFD-based optimization), making the design process much more interactive, as demonstrated in the Webfoil airfoil design optimization tool.},
  author = {Mohamed Amine Bouhlel and Sicheng He and Joaquim R. R. A. Martins},
  doi = {10.1007/s00158-020-02488-5},
  journal = {Structural and Multidisciplinary Optimization},
@@ -5982,7 +5983,11 @@ using the ADIFOR automatic differentiation tool.},
  year = {2018}
 }
 
-@article{cite-key
+@conference{cite-key,
+ address = {Trondheim, Norway},
+ author = {John Marius Hegseth and Erin E. Bachynski and Joaquim R. R. A. Martins},
+ booktitle = {Journal of Physics: Conference Series, Volume 1669, EERA DeepWind'2020 15 -- 17 January 2020, Radisson},
+ title = {Design Optimization of Spar Floating Wind Turbines Considering Different Control Strategies}
 }
 
 @book{cite-key,
@@ -7857,6 +7862,12 @@ of these algorithms are assessed for a series of tetrahedral meshes.},
  title = {Aerodynamic Shape Design and Optimization: Status and Trends},
  volume = {29},
  year = {1992}
+}
+
+@conference{dummy,
+ author = {Joaquim R. R. A. Martins},
+ title = {dummy},
+ year = {2020}
 }
 
 @inbook{Dumont2019,
@@ -13060,6 +13071,19 @@ are solved, with a variety of boundary conditions.},
  pages = {102771},
  title = {Integrated Design Optimization of Spar Floating Wind Turbines},
  volume = {72},
+ year = {2020}
+}
+
+@article{Hegseth2020b,
+ abstract = {One of the challenges related to the design of floating wind turbines (FWTs) is the strong interactions between the controller and the support structure, which may result in an unstable system. Several control strategies have been proposed to improve the dynamic behaviour, all of which result in trade-offs between structural loads, rotor speed variation, and blade pitch actuator use, which makes controller design a challenging task. Due to the interactions, simultaneous design of the controller and support structure should be performed to properly identify and compare different solutions. In the present work, integrated design optimization of the blade-pitch controller and support structure is performed for a 10 MW spar FWT, considering four different control strategies, to evaluate the effect of the controller on the structural design and associated costs. The introduction of velocity feedback control reduces the platform pitch response and consequently the fatigue loads in the tower, which leads to a decrease in the tower costs compared to a simple PI controller. Low-pass filtering of the nacelle velocity signal to remove the wave-frequency components results in reduced rotor speed variation, but offers only small improvements in costs, likely due to the limited wave-frequency response for the considered designs. Comparisons with nonlinear time-domain simulations show that the linearized model is able to capture trends with acceptable accuracy, but that significant overpredictions may occur for the platform pitch response.},
+ author = {John Marius Hegseth and Erin E. Bachynski and Joaquim R. R. A. Martins},
+ doi = {10.1088/1742-6596/1669/1/012010},
+ journal = {Journal of Physics: Conference Series},
+ month = {October},
+ pages = {012010},
+ publisher = {{IOP} Publishing},
+ title = {Design Optimization of Spar Floating Wind Turbines Considering Different Control Strategies},
+ volume = {1669},
  year = {2020}
 }
 
@@ -20842,7 +20866,7 @@ A first-order framework is given for design procedures aimed at achieving a give
  author = {Charles A. Mader and Gaetan K. W. Kenway and Anil Yildirim and Joaquim R. R. A. Martins},
  doi = {10.2514/1.I010796},
  journal = {Journal of Aerospace Information Systems},
- title = {{AD}flow---An open-source computational fluid dynamics solver for aerodynamic and multidisciplinary optimization},
+ title = {{ADflow}---An open-source computational fluid dynamics solver for aerodynamic and multidisciplinary optimization},
  year = {2020}
 }
 
@@ -28990,10 +29014,14 @@ to date.},
 }
 
 @article{Shi2020a,
+ abstract = {Natural laminar-flow wings are one of the most promising technologies for reducing fuel burn and emissions for commercial aviation. However, there is a lack of tools for performing shape optimization of wings based on computational fluid dynamics considering laminar-to-turbulent transition. To address this need, we develop a discrete adjoint-based optimization framework where transition is modeled. The core of this framework is a Reynolds-averaged Navier--Stokes solver that is coupled with a simplified e N method to predict Tollmien--Schlichting and laminar separation-induced transition that consists of a laminar boundary-layer code and a database method for flow stability analysis. The transition prediction is integrated with a Spalart--Allmaras turbulence model through a smoothed intermittency function, which makes it suitable for gradient-based optimization. A coupled-adjoint approach that uses transpose Jacobian-vector products derived via automatic differentiation computes the transition prediction derivatives. Lift-constrained drag minimizations of airfoils for a single-point design and a multipoint design problem are performed. The results show that the optimizer successfully reduces the drag coefficient by increasing the extent of laminar flow. The multipoint optimization formulation produces an airfoil with a significant amount of laminar flow that is maintained at several flight conditions. The proposed methods make it possible to perform aerodynamic shape optimization considering laminar-to-turbulent transition in airfoil optimization.},
  author = {Yayun Shi and Charles A. Mader and Sicheng He and Gustavo L. O. Halila and Joaquim R. R. A. Martins},
  doi = {10.2514/1.J058944},
  journal = {AIAA Journal},
+ number = {11},
+ pages = {4702--4722},
  title = {Natural Laminar-Flow Airfoil Optimization Design Using a Discrete Adjoint Approach},
+ volume = {58},
  year = {2020}
 }
 

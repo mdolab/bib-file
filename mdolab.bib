@@ -1454,7 +1454,7 @@ further research into the Navier-Stokes design process are made.},
  doi = {10.2514/6.2011-3074},
  month = {June},
  number = {AIAA 2011-3074},
- title = {Overview of laminar-turbulent transition investigations at ONERA Toulouse},
+ title = {Overview of laminar-turbulent transition investigations at {ONERA} {Toulouse}},
  year = {2012}
 }
 
@@ -4402,6 +4402,7 @@ We start with a rectangular wing and optimize the aerodynamic shape and the sizi
 }
 
 @inproceedings{Brelje2021a,
+ abstract = {Hydrogen has been identified as a potential fuel for air transportation without carbon emissions. Hydrogen contains much higher energy per unit mass than any conceivable rechargeable battery, potentially making longer-range missions possible than pure electric configurations. However, hydrogen's low volumetric energy density presents practical challenges. Hydrogen must either be kept under deep cryogenic conditions or compressed under very high pressure. Either solution is likely to require adding significant drag and tank weight to the airplane. This is a packing optimization problem subject to aerostructural physics, and we can employ multidisciplinary design optimization techniques to provide insight into optimal wing design for novel hydrogen aircraft concepts. In this paper, we extend prior work on wing packing optimization subject to aerodynamics only, and now incorporate structural analysis and structure geometry into the problem. We optimize the range of a hydrogen-electric aircraft with hydrogen fuel storage located inside the wing outer mold line. The geometry of the hydrogen storage tanks influences the shape of the wing as well as the weight and volumetric capacity of the tank. While the effect of hydrogen storage on other aircraft concepts cannot be generalized from this study, the optimization methods we use are promising for performing relevant aircraft design trade studies. The optimizer finds the correct tradeoff between weight, drag, and fuel storage for the mission, subject to spatial integration feasibility. In our test scenario, we find that the optimal aerostructural design involves substantial wing root thickening.},
  author = {Benjamin J. Brelje and Joaquim R. R. A. Martins},
  booktitle = {Proceedings of the AIAA SciTech Forum},
  doi = {10.2514/6.2021-1132},
@@ -6585,6 +6586,11 @@ using the ADIFOR automatic differentiation tool.},
  publisher = {AIAA},
  title = {Implementation of topology optimization using {OpenMDAO}},
  year = {2018}
+}
+
+@article{cite-key,
+ author = {Anil V. Rao},
+ title = {A survey of numerical methods for optimal control}
 }
 
 @book{cite-key,
@@ -15751,7 +15757,7 @@ multi-fidelity/multi-scale aspects as well as model parameterisation and loadspa
  year = {2007}
 }
 
-@article{irons1969,
+@article{Irons1969,
  author = {Bruce M. Irons and Robert C. Tuck},
  doi = {10.1002/nme.1620010306},
  journal = {International Journal for Numerical Methods in Engineering},
@@ -17084,6 +17090,14 @@ Opportunities for further improvement may lie in combining the best features of 
  title = {System for assessing Aviation's Global Emissions {(SAGE)}, {P}art 2: Uncertainty assessment},
  volume = {12},
  year = {2007}
+}
+
+@book{Joseph2010a,
+ author = {George Gheverghese Joseph},
+ keywords = {mdobook, history},
+ publisher = {Princeton University Press},
+ title = {The crest of the peacock: Non-{European} roots of mathematics},
+ year = {2010}
 }
 
 @article{Josheph2008,
@@ -30640,17 +30654,10 @@ to date.},
  year = {2019}
 }
 
-@article{Secco2020,
- author = {Secco, Ney R. and Kenway, Gaetan K. W. and He, Ping and Mader, Charles A. and Martins, Joaquim R. R. A.},
- journal = {AIAA Journal},
- note = {(Submitted)},
- title = {Efficient Mesh Generation and Deformation for Aerodynamic Shape Optimization},
- year = {2020}
-}
-
 @article{Secco2020a,
- abstract = {Mesh generation and deformation are critical elements in gradient-based aerodynamic shape optimization (ASO). Improperly generated or deformed meshes may contain bad-quality cells that degrade the accuracy of computational fluid dynamics (CFD) solvers. Moreover, an inefficient mesh deformation method can become the bottleneck for the entire ASO process. To perform practical ASO, mesh generation and deformation methods need to be automated, scalable, robust, and computationally efficient. This paper tackles these challenges by developing an efficient approach for generating high-quality structured meshes in a semi-automatic manner. An automatic mesh generation approach is also proposed to handle intersections of multiple structured meshes with the overset mesh approach. In addition to mesh generation, a flexible mesh deformation method is developed, along with an efficient approach for computing mesh deformation derivatives using algorithmic differentiation. Finally, the performance of the proposed approaches is evaluated in terms of speed, scalability, and robustness. It is demonstrated that the mesh generation approach scales up to 100 million cells and 256~CPU-cores. In addition, the robust mesh deformation approach enables a large range of valid mesh deformations, which gives more freedom to explore the design space in ASO. Moreover, the mesh deformation and the computation of its derivatives requires only 0.1 of the CFD runtime. The mesh generation and deformation approaches have been implemented in the pyHyp and IDWarp software packages, which are publicly available under open-source licenses.  The proposed approaches have the potential to become useful tools to handle general ASO problems for aircraft, turbomachinery, and ground vehicles.},
+ abstract = {Mesh generation and deformation are critical elements in gradient-based aerodynamic shape optimization (ASO). Improperly generated or deformed meshes may contain bad-quality cells that degrade the accuracy of computational fluid dynamics (CFD) solvers. Moreover, an inefficient mesh deformation method can become the bottleneck for the entire ASO process. To perform practical ASO, mesh generation and deformation methods need to be automated, scalable, robust, and computationally efficient. This paper tackles these challenges by developing an efficient approach for generating high-quality structured meshes in a semi-automatic manner. An automatic mesh generation approach is also proposed to handle intersections of multiple structured meshes with the overset mesh approach. In addition to mesh generation, a flexible mesh deformation method is developed, along with an efficient approach for computing mesh deformation derivatives using automatic differentiation. Finally, the performance of the proposed approaches is evaluated in terms of speed, scalability, and robustness. It is demonstrated that the mesh generation approach scales up to 100 million cells and 256~CPU-cores. In addition, the robust mesh deformation approach enables a large range of valid mesh deformations, which gives more freedom to explore the design space in ASO. Moreover, the mesh deformation and the computation of its derivatives require only 0.1 of the CFD runtime. The mesh generation and deformation approaches have been implemented in the pyHyp and IDWarp software packages, which are publicly available under open-source licenses.  The proposed approaches have the potential to become useful tools to handle general ASO problems for aircraft, turbomachinery, and ground vehicles.},
  author = {Ney Secco and Gaetan K. W. Kenway and Ping He and Charles A. Mader and Joaquim R. R. A. Martins},
+ doi = {10.2514/1.J059491},
  journal = {AIAA Journal},
  keywords = {xsede},
  note = {(In press)},
@@ -37368,6 +37375,7 @@ time when the world is recognizing the importance of conserving resources.},
 }
 
 @inproceedings{Yildirim2021a,
+ abstract = {Boundary layer ingestion (BLI) offers the potential for significant fuel burn reduction by exploiting strong aeropropulsive interactions. NASA's STARC-ABL concept uses an electrically powered BLI tail cone thruster on what is otherwise a conventional airframe. Despite this conventional airframe, aeropropulsive integration is critical to the performance of the BLI propulsor. In particular, the aeropropulsive integration of the BLI system must account for the variation in fan performance. Because it is electrically powered, the fan pressure ratio and efficiency of the BLI tail cone thruster vary widely across the flight envelope. Thus, accurate performance prediction for this novel propulsion configuration requires using a coupled aeropropulsive model across the flight envelope. In this work, we introduce a method to quantify the benefit of BLI at off-design conditions. We analyze the off-design performance of 18 optimized designs using an aeropropulsive model that is built with the OpenMDAO framework to couple 3-D RANS CFD simulations to 1-D thermodynamic cycle analyses. The designs are generated via high-fidelity aeropropulsive design optimizations for a range of fan pressure ratio and thrust values at the cruise conditions for the STARC-ABL concept. Performance analyses are then performed at a range of off-design flight conditions that span the flight envelope, including low-speed and low-altitude flight conditions. This study provides the first set of high-fidelity data for the STARC--ABL configuration at off-design conditions. The results quantify the power savings through BLI compared to a traditional propulsion system across the entire mission profile. Finally, the results and techniques from this study will guide the extension of current aeropropulsive design capabilities to multipoint design optimizations.},
  author = {Anil Yildirim and Justin S. Gray and Charles A. Mader and Joaquim R. R. A. Martins},
  booktitle = {Proceedings of the AIAA SciTech Forum},
  doi = {10.2514/6.2021-0891},
@@ -37378,6 +37386,7 @@ time when the world is recognizing the importance of conserving resources.},
 }
 
 @article{Yildirim2021b,
+ abstract = {Aerodynamic shape optimization based on computational fluid dynamics (CFD) requires three steps: updating the geometry based on the design variables, updating the CFD surface mesh for the new geometry, and updating the CFD volume mesh based on the new surface mesh. While there are many tools available for the first and third steps, the methods available for the second step are insufficient for geometries that have intersecting components. For these geometries, the CFD surface mesh needs to be updated near component intersections to conform to the component geometries and the updated intersection curves. To address this need, we introduce a method that can deform the CFD surface mesh nodes near component intersections. The method can handle arbitrary design changes for each intersecting component as long as the geometric topology is unchanged. Furthermore, the method is suitable for gradient-based optimization because it smoothly deforms every CFD surface node without introducing topological changes in the CFD surface mesh. In this paper, we detail each step of the proposed method and visualize the range of design changes that can be achieved with this approach. Finally, we use the proposed method in an aerodynamic shape optimization problem to optimize the wing-body intersection of the DLR-F6 configuration. These results demonstrate the effectiveness of the proposed method in a high-fidelity design optimization framework. The method applies to both structured and unstructured CFD meshes and makes it possible to use computer-aided design and conceptual design geometry tools within high-fidelity design optimization.},
  author = {Anil Yildirim and Charles A. Mader and Joaquim R. R. A. Martins},
  doi = {10.1007/s00366-020-01247-w},
  journal = {Engineering with Computers},

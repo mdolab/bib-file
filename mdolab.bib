@@ -258,6 +258,8 @@
 }
 
 @inproceedings{AGray2021a,
+ abstract = {Over the past decade, advances in multidisciplinary design optimization (MDO) have enabled the optimization of aircraft wings using high-fidelity simulations of their coupled aerodynamic and structural behavior. However, as their aspect-ratios increase, these wings increasingly exhibit geometrically nonlinear behavior that cannot be correctly modeled by typical linear structural analysis methods. Although many low-fidelity aeroelastic analysis and optimization tools feature geometrically nonlinear finite element models, all examples to date of high-fidelity aerostructural optimization have been restricted to linear finite element models due to concerns over computational cost and complexity. In this work, we develop a tool for high-fidelity, geometrically nonlinear structural and aerostructural optimization and demonstrate it by performing detailed structural sizing optimization of a high aspect-ratio wingbox using high-fidelity RANS CFD and a geometrically nonlinear shell finite element formulation. By comparing the results of aerostructural analysis and optimization using both geometrically linear and nonlinear structural finite element formulations, we find that geometric nonlinearity results in a 5-10% increase in the bending stress and optimized structural mass of the wingbox. Geometrically nonlinear analysis not only results in deflected wing shapes and lift distributions which are more physically accurate, but also captures new loading phenomena within the wingbox, both of which lead to more realistic structural sizing. We also show that the increase in computational cost when optimizing with geometrically nonlinear analysis can be as low as 15%, meaning these formulations should not be viewed as prohibitively expensive.
+},
  author = {Alasdair C. Gray and Joaquim R. R. A. Martins},
  booktitle = {Proceedings of the AIAA SciTech Forum},
  doi = {10.2514/6.2021-0283},
@@ -1044,7 +1046,7 @@ derivatives are then used in optimization.},
  year = {2000}
 }
 
-@article{amoignon2006shape,
+@article{Amoignon2006a,
  author = {Amoignon, Olivier G and Pralits, Jan O and Hanifi, Ardeshir and Berggren, Martin and Henningson, Dan S},
  doi = {10.2514/1.12431},
  journal = {AIAA journal},
@@ -1804,16 +1806,6 @@ further research into the Navier-Stokes design process are made.},
  year = {2004}
 }
 
-@article{AvWeek:PAT,
- author = {Graham Warwick},
- journal = {Aviation Week \& Space Technology},
- month = {November},
- number = {45},
- title = {Aurora Builds Tow-Steered Carbon Wing for {NASA}},
- volume = {179},
- year = {2017}
-}
-
 @article{AvWeek:PAT2017,
  author = {Graham Warwick},
  journal = {Aviation Week \& Space Technology},
@@ -2313,7 +2305,7 @@ The design of swept wings has now reached the stage where a coherent set of aero
  journal = {Journal of Aircraft},
  number = {4},
  pages = {1522--1530},
- title = {Aeroelastic Optimization with an Economical Transonic Flutter Constraint Using Navier-Stokes Aerodynamics},
+ title = {Aeroelastic Optimization with an Economical Transonic Flutter Constraint Using {Navier}--{Stokes} Aerodynamics},
  volume = {55},
  year = {2018}
 }
@@ -4804,6 +4796,18 @@ We start with a rectangular wing and optimize the aerodynamic shape and the sizi
  year = {2001}
 }
 
+@article{Broyden1965a,
+ author = {Broyden, Charles G.},
+ doi = {10.1090/S0025-5718-1965-0198670-6},
+ journal = {Mathematics of Computation},
+ month = {October},
+ number = {92},
+ pages = {577--593},
+ title = {A Class of Methods for Solving Nonlinear Simultaneous Equations},
+ volume = {19},
+ year = {1965}
+}
+
 @inproceedings{Brucculeri2019a,
  author = {Brucculeri, Joseph and Salas Nunez, Luis and Gladin, Jonathan C. and Mavris, Dimitri N.},
  doi = {10.2514/6.2019-3451},
@@ -6045,7 +6049,10 @@ using the ADIFOR automatic differentiation tool.},
  doi = {10.2514/1.C035991},
  journal = {Journal of Aircraft},
  keywords = {ank},
+ number = {3},
+ pages = {497--513},
  title = {{RANS}-Based Aerodynamic Shape Optimization of a Wing Considering Propeller-Wing Interaction},
+ volume = {58},
  year = {2021}
 }
 
@@ -6181,13 +6188,12 @@ using the ADIFOR automatic differentiation tool.},
 @article{Chen2019,
  abstract = {In this paper, we present a method to control the discretization error in constrained aerodynamic shape optimization problems using meshes adapted via adjoint-based error estimates. The optimization constraints may involve outputs that are not directly targeted for optimization, and hence also not for error estimation and mesh adaptation. However, discretization errors in these outputs often indirectly affect the calculation of the objective function. The proposed method takes this effect into account, so that the mesh is adapted and itself optimized to predict both objective outputs and constraint outputs with appropriate accuracy. We use unstructured mesh optimization to maximize accuracy of the results for a given number of degrees of freedom. The error estimates drive a multifidelity optimization process, preventing over-optimization on a coarse mesh and over-refinement on an undesired design. We demonstrate the accuracy and efficiency of our proposed method on several airfoil shape optimization problems governed by the compressible Navier-Stokes equations. The framework is expected to be even more important for optimization problems with complex systems, dramatic design changes, or high-accuracy requirements.},
  author = {Guodong Chen and Krzysztof J. Fidkowski},
- doi = {https://doi.org/10.1016/j.jcp.2019.02.038},
+ doi = {10.1016/j.jcp.2019.02.038},
  issn = {0021-9991},
  journal = {Journal of Computational Physics},
  keywords = {Constrained aerodynamic optimization, Multifidelity optimization, Discretization error control, Adjoint-based error estimation, Output-based mesh adaptation, Unstructured mesh optimization},
  pages = {163--185},
  title = {Discretization Error Control for Constrained Aerodynamic Shape Optimization},
- url = {http://www.sciencedirect.com/science/article/pii/S002199911930155X},
  volume = {387},
  year = {2019}
 }
@@ -6740,7 +6746,8 @@ using the ADIFOR automatic differentiation tool.},
  number = {4},
  pages = {1406--1419},
  title = {Contributions to the {Sixth} {Drag} {Prediction} {Workshop} Using Structured, Overset Grid Methods},
- volume = {55}
+ volume = {55},
+ year = {2018}
 }
 
 @inproceedings{Coder:AIAA:2018,
@@ -7220,13 +7227,13 @@ using the ADIFOR automatic differentiation tool.},
  year = {2011}
 }
 
-@article{Crouch2008,
+@inproceedings{Crouch2008,
  author = {Crouch, Jeffrey},
+ booktitle = {Proceedings of the 38th Fluid Dynamics Conference and Exhibit},
  doi = {10.2514/6.2008-3832},
- file = {:Users/shiyayun/Documents/Research/Papers/reading/crouch2008.pdf:pdf},
  number = {June},
- pages = {1--9},
- title = {{Modeling Transition Physics for Laminar Flow Control}},
+ organization = {AIAA},
+ title = {Modeling Transition Physics for Laminar Flow Control},
  year = {2008}
 }
 
@@ -9749,7 +9756,7 @@ of these algorithms are assessed for a series of tetrahedral meshes.},
  year = {2011}
 }
 
-@article{Fidkowski:2011:A,
+@article{Fidkowski2011a,
  author = {Krzysztof J. Fidkowski and David L. Darmofal},
  journal = {AIAA Journal},
  keywords = {error estimation, adjoint, CFD},
@@ -10705,16 +10712,6 @@ of these algorithms are assessed for a series of tetrahedral meshes.},
  note = {http://www.gasturb.de/GasTurb11Help/, cited may, 2009},
  title = {GasTurb 11},
  year = {2007}
-}
-
-@conference{Gaudin2008,
- adress = {Victoria, Canada},
- author = {Jocelyn Gaudin},
- booktitle = {AIAA CASI MAO Conference},
- doi = {10.1016/j.compstruc.2015.02.024},
- month = {September},
- title = {Strategies for adaptive optimization with aggregation constraints using interior-point methods},
- year = {2008}
 }
 
 @incollection{Gauger2007,
@@ -12556,6 +12553,13 @@ parameterisation should help AIRBUS to design the best airframe concepts in the 
  year = {2011}
 }
 
+@book{Gurdal:opt-laminated-composites,
+ author = {Z. G{\"u}rdal and R. T. Haftka and P Hajela},
+ publisher = {John Wiley},
+ title = {Design and Optimization of Laminated Composite Materials},
+ year = {1999}
+}
+
 @book{Gurney1997,
  address = {Bristol, PA, USA},
  author = {Gurney, Kevin},
@@ -12823,10 +12827,10 @@ parameterisation should help AIRBUS to design the best airframe concepts in the 
  year = {1992}
 }
 
-@article{HAFTKA1992b,
+@article{Haftka1992b,
  author = {Raphael T. Haftka and Joanne L. Walsh},
  doi = {10.2514/3.10989},
- journal = {{AIAA} Journal},
+ journal = {AIAA Journal},
  month = {March},
  number = {3},
  pages = {814--819},
@@ -13371,17 +13375,6 @@ parameterisation should help AIRBUS to design the best airframe concepts in the 
  title = {Assessment of a Boundary Layer Ingesting Turboelectric Aircraft Configuration using Signomial Programming},
  urldate = {2020-08-20},
  year = {2018}
-}
-
-@article{hall_2017,
- author = {David K. Hall and Arthur C. Huang and Alejandra Uranga and Edward M. Greitzer and Mark Drela and and Sho Sato},
- doi = {10.2514/1.B36321},
- journal = {Journal of Propulsion and Power},
- number = {5},
- pages = {1118--1129},
- title = {Boundary Layer Ingestion Propulsion Benefit for Transport Aircraft},
- volume = {33},
- year = {2017}
 }
 
 @inproceedings{hall_signomial_2018,
@@ -14233,7 +14226,7 @@ are solved, with a variety of boundary conditions.},
 @phdthesis{He2020e,
  author = {Sicheng He},
  school = {University of Michigan},
- title = {Aerodynamic Shape Optimization using a Time-Spectral Approach for Flutter Analysis},
+ title = {Aerodynamic Shape Optimization using a Time-Spectral Approach for Limit Cycle Oscillation Prediction},
  year = {2020}
 }
 
@@ -14256,12 +14249,16 @@ are solved, with a variety of boundary conditions.},
 }
 
 @article{He2021c,
+ abstract = {Flutter and limit cycle oscillation (LCO) are important phenomena that need to be considered in aircraft design. Previous harmonic-balance-based flutter and LCO prediction methods either have low linear convergence rates or require expensive Newton steps to achieve quadratic convergence. In this paper, we propose a preconditioned, Jacobian-free, coupled Newton--Krylov (CNK) method for the time-spectral aeroelastic equations. By solving the coupled system directly, the method reduces the computational cost of each Newton step, making quadratic convergence affordable. The proposed Jacobian-free method is easier to implement and requires less memory relative to previous methods. We demonstrate the capability of the CNK solver by verifying the results against a time-accurate solver and by comparing them to other harmonic-balance-based results reported in the literature. We observe that the proposed method is more efficient than the time-accurate method in LCO response simulations. And the LCO velocities and frequencies predicted by the proposed method and the time-accurate method are within 1\% of relative difference when the same mesh is used. This method can be potentially used in aircraft design.},
  author = {Sicheng He and Eirikur Jonsson and Charles A. Mader and Joaquim R. R. A. Martins},
  doi = {10.2514/1.J059224},
  journal = {AIAA Journal},
  keywords = {ank},
- note = {(In press)},
+ month = {June},
+ number = {6},
+ pages = {2214--2232},
  title = {Coupled {Newton}--{Krylov} Time-Spectral Solver for Flutter and Limit Cycle Oscillation Prediction},
+ volume = {59},
  year = {2021}
 }
 
@@ -16424,6 +16421,18 @@ multi-fidelity/multi-scale aspects as well as model parameterisation and loadspa
  year = {2011}
 }
 
+@article{Jarvis1973a,
+ author = {Jarvis, Ray A.},
+ doi = {10.1016/0020-0190(73)90020-3},
+ journal = {Information processing letters},
+ number = {1},
+ pages = {18--21},
+ publisher = {Elsevier},
+ title = {On the identification of the convex hull of a finite set of points in the plane},
+ volume = {2},
+ year = {1973}
+}
+
 @article{Jasa2018a,
  abstract = {To teach multidisciplinary design optimization (MDO) to students effectively, it is useful to have accessible software that runs quickly, allowing hands-on exploration of coupled systems and optimization methods. Open-source software exists for low-fidelity aerodynamic or structural analysis, but there is no existing software for fast tightly coupled aerostructural analysis and design optimization. To address this need, we present OpenAeroStruct, an open-source low-fidelity aerostructural analysis and optimization tool developed in NASA's OpenMDAO framework. It uses the coupled adjoint method to compute the derivatives required for efficient gradient-based optimization. OpenAeroStruct combines a vortex lattice method and 1-D finite-element analysis to model lifting surfaces, such as aircraft wings and tails, and uses the coupled-adjoint method to compute the aerostructural derivatives. We use the Breguet range equation to compute the fuel burn as a function of structural weight and aerodynamic performance. OpenAeroStruct has proved effective both as an educational tool and as a benchmark for researching new MDO methods. There is much more potential to be exploited as the research community continues to develop and use this tool.},
  author = {John P. Jasa and John T. Hwang and Joaquim R. R. A. Martins},
@@ -17178,6 +17187,13 @@ Opportunities for further improvement may lie in combining the best features of 
  year = {2019}
 }
 
+@phdthesis{Jonsson2020b,
+ author = {Eirikur Jonsson},
+ school = {University of Michigan},
+ title = {High-fidelity Aerostructural Optimization of Flexible Wings with Flutter Constraints},
+ year = {2020}
+}
+
 @inproceedings{Joo2015,
  author = {James J. Joo and Christopher R. Marks and Lauren Zientarski and Adam J. Culler},
  booktitle = {23nd {AIAA}/{AHS} Adaptive Structures Conference},
@@ -17233,6 +17249,18 @@ Opportunities for further improvement may lie in combining the best features of 
  url = {https://doi.org/10.1115/1.2829873},
  volume = {130},
  year = {2008}
+}
+
+@article{Joshy2021a,
+ abstract = {Large-scale system design optimization is a numerical technique used in solving system design problems that involve a large number of design variables. These systems are often multidisciplinary, with many disciplines interacting with each other. The scale of these problems demands a gradient-based approach for efficient solutions, and it is often implemented by coupling an engineering model with an optimizer. A recently developed theory on multidisciplinary derivative computation has made it feasible to solve large-scale system design optimization problems in only hundreds of model evaluations. This has led to an increase in the number of applications for large-scale system design optimization with new applications still emerging. This paper presents a new optimization formulation that can further reduce the required number of model evaluations by unifying two widely used optimization architectures, namely, multidisciplinary feasible, and simultaneous analysis and design. Complex engineering systems that require solutions of large nonlinear systems can potentially benefit from this new formulation, and the optimized solutions can be reached in just tens of equivalent model evaluations. We demonstrate this order of magnitude improvement using a bar design problem. The paper also provides details on the practical implementation of this new formulation in an equality-constrained optimization setting. },
+ author = {Joshy, Anugrah Jo and Hwang, John T.},
+ doi = {10.2514/1.J059954},
+ journal = {AIAA Journal},
+ number = {6},
+ pages = {1953--1963},
+ title = {Unifying Monolithic Architectures for Large-Scale System Design Optimization},
+ volume = {59},
+ year = {2021}
 }
 
 @article{Joskow1983,
@@ -18111,8 +18139,8 @@ Opportunities for further improvement may lie in combining the best features of 
  address = {Dallas, TX},
  author = {Gaetan W. K. Kenway and Joaquim R. R. A. Martins},
  booktitle = {Proceedings of the 16th AIAA/ISSMO Multidisciplinary Analysis and Optimization Conference},
+ doi = {10.2514/6.2015-2790},
  month = {June},
- note = {AIAA 2015-2790},
  title = {High-fidelity aerostructural optimization considering buffet onset},
  year = {2015}
 }
@@ -18322,7 +18350,7 @@ Opportunities for further improvement may lie in combining the best features of 
  year = {2011}
 }
 
-@inproceedings{khayatzadeh2012aerodynamic,
+@inproceedings{Khayatzadeh2012a,
  author = {Khayatzadeh, Peyman and Nadarajah, Sivakumaran},
  booktitle = {50th AIAA Aerospace Sciences Meeting including the New Horizons Forum and Aerospace Exposition},
  doi = {10.2514/6.2012-61},
@@ -18355,6 +18383,7 @@ Opportunities for further improvement may lie in combining the best features of 
 
 @article{Khosravi2017a,
  author = {Khosravi, Shahriar and Zingg, David W.},
+ doi = {10.2514/1.C033914},
  journal = {Journal of Aircraft},
  keywords = {winglets, aerostruct},
  number = {3},
@@ -18737,6 +18766,18 @@ Opportunities for further improvement may lie in combining the best features of 
  year = {2019}
 }
 
+@article{Kiviaho:2018:MELD,
+ author = {Jan F. Kiviaho and Graeme J. Kennedy},
+ doi = {10.2514/1.J057318},
+ journal = {AIAA Journal},
+ keywords = {meld},
+ number = {5},
+ pages = {2237--2243},
+ title = {Efficient and Robust Load and Displacement Transfer Scheme Using Weighted Least Squares},
+ volume = {57},
+ year = {2019}
+}
+
 @inproceedings{kiyici2015design,
  author = {Kiyici, Firat and Aradag, Selin},
  booktitle = {22nd AIAA Computational Fluid Dynamics Conference},
@@ -18946,6 +18987,20 @@ Opportunities for further improvement may lie in combining the best features of 
  year = {2002}
 }
 
+@article{Kogiso:1994:ga-composite-design,
+ author = {Kogiso, N. and Watson, L.T. and G{\"u}rdal, Z. and Haftka, R.T.},
+ doi = {10.1007/BF01743714},
+ issn = {0934-4373},
+ journal = {Structural optimization},
+ language = {English},
+ number = {4},
+ pages = {207-218},
+ publisher = {Springer-Verlag},
+ title = {Genetic algorithms with local improvement for composite laminate design},
+ volume = {7},
+ year = {1994}
+}
+
 @article{Kokail2019,
  abstract = {Hybrid classical--quantum algorithms aim to variationally solve optimization problems using a feedback loop between a classical computer and a quantum co-processor, while benefiting from quantum resources. Here we present experiments that demonstrate self-verifying, hybrid, variational quantum simulation of lattice models in condensed matter and high-energy physics. In contrast to analogue quantum simulation, this approach forgoes the requirement of realizing the targeted Hamiltonian directly in the laboratory, thus enabling the study of a wide variety of previously intractable target models. We focus on the lattice Schwinger model, a gauge theory of one-dimensional quantum electrodynamics. Our quantum co-processor is a programmable, trapped-ion analogue quantum simulator with up to 20 qubits, capable of generating families of entangled trial states respecting the symmetries of the target Hamiltonian. We determine ground states, energy gaps and additionally, by measuring variances of the Schwinger Hamiltonian, we provide algorithmic errors for the energies, thus taking a step towards verifying quantum simulation.},
  author = {Kokail, C. and Maier, C. and van Bijnen, R. and Brydges, T. and Joshi, M. K. and Jurcevic, P. and Muschik, C. A. and Silvi, P. and Blatt, R. and Roos, C. F. and Zoller, P.},
@@ -19051,25 +19106,13 @@ Opportunities for further improvement may lie in combining the best features of 
  year = {1967}
 }
 
-@article{Koo2017a,
+@article{Koo2018a,
  author = {David Koo and David W. Zingg},
  doi = {10.2514/1.j055978},
  journal = {AIAA Journal},
  month = {August},
  pages = {250--263},
  publisher = {American Institute of Aeronautics and Astronautics},
- title = {Investigation into Aerodynamic Shape Optimization of Planar and Nonplanar Wings},
- volume = {56},
- year = {2018}
-}
-
-@article{Koo2018a,
- author = {Koo, David and Zingg, David W.},
- doi = {10.2514/1.J055978},
- journal = {AIAA Journal},
- month = {January},
- number = {1},
- pages = {250--263},
  title = {Investigation into Aerodynamic Shape Optimization of Planar and Nonplanar Wings},
  volume = {56},
  year = {2018}
@@ -19339,12 +19382,12 @@ Opportunities for further improvement may lie in combining the best features of 
  author = {Krishnan, K. S.G. and Bertram, O. and Seibel, O.},
  doi = {10.1016/j.paerosci.2017.05.005},
  journal = {Progress in Aerospace Sciences},
- keywords = {Flight tests,Hybrid laminar flow control,Suction system,System design,Wind-tunnel tests},
+ keywords = {Hybrid laminar flow control},
  month = {November},
  number = {February},
  pages = {24--52},
  publisher = {Elsevier Ltd},
- title = {{Review of Hybrid Laminar Flow Control Systems}},
+ title = {Review of Hybrid Laminar Flow Control Systems},
  volume = {93},
  year = {2017}
 }
@@ -20814,6 +20857,18 @@ A first-order framework is given for design procedures aimed at achieving a give
  year = {1993}
 }
 
+@article{LeRiche:1995:ImprovedGA-min-thickness,
+ author = {R. {Le Riche} and R. T. Haftka},
+ doi = {http://dx.doi.org/10.1016/0961-9526(95)90710-S},
+ issn = {0961-9526},
+ journal = {Composites Engineering},
+ number = {2},
+ pages = {143 - 161},
+ title = {Improved genetic algorithm for minimum thickness composite laminate design},
+ volume = {5},
+ year = {1995}
+}
+
 @article{Lesoinne1998a,
  author = {M. Lesoinne and C. Farhat},
  journal = {AIAA Journal},
@@ -21218,6 +21273,7 @@ A first-order framework is given for design procedures aimed at achieving a give
  author = {Yingqian Liao and Anil Yildirim and Yin Lu Young and Joaquim R. R. A. Martins},
  booktitle = {SNAME Maritime Convention},
  keywords = {ank},
+ month = {September},
  organization = {The Society of Naval Architects and Marine Engineers},
  title = {Hydrodynamic Optimization of a {T}-foil},
  url = {https://www.onepetro.org/conference-paper/SNAME-SMC-2020-084},
@@ -21726,6 +21782,43 @@ A first-order framework is given for design procedures aimed at achieving a give
  title = {Surrogate-based aerodynamic shape optimization of hypersonic flows considering transonic performance},
  volume = {93},
  year = {2019}
+}
+
+@article{Liu:2000a,
+ author = {B. Liu and R.T. Haftka and M. A. Akg{\"u}n},
+ issue = {2},
+ journal = {Structural Optimization},
+ pages = {87-96},
+ title = {Two-Level Composite Wing Structural Optimization Using Response Surfaces},
+ volume = {20},
+ year = {2000}
+}
+
+@article{Liu:2000b,
+ author = {B. Liu and R.T. Haftka and M. A. Akg{\"u}n and A. Todoroki},
+ journal = {Computer Methods in Applied Mechanics and Engineering},
+ pages = {357-372},
+ title = {Permutation Genetic Algorithm For Stacking Sequence Design Of Composite Laminates},
+ volume = {186},
+ year = {2000}
+}
+
+@article{Liu:2004a,
+ author = {B. Liu and R.T. Haftka},
+ journal = {Structural and Multidisciplinary Optimization},
+ pages = {111-120},
+ title = {Single-level composite wing optimization based on flexural lamination parameters},
+ volume = {26},
+ year = {2004}
+}
+
+@article{Liu:2004b,
+ author = {B. Liu and R.T. Haftka},
+ journal = {Structural and Multidisciplinary Optimization},
+ pages = {111-120},
+ title = {Minimization of Composite Wing Weight Using Flexural Lamination Parameters},
+ volume = {26},
+ year = {2004}
 }
 
 @article{LiuEtAl2017,
@@ -22707,6 +22800,7 @@ A first-order framework is given for design procedures aimed at achieving a give
 }
 
 @inproceedings{Mader2017a,
+ abstract = {The D8 ``double-bubble'' is a new transport aircraft configuration proposed by MIT that has the potential to provide large improvements in fuel efficiency. It has been studied at the conceptual level and in low-speed wind tunnel tests, but there was, up to now, no higher fidelity transonic design. In this study, we use the conceptual design definition as a starting point and develop a high-fidelity aerostructural optimization problem for the D8 configuration using the MACH framework. Via gradient-based optimization techniques with coupled RANS and shell FEA, the D8 is optimized at three different cruise Mach numbers (0.72, 0.78, 0.84). The preliminary results presented confirm that the planforms designed with the conceptual level tools perform well and as predicted, and that some small improvements can be gained from further optimization. In spite of its limitations, this work confirms the viability of the D8 wing-body in the transonic regime and provides preliminary transonic geometries for future work.},
  author = {Charles A. Mader and Gaetan K. Kenway and Joaquim R. R. A. Martins and Alejandra Uranga},
  booktitle = {18th {AIAA}/{ISSMO} Multidisciplinary Analysis and Optimization Conference},
  doi = {10.2514/6.2017-4436},
@@ -23631,10 +23725,19 @@ A first-order framework is given for design procedures aimed at achieving a give
 
 @book{Martins2021,
  author = {Joaquim R. R. A. Martins and Andrew Ning},
- note = {(to be published)},
+ note = {(to be published) https://www.dropbox.com/s/3i1qmydet323nx5/mdobook.pdf},
  publisher = {Cambridge University Press},
  title = {Engineering Design Optimization},
- year = {2020}
+ url = {https://www.dropbox.com/s/3i1qmydet323nx5/mdobook.pdf},
+ year = {2021}
+}
+
+@article{Martins2021a,
+ author = {Joaquim R. R. A. Martins and Graeme J. Kennedy},
+ journal = {Structural and Multidisciplinary Optimization},
+ note = {(In press)},
+ title = {Enabling Large-scale Multidisciplinary Design Optimization through Adjoint Sensitivity Analysis},
+ year = {2021}
 }
 
 @techreport{Martins:1994:FFS,
@@ -28629,8 +28732,8 @@ MPI-AMRVAC framework [1, 2]. BHAC has been designed to solve the equations of id
  year = {2016}
 }
 
-@article{rashad2016aerodynamic,
- author = {Rashad, Ramy and Zingg, David W},
+@article{Rashad2016b,
+ author = {Rashad, Ramy and Zingg, David W.},
  doi = {10.2514/1.J054940},
  journal = {AIAA Journal},
  number = {11},
@@ -28850,14 +28953,6 @@ where a CPU time reduction of more than 70 and 80{\%} is demonstrated.},
  month = {January},
  title = {Aerodynamically Optimal Regional Aircraft Concepts: Conventional and Blended-Wing-Body Designs},
  year = {2014}
-}
-
-@article{Reist2020,
- author = {Reist, Thomas A. and Koo, David and Zingg, David W. and Bochud, Pascal and Castonguay, Patrice and Leblond, David},
- doi = {10.2514/1.J059091},
- journal = {AIAA Journal},
- title = {Cross Validation of Aerodynamic Shape Optimization Methodologies for Aircraft Wing-Body Optimization},
- year = {2020}
 }
 
 @article{Reist2020a,
@@ -30660,6 +30755,20 @@ action.},
  year = {2020}
 }
 
+@inbook{Schulz2013,
+ abstract = {Recently, optimization has become an integral part of the aerodynamic design process chain. However, because of uncertainties with respect to the flight conditions and geometry uncertainties, a design optimized by a traditional design optimization method seeking only optimality may not achieve its expected performance. Robust optimization deals with optimal designs, which are robust with respect to small (or even large) perturbations of the optimization setpoint conditions. That means, the optimal designs computed should still be good designs, even if the input parameters for the optimization problem formulation are changed by a non-negligible amount. Thus even more experimental or numerical effort can be saved. In this paper, we aim at an improvement of existing simulation and optimization technology, developed in the German collaborative effort MEGADESIGN1, so that numerical uncertainties are identified, quantized and included in the overall optimization procedure, thus making robust design in this sense possible. We introduce two robust formulations of the aerodynamic optimization problem which we numerically compare in a 2d testcase under uncertain flight conditions. Beside the scalar valued uncertainties we consider the shape itself as an uncertainty source and apply a Karhunen-Lo{\`e}ve expansion to approximate the infinite-dimensional probability space. To overcome the curse of dimensionality an adaptively refined sparse grid is used in order to compute statistics of the solution.},
+ address = {Berlin, Heidelberg},
+ author = {Schulz, Volker and Schillings, Claudia},
+ booktitle = {Management and Minimisation of Uncertainties and Errors in Numerical Aerodynamics: Results of the German collaborative project {MUNA}},
+ doi = {10.1007/978-3-642-36185-2_13},
+ editor = {Eisfeld, Bernhard and Barnewitz, Holger and Fritz, Willy and Thiele, Frank},
+ isbn = {978-3-642-36185-2},
+ pages = {297--338},
+ publisher = {Springer Berlin Heidelberg},
+ title = {Optimal Aerodynamic Design under Uncertainty},
+ year = {2013}
+}
+
 @article{Schuster2003,
  author = {Schuster, David M and Liu, Danny D and Huttsell, Lawerence J},
  journal = {Journal of Aircraft},
@@ -31296,17 +31405,6 @@ to date.},
  year = {2021}
 }
 
-@article{Shahriar2017,
- author = {Khosravi, Shahriar and Zingg, David W.},
- doi = {10.2514/1.C033914},
- journal = {Journal of Aircraft},
- number = {3},
- pages = {1121-1138},
- title = {Aerostructural Perspective on Winglets},
- volume = {54},
- year = {2017}
-}
-
 @article{Shaja2010,
  author = {A. S. Shaja and K. Sudhakar},
  doi = {10.1007/s00163-009-0082-5},
@@ -31575,6 +31673,15 @@ to date.},
  title = {Natural Laminar-Flow Airfoil Optimization Design Using a Discrete Adjoint Approach},
  volume = {58},
  year = {2020}
+}
+
+@article{Shi2021a,
+ author = {Yayun Shi and Charles A. Mader and Joaquim R. R. A. Martins},
+ doi = {10.1007/s00158-021-02936-w},
+ journal = {Structural and Multidisciplinary Optimization},
+ note = {(In press)},
+ title = {Natural Laminar Flow Wing Optimization Using a Discrete Adjoint Approach},
+ year = {2021}
 }
 
 @inproceedings{Shi:1998,
@@ -34496,6 +34603,19 @@ development.},
  year = {2011}
 }
 
+@article{Todoroki:1998:Stacking-sequence-GA,
+ author = {Akira Todoroki and Raphael T. Haftka},
+ doi = {10.1016/S1359-8368(97)00030-9},
+ issn = {1359-8368},
+ journal = {Composites Part B: Engineering},
+ keywords = {lamination parameters},
+ number = {3},
+ pages = {277 - 285},
+ title = {Stacking sequence optimization by a genetic algorithm with a new recessive gene like repair strategy},
+ volume = {29},
+ year = {1998}
+}
+
 @misc{TOMLAB,
  author = {Mattias Bj{\"o}rkman and Kenneth Holmstr{\"o}m},
  howpublished = {https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.2.9969},
@@ -35089,6 +35209,23 @@ development.},
  title = {{OpenAD}: Algorithm Implementation User Guide},
  type = {Technical Memorandum},
  year = {2004}
+}
+
+@article{Utke2008a,
+ abstract = {The Open/ADF tool allows the evaluation of derivatives of functions defined by a Fortran program. The derivative evaluation is performed by a Fortran code resulting from the analysis and transformation of the original program that defines the function of interest. Open/ADF has been designed with a particular emphasis on modularity, flexibility, and the use of open source components. While the code transformation follows the basic principles of automatic differentiation, the tool implements new algorithmic approaches at various levels, for example, for basic block preaccumulation and call graph reversal. Unlike most other automatic differentiation tools, Open/ADF uses components provided by the Open/AD framework, which supports a comparatively easy extension of the code transformations in a language-independent fashion. It uses code analysis results implemented in the OpenAnalysis component. The interface to the language-independent transformation engine is an XML-based format, specified through an XML schema. The implemented transformation algorithms allow efficient derivative computations using locally optimized cross-country sequences of vertex, edge, and face elimination steps. Specifically, for the generation of adjoint codes, Open/ADF supports various code reversal schemes with hierarchical checkpointing at the subroutine level. As an example from geophysical fluid dynamics, a nonlinear time-dependent scalable, yet simple, barotropic ocean model is considered. OpenAD/F's reverse mode is applied to compute sensitivities of some of the model's transport properties with respect to gridded fields such as bottom topography as independent (control) variables.},
+ address = {New York, NY, USA},
+ author = {Utke, Jean and Naumann, Uwe and Fagan, Mike and Tallent, Nathan and Strout, Michelle and Heimbach, Patrick and Hill, Chris and Wunsch, Carl},
+ doi = {10.1145/1377596.1377598},
+ issn = {0098-3500},
+ journal = {ACM Transactions on Mathematical Software},
+ keywords = {source transformation, Automatic differentiation, adjoint compiler},
+ month = {July},
+ number = {4},
+ numpages = {36},
+ publisher = {Association for Computing Machinery},
+ title = {OpenAD/F: A Modular Open-Source Tool for Automatic Differentiation of Fortran Codes},
+ volume = {34},
+ year = {2008}
 }
 
 @techreport{Utke:OpenAD,
@@ -35731,14 +35868,6 @@ time when the world is recognizing the importance of conserving resources.},
  year = {1982}
 }
 
-@techreport{Vivek_2019,
- author = {Vivek Ojha and Krzysztof J. Fidkowski and Carlos E. S. Cesnik},
- note = {abstract submitted},
- title = {High-Fidelity Coupled Fluid-Structure Interaction Simulations with Adaptive Meshing},
- type = {{AIAA} Paper},
- year = {2019}
-}
-
 @inbook{Volpi2018a,
  author = {Volpi, Silvia and Diez, Matteo and Stern, Frederick},
  booktitle = {2018 Multidisciplinary Analysis and Optimization Conference},
@@ -35809,6 +35938,27 @@ time when the world is recognizing the importance of conserving resources.},
  title = {Design and Off-Design Performance of Electric System Architectures for Electric Powered Aircraft},
  url = {https://www.icas.org/ICAS_ARCHIVE/ICAS2018/data/papers/ICAS2018_0728_paper.pdf},
  year = {2018}
+}
+
+@article{Vuruskan2019a,
+ abstract = { The objective of this paper is to investigate the impact of two commonly used turbulence models with three different shape parameterization techniques in Reynolds-averaged Navier--Stokes simulations on two-dimensional optimum design obtained with gradient-based deterministic and robust aerodynamic shape optimization in transonic, viscous, turbulent flow. The main contribution of this study to aerodynamic design area is to evaluate the impact of turbulence models and shape parameterization techniques on the computational cost, optimal shape, and its performance obtained with robust optimization under uncertainty. The two turbulence models investigated include Spalart--Allmaras and Menter's shear-stress transport models. Hicks--Henne bump functions, B-spline curves, and free-form deformation are used as shape parameterization techniques. The results of the current study show that the shape parameterization technique has a larger impact on the computational cost compared to the turbulence model in both deterministic and robust design. Robust design tends to reduce the impact of the turbulence model selection on the optimum shape and performance, whereas the turbulence model becomes important for the deterministic design at off-design conditions. In this study, the robustness of the final design obtained with stochastic optimization approach is also demonstrated over the Mach number range considered as the uncertain operating condition. },
+ author = {Vuruskan, Aslihan and Hosder, Serhat},
+ doi = {10.2514/1.C035039},
+ journal = {Journal of Aircraft},
+ number = {3},
+ pages = {1099--1115},
+ title = {Impact of Turbulence Models and Shape Parameterization on Robust Aerodynamic Shape Optimization},
+ volume = {56},
+ year = {2019}
+}
+
+@inproceedings{Vuruskan2021a,
+ abstract = { The objective of this paper is to investigate the impact of two commonly used turbulence models in Reynolds-Averaged Navier-Stokes simulations (the Spalart-Allmaras and the Menter's Shear Stress Transport models) on the three-dimensional optimum wing design obtained with the gradient-based deterministic and robust aerodynamic shape optimization in transonic, viscous, turbulent flow. In particular, the main contribution of this study to aerodynamic design area is to evaluate the impact of turbulence models and different weight distributions in the multi-objective function (equal, mean-biased, and variance-biased) on the computational cost, optimal shape and its performance under Mach number uncertainty obtained with robust optimization. The results of the study show that the effect of the weight distribution in the objective function is more significant than the effect of turbulence model on the final shape obtained with robust design at lower off-design Mach numbers. Robust design tends to mitigate the impact of the turbulence model selection on the optimum shape and performance over the uncertain Mach number range, whereas the choice of the turbulence model becomes significant at off-design conditions for the optimal shapes obtained with deterministic design. This study also demonstrates the effectiveness of using stochastic expansions in robust aerodynamic shape optimization of three-dimensional wings. },
+ author = {Aslihan Vuruskan and Serhat Hosder},
+ booktitle = {Proceedings of the AIAA Scitech 2021 Forum},
+ doi = {10.2514/6.2021-0339},
+ title = {Impact of Turbulence Models on Robust Aerodynamic Shape Optimization of {3-D} Wing Geometries},
+ year = {2021}
 }
 
 @inproceedings{Wachowiak2004,
@@ -36147,6 +36297,17 @@ time when the world is recognizing the importance of conserving resources.},
  title = {Forward and adjoint sensitivity computation of chaotic dynamical systems},
  volume = {235},
  year = {2013}
+}
+
+@article{Wang2014a,
+ author = {Wang, Gang and Mian, Haris Hameed and Ye, Zheng-Yin and Lee, Jen-Der},
+ journal = {Journal of aircraft},
+ number = {1},
+ pages = {342--350},
+ publisher = {American Institute of Aeronautics and Astronautics},
+ title = {Numerical study of transitional flow around {NLR}-7301 airfoil using correlation-based transition model},
+ volume = {51},
+ year = {2014}
 }
 
 @inproceedings{Wang2015,

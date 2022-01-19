@@ -2049,6 +2049,17 @@ publisher       = {SIAM},
 year            = {2000}
 }
 
+@TechReport{Bak2013,
+author          = {Bak, Christian and Zahle, Frederik and Bitsche, Robert and Kim, Taeseong and Yde, Anders and Henriksen, Lars Christian and Natarajan, Anand and Hansen, Morten},
+title           = {Description of the DTU 10 MW reference wind turbine},
+institution     = {Danish Technical University, DTU Wind Energy Roskilde, DK},
+keywords        = {DTU10MW},
+number          = {DTU Wind Energy Report-I-0092},
+url             = {https://rwt.windenergy.dtu.dk/dtu10mw/dtu-10mw-rwt/-/blob/master/docs/DTU_Wind_Energy_Report-I-0092.pdf},
+volume          = {5},
+year            = {2013}
+}
+
 @Conference{Bak:2006:EWEC,
 author          = {Christian Bak, Jeppe Johansen, Peter B. Andersen},
 title           = {Three-Dimensional Corrections of Airfoil Characteristics Based on Pressure Distributions},
@@ -4066,6 +4077,20 @@ volume          = {32},
 year            = {2007}
 }
 
+@Article{Bortolotti2016,
+author          = {Bortolotti, P. and Bottasso, C. L. and Croce, A.},
+title           = {Combined preliminary--detailed design of wind turbines},
+doi             = {10.5194/wes-1-71-2016},
+journal         = {Wind Energy Science},
+keywords        = {MDO, Optimization, Aerostructural optimization},
+number          = {1},
+pages           = {71--88},
+volume          = {1},
+year            = {2016},
+abstract        = {This paper is concerned with the holistic optimization of wind turbines. A multi-disciplinary optimization procedure is presented that marries the overall sizing of the machine in terms of rotor diameter and tower height (often termed ``preliminary design'') with the detailed sizing of its aerodynamic and structural components. The proposed combined preliminary-detailed approach sizes the overall machine while taking into full account the subtle and complicated couplings that arise due to the mutual effects of aerodynamic and structural choices. Since controls play a central role in dictating performance and loads, control laws are also updated accordingly during optimization. As part of the approach, rotor and tower are sized simultaneously, even in this case capturing the mutual effects of one component over the other due to the tip clearance constraint. The procedure, here driven by detailed models of the cost of energy, results in a complete aero-structural
+                  design of the machine, including its associated control laws.}
+}
+
 @Article{Botkin1982a,
 author          = {Botkin, M. E.},
 title           = {Shape Optimization of Plate and Shell Structures},
@@ -4087,6 +4112,34 @@ number          = {3},
 pages           = {291--308},
 volume          = {16},
 year            = {2006}
+}
+
+@Article{Bottasso2012,
+author          = {Bottasso, Carlo Luigi and Campagnolo, Filippo and Croce, Alessandro},
+title           = {Multi-disciplinary constrained optimization of wind turbines},
+doi             = {10.1007/s11044-011-9271-x},
+journal         = {Multibody System Dynamics},
+number          = {1},
+pages           = {21--53},
+publisher       = {Springer},
+volume          = {27},
+year            = {2012},
+abstract        = {We describe procedures for the multi-disciplinary design optimization of wind turbines, where design parameters are optimized by maximizing a merit function, subjected to constraints that translate all relevant design requirements. Evaluation of merit function and constraints is performed by running simulations with a parametric high-fidelity aero-servo-elastic model; a detailed cross-sectional structural model is used for the minimum weight constrained sizing of the rotor blade. To reduce the computational cost, the multi-disciplinary optimization is performed by a multi-stage process that first alternates between an aerodynamic shape optimization step and a structural blade optimization one, and then combines the two to yield the final optimum solution. A complete design loop can be performed using the proposed algorithm using standard desktop computing hardware in one-two days. The design procedures are implemented in a computer program and demonstrated on the
+                  optimization of multi-MW horizontal axis wind turbines and on the design of an aero-elastically scaled wind tunnel model.}
+}
+
+@Article{Bottasso2016,
+author          = {Bottasso, Carlo Luigi and Bortolotti, P and Croce, Alessandro and Gualdoni, Federico},
+title           = {Integrated aero-structural optimization of wind turbines},
+doi             = {10.1007/s11044-015-9488-1},
+journal         = {Multibody System Dynamics},
+number          = {4},
+pages           = {317--344},
+publisher       = {Springer},
+volume          = {38},
+year            = {2016},
+abstract        = {The present work describes methods for the integrated aero-structural optimization of wind turbines. The goal of the algorithms is to identify the structural and aerodynamic design characteristics that achieve the minimum cost of energy for a given wind turbine configuration. Given the strong couplings that exist between aerodynamic and structural design choices, the methods are formulated so as to address both problems simultaneously in an integrated manner, resulting in tools that may help avoid suboptimal solutions or lengthy design loops. All methods considered herein use the same high fidelity multibody aeroservoelastic simulation environment and operate the design according to standard certification guidelines. The methods, however, differ in the way the optimization is conducted, realizing different tradeoffs amongst computational efficiency, generality, level of automation and overall robustness. The proposed formulations are exercised on the design of a
+                  conceptual 10 MW horizontal axis wind turbine, illustrating the main characteristics of the various methods.}
 }
 
 @Article{Bottou2018a,
@@ -6401,6 +6454,20 @@ volume          = {137},
 year            = {2015}
 }
 
+@Article{Cheng2019,
+author          = {Ping Cheng and Yang Huang and Decheng Wan},
+title           = {A numerical model for fully coupled aero-hydrodynamic analysis of floating offshore wind turbine},
+doi             = {10.1016/j.oceaneng.2018.12.021},
+issn            = {0029-8018},
+journal         = {Ocean Engineering},
+keywords        = {Multiphysics, CFD},
+pages           = {183-196},
+volume          = {173},
+year            = {2019},
+abstract        = {Designing floating offshore wind turbine system is a quite challenging task because of the complex environmental loading and complicated coupling effects. In the present study, the fully coupled aero-hydrodynamic model for numerical simulation of floating offshore wind turbine (FOWT) is established with open source tool OpenFOAM. The coupled FOWT-UALM-SJTU solver is developed using the open source CFD package OpenFOAM, in which the unsteady actuator line model (UALM) is introduced into OpenFOAM for the aerodynamic simulation of wind turbine, while the hydrodynamic computation of floating platform is carried out with a two-phase CFD solver naoe-FOAM-SJTU. In the coupled model, the three-dimensional Reynolds-Averaged Navier-Stokes (RANS) equations are solved with the turbulence model k-ω SST employed for closure of RANS equations, and the Pressure-Implicit with Splitting of Operations (PISO) algorithm is applied to solve the pressure-velocity coupling equations. The
+                  coupled responses of a FOWT with NREL-5MW baseline wind turbine mounted on a semi-submersible platform are investigated. From the simulation, aerodynamic forces including the unsteady aerodynamic power and thrust can be obtained, and hydrodynamic responses such as the six-degree-of-freedom motions of the floating platform and the mooring tensions are also available. The impact of dynamic motions of floating platform on the aerodynamic performance of wind turbine is analyzed, and the effect of the aerodynamic forces on the hydrodynamic response of the floating platform is also studied.}
+}
+
 @Article{Cheng:1992:AAA,
 author          = {G.D. Cheng and Z. Jiang},
 title           = {Study on topology optimization with stress constraints},
@@ -7943,6 +8010,17 @@ publisher       = {AIAA},
 year            = {2017}
 }
 
+@Article{delCarre2019,
+author          = {del Carre, Alfonso and Mu{\~n}oz-Sim{\'o}n, Arturo and Goizueta, Norberto and Palacios, Rafael},
+title           = {SHARPy: A dynamic aeroelastic simulation toolbox for very flexible aircraft and wind turbines},
+doi             = {10.21105/joss.01885},
+journal         = {Journal of Open Source Software},
+number          = {44},
+pages           = {1885},
+volume          = {4},
+year            = {2019}
+}
+
 @InProceedings{DelRosario2012,
 author          = {Del Rosario, R and Follen, G and Wahls, R and Madavan, N},
 title           = {Subsonic Fixed Wing Project Overview of Technical Challenges for Energy Efficient, Environmentally Compatible Subsonic Transport Aircraft},
@@ -9008,6 +9086,15 @@ title           = {An Album of Fluid Motion},
 keywords        = {aerodynamics},
 publisher       = {Parabolic Press},
 year            = {1982}
+}
+
+@InProceedings{Dykes2014,
+author          = {Katherine Dykes and Andrew Ning and Ryan King and Peter Graf and George Scott and Paul S. Veers},
+title           = {Sensitivity Analysis of Wind Plant Performance to Key Turbine Design Parameters: A Systems Engineering Approach},
+booktitle       = {32nd ASME Wind Energy Symposium},
+doi             = {10.2514/6.2014-1087},
+keywords        = {MDO,Optimization},
+year            = {2014}
 }
 
 @InBook{Dyson2018,
@@ -10869,6 +10956,20 @@ volume          = {59},
 year            = {2021}
 }
 
+@Article{Garcia-Sanz2020,
+author          = {Garcia-Sanz, Mario},
+title           = {A Metric Space with LCOE Isolines for Research Guidance in wind and hydrokinetic energy systems},
+doi             = {10.1002/we.2429},
+journal         = {Wind Energy},
+keywords        = {hydrokinetic energy systems, Levelized cost of energy, performance metrics, research strategy, tidal energy systems, wind energy systems, wind farms, wind turbines},
+number          = {2},
+pages           = {291-311},
+volume          = {23},
+year            = {2020},
+abstract        = {Abstract This paper introduces a new Metric Space to guide the design of advanced wind energy systems and hydrokinetic energy converters such as tidal, ocean current and riverine turbines. The Metric Space can analyse farms that combine different or identical turbines and stand-alone turbines. The first metric (M1) of the space considers the efficiency of the turbines in the farm, which is also proportional to the specific power per swept area at a given wind/water velocity (W/m2). The second metric (M2) describes the specific rotor area per unit of mass of the turbines (m2/kg). Both metrics depend on the primary design characteristics of the turbines, such as swept area, system size and mass, materials and efficiency, and are independent at first from external characteristics, such as atmospheric and ocean site conditions, cost of materials and economic factors. Combining both metrics, and for a given set of external characteristics, the resulting Metric Space M2/M1
+                  displays the Levelized Cost of Energy (LCOE) standards as isolines. This graphical representation provides a quick understanding of the cost and state of the technology. It also offers a practical guidance to choose the research tasks and strategy to design advanced wind and hydrokinetic energy systems. The paper applies the new Metric Space to several case studies, including large and small onshore wind turbines, floating and bottom-fixed offshore wind turbines, downwind rotors, multi-rotor and hybrid systems, airborne wind energy systems, wind farms and tidal energy converters.}
+}
+
 @Article{Gardner:1997:A,
 author          = {R. M. Gardner and K. Adams and T. Cook and F Deidewig and S. Ernedal and R. Falk and E. Fleuti and E. Herms and C. E. Johnson and M. Lecht and P Newon and A. Shmitt and C. Vanderbergh and R. van Drimmelen},
 title           = {The {ANCAT/EC} Global Inventory of {NO}$_x$ Emissions from Aircraft},
@@ -11029,6 +11130,15 @@ title           = {Composite Materials: Design and Applications},
 edition         = {Third},
 publisher       = {CRC Press},
 year            = {2015}
+}
+
+@TechReport{Gayathri2019,
+author          = {Prakash, Gayathri and Anuta, Harold},
+title           = {Future of Wind: Deployment, investment, technology, grid integration and socio-economic aspects},
+institution     = {International Renewable Energy Agency (IRENA)},
+number          = {NREL/TP-5000-66599},
+url             = {https://www.irena.org/publications/2019/Oct/Future-of-wind},
+year            = {2019}
 }
 
 @InProceedings{Gazaix2002a,
@@ -14716,6 +14826,20 @@ volume          = {12},
 year            = {2001}
 }
 
+@Article{Heinz2016,
+author          = {Heinz, Joachim C. and S{\o}rensen, Niels N. and Zahle, Frederik},
+title           = {Fluid-structure interaction computations for geometrically resolved rotor simulations using CFD},
+doi             = {10.1002/we.1976},
+journal         = {Wind Energy},
+keywords        = {fluid-structure interaction, FSI, loose coupling, aeroelasticity, full rotor simulations, CFD, standstill vibrations, HAWC2CFD},
+number          = {12},
+pages           = {2205-2221},
+volume          = {19},
+year            = {2016},
+abstract        = {Abstract This paper presents a newly developed high-fidelity fluid-structure interaction simulation tool for geometrically resolved rotor simulations of wind turbines. The tool consists of a partitioned coupling between the structural part of the aero-elastic solver HAWC2 and the finite volume computational fluid dynamics (CFD) solver EllipSys3D. The paper shows that the implemented loose coupling scheme, despite a non-conservative force transfer, maintains a sufficient numerical stability and a second-order time accuracy. The use of a strong coupling is found to be redundant. In a first test case, the newly developed coupling between HAWC2 and EllipSys3D (HAWC2CFD) is utilized to compute the aero-elastic response of the NREL 5-MW reference wind turbine (RWT) under normal operational conditions. A comparison with the low-fidelity but state-of-the-art aero-elastic solver HAWC2 reveals a very good agreement between the two approaches. In a second test case, the
+                  response of the NREL 5-MW RWT is computed during a yawed and thus asymmetric inflow. The continuous good agreement confirms the qualities of HAWC2CFD but also illustrates the strengths of a computationally cheaper blade element momentum theory (BEM) based solver, as long as the solver is applied within the boundaries of the employed engineering models. Two further test cases encompass flow situations, which are expected to exceed the limits of the BEM model. However, the simulation of the NREL 5-MW RWT during an emergency shut down situation still shows good agreements in the predicted structural responses of HAWC2 and HAWC2CFD since the differences in the computed force signals only persist for an insignificantly short time span. The considerable new capabilities of HAWC2CFD are finally demonstrated by simulating vortex-induced vibrations on the DTU 10-MW wind turbine blade in standstill.}
+}
+
 @InProceedings{Helenbrook2003a,
 author          = {Helenbrook, Brian and Mavriplis, Dimitri and Atkins, Harold},
 title           = {Analysis of ``p''-{Multigrid} for {Continuous} and {Discontinuous} {Finite} {Element} {Discretizations}},
@@ -15367,6 +15491,16 @@ type            = {TN},
 year            = {1972}
 }
 
+@InCollection{Horcas2016,
+author          = {Horcas, Sergio Gonz{\'a}lez and Debrabandere, Fran{\c{c}}ois and Tartinville, Beno{\^\i}t and Hirsch, Charles and Coussement, Gr{\'e}gory},
+title           = {CFD study of DTU 10 MW RWT aeroelasticity and rotor-tower interactions},
+booktitle       = {MARE-WINT},
+doi             = {10.1007/978-3-319-39095-6_18},
+pages           = {309--334},
+publisher       = {Springer, Cham},
+year            = {2016}
+}
+
 @Manual{Hordwedel:1991:GM,
 author          = {J. E. Horwedel},
 title           = {GRESS Version 2.0 User's Manual},
@@ -15962,6 +16096,14 @@ version         = {ANSYS ICEM CFD 15.0},
 year            = {2013}
 }
 
+@TechReport{IEANetZero,
+author          = {Cozzi, Laura and G{\"u}l, Timur and Bouckaert, St{\'e}phanie},
+title           = {Net Zero by 2050 ---A Roadmap for the Global Energy Sector},
+institution     = {IEA},
+month           = {May},
+year            = {2021}
+}
+
 @Article{Ihara1989,
 author          = {A. Ihara and H. Watanabe and S. Shizukuishi},
 title           = {Experimental Research of the Effects of Sweep on Unsteady Hydrofoil Loadings in Cavitation},
@@ -16023,6 +16165,20 @@ month           = {May},
 publisher       = {International Sailing Federation},
 url             = {http://www.moth-sailing.org/wp-content/uploads/2017/05/MTH2017CR010517.pdf},
 year            = {2017}
+}
+
+@Article{Ingersoll2020,
+author          = {Ingersoll, Bryce and Ning, Andrew},
+title           = {Efficient incorporation of fatigue damage constraints in wind turbine blade optimization},
+doi             = {10.1002/we.2473},
+journal         = {Wind Energy},
+keywords        = {BEM, Surrogate, Optimization},
+number          = {4},
+pages           = {1063-1076},
+volume          = {23},
+year            = {2020},
+abstract        = {Abstract Wind turbine design is a challenging multidisciplinary optimization problem, where the aerodynamic shapes, structural member sizing, and material composition must all be determined and optimized. Some previous blade design methods incorporate static loading with an added safety factor to account for dynamic effects. Others incorporate dynamic loading, but in general limit, the evaluation to a few design cases. By not fully incorporating the dynamic loading of the wind turbine, the final turbine blade design is either too conservative by overemphasizing the dynamic effects or infeasible by failing to adequately account for these effects. We propose an iterative method that estimates fatigue effects during the optimization process while quickly converging to the true solution. We also demonstrate an alternate approach where a surrogate model is trained to efficiently estimate the dynamic loading of the wind turbine in the design process. This surrogate model,
+                  once trained, was then incorporated in the optimization loop of the wind turbine blade. In contrast to the iterative method, there is significant upfront computational cost to construct the surrogate model. However, this surrogate model has been generalized to be used for different rated turbines and can predict the fatigue damage of a wind turbine with less than 5\% error for baseline wind turbines of the same family. These methods can be used instead of the more computationally expensive method of calculating the dynamic loading of the turbine within the optimization routine.}
 }
 
 @InProceedings{Ingraham2019,
@@ -21065,6 +21221,20 @@ volume          = {47},
 year            = {2015}
 }
 
+@Article{Lee2017,
+author          = {Kyoungsoo Lee and Ziaul Huque and Raghava Kommalapati and Sang-Eul Han},
+title           = {Fluid-structure interaction analysis of NREL phase VI wind turbine: Aerodynamic force evaluation and structural analysis using FSI analysis},
+doi             = {10.1016/j.renene.2017.02.071},
+issn            = {0960-1481},
+journal         = {Renewable Energy},
+keywords        = {Fluid-structure interaction, Computational fluid dynamics, National Renewable Energy Laboratory Phase VI wind turbine blade, Aerodynamic force, Structural analysis, Wind turbine},
+pages           = {512-531},
+volume          = {113},
+year            = {2017},
+abstract        = {The fluid-structure interaction (FSI) analyses were performed to obtain the structural responses of 3D wind turbine research on the National Renewable Energy Laboratory (NREL) Phase VI wind turbine using the commercial program ANSYS. The surface pressure information was imported from the results of computation fluid dynamics (CFD) which were studied in advance. To perform the structural analyses for both of FSI and blade element momentum (BEM) method, the structural model of full NREL Phase VI wind turbine were developed which is assembled by a rotor, nacelle, tower and blades. The aerodynamic forces also can be calculated from structural model by the value of reaction on rotor shaft. From those new aerodynamic evaluating process, the accuracy of FSI process which utilizing CFD results were described. And the advantages and characteristics of combination of CFD/FSI which were demonstrated by investigating the structural response of NREL Phase VI turbine for 7 wind
+                  speed cases. From the studies of structural analysis, the wind turbine can be said that it is not governed by torque force, which is the main interest in power efficiency of wind turbine, but the thrust force. Finally, the practical applicability of this methodology is discussed.}
+}
+
 @Article{Lee2017a,
 author          = {Christopher Lee and David Koo and David W. Zingg},
 title           = {Comparison of {B}-Spline Surface and Free-Form Deformation Geometry Control for Aerodynamic Optimization},
@@ -21272,6 +21442,21 @@ author          = {Leifur Thor Leifsson},
 title           = {Multidisciplinary Design Optimization of Low-Noise Transport Aircraft},
 school          = {Virginia Polytechnic Institute and State University},
 year            = {2005}
+}
+
+@Article{Leimeister2021,
+author          = {Leimeister, Mareike and Kolios, Athanasios and Collu, Maurizio},
+title           = {Development of a Framework for Wind Turbine Design and Optimization},
+doi             = {10.3390/modelling2010006},
+issn            = {2673-3951},
+journal         = {Modelling},
+keywords        = {Optimization, framework},
+number          = {1},
+pages           = {105--128},
+volume          = {2},
+year            = {2021},
+abstract        = {Dimensioning and assessment of a specific wind turbine imply iterative steps for design optimization, as well as load calculations and performance analyses of the system in various environmental conditions. However, due to the complexity of wind turbine systems, fully coupled aero-hydro-servo-elastic codes are indispensable to represent and simulate the non-linear system behavior. To cope with the large number of simulations to be performed during the design process of a wind turbine system, automation of simulation executions and optimization procedures are required. In this paper, such a holistic simulation and optimization framework is presented, by which means iterative simulations within the wind turbine design assessment and development processes can be managed and executed in an automated and high-performance manner. The focus lies on the application to design load case simulations, as well as the realization of automated optimizations. The proper functioning
+                  and the high flexibility of the framework tool is shown based on three exemplary optimization tasks.}
 }
 
 @Book{Leishman,
@@ -23851,6 +24036,17 @@ note            = {AIAA 2006-8009},
 year            = {2006}
 }
 
+@InProceedings{Marten2013,
+author          = {Marten, Dennis and Wendler, Johannes and Pechlivanoglou, George and Nayeri, Christian Navid and Paschereit, Christian Oliver},
+title           = {QBLADE: an open source tool for design and simulation of horizontal and vertical axis wind turbines},
+issn            = {2250-2459},
+journal         = {International Journal of Emerging Technology and Advanced Engineering},
+number          = {3},
+pages           = {264--269},
+volume          = {3},
+year            = {2013}
+}
+
 @InProceedings{Marti2017,
 author          = {Ferran Marti and Feng Liu},
 title           = {Multiple Equilibrium Points of Airfoil Flutter in Viscous Flow},
@@ -24385,6 +24581,14 @@ title           = {FRICTman},
 note            = {http://www.aoe.vt.edu/~mason/Masonf/FRICTman.pdf, cited jan, 2009},
 publisher       = {Virginia Tech},
 year            = {1998}
+}
+
+@TechReport{Masson2018,
+author          = {Masson-Delmotte, Val{\'e}rie and Zhai, Panmao and P{\"o}rtner, Hans-Otto and Roberts, Debra and Skea, Jim and Shukla, Priyadarshi R and Pirani, Anna and Moufouma-Okia, W and P{\'e}an, C and Pidcock, R and others},
+title           = {Global warming of 1.5 C. An IPCC Special Report on the impacts of global warming of 1.5$\,^{\circ}$C above pre-industrial levels and related global greenhouse gas emission pathways, in the context of strengthening the global response to the threat of climate change, sustainable development, and efforts to eradicate poverty.},
+institution     = {Intergovernmental Panel on Climate Change (IPCC)},
+url             = {https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_High_Res.pdf},
+year            = {2018}
 }
 
 @InProceedings{MAST,
@@ -24947,6 +25151,18 @@ pages           = {1546--1555},
 publisher       = {American Institute of Aeronautics and Astronautics},
 volume          = {45},
 year            = {2007}
+}
+
+@InProceedings{Mcwilliam2018,
+author          = {McWilliam, Michael K and Zahle, Frederik and Dicholkar, Antariksh and Verelst, David and Kim, Taeseong},
+title           = {Optimal aero-elastic design of a rotor with bend-twist coupling},
+booktitle       = {Journal of Physics: Conference Series},
+doi             = {10.1088/1742-6596/1037/4/042009},
+number          = {4},
+organization    = {IOP Publishing},
+pages           = {042009},
+volume          = {1037},
+year            = {2018}
 }
 
 @Article{Mee:2002:TLS,
@@ -26208,11 +26424,33 @@ volume          = {26},
 year            = {1988}
 }
 
+@TechReport{Musial2016,
+author          = {W. Musial and D. Heimiller and P. Beiter and G. Scott and C. Draxl},
+title           = {2016 Offshore Wind Energy Resource Assessment for the United States},
+institution     = {National Renewable Energy Laboratory},
+number          = {NREL/TP-5000-66599},
+url             = {http://www.nrel.gov/docs/fy16osti/66599.pdf},
+year            = {2016}
+}
+
 @Book{Myers:2002:RSM,
 author          = {Raymond H. Myers},
 title           = {Response surface methodology: Process and product optimization using designed experiments},
 publisher       = {J. Wiley},
 year            = 2002
+}
+
+@Article{Myhr2014,
+author          = {Myhr, Anders and Bjerkseter, Catho and {\AA}gotnes, Anders and Nygaard, Tor A},
+title           = {Levelised cost of energy for offshore floating wind turbines in a life cycle perspective},
+doi             = {10.1016/j.renene.2014.01.017},
+journal         = {Renewable energy},
+pages           = {714--728},
+publisher       = {Elsevier},
+volume          = {66},
+year            = {2014},
+abstract        = {This report presents a comprehensive analysis and comparison of the levelised cost of energy (LCOE) for the following offshore floating wind turbine concepts: Spar-Buoy (Hywind II), Tension-Leg-Spar (SWAY), Semi-Submersible (WindFloat), Tension-Leg-Wind-Turbine (TLWT) and Tension-Leg-Buoy (TLB). The analysis features a generic commercial wind farm consisting of 100 five megawatt turbines, at a far offshore site in a Life Cycle Analysis (LCA) perspective. Data for existing bottom-fixed turbines, both jacket and monopile concepts are used as reference values for adaptation to the generic wind farm parameters. The results indicate that LCOE values are strongly dependent on depth and distance from shore, due to mooring costs and export cable length, respectively. Based on the findings, depth is the dominant parameter to determine the optimal concept for a site. Distance to shore, Load Factor and availability are amongst the significant factors affecting the LCOE. The
+                  findings also indicate that LCOE of floating turbines applied in large scale and in intermediate depths of 50-150 m is comparable to bottom-fixed turbines. Floating turbines for increasing depths generally experience increased LCOE at a lower rate than bottom-fixed turbines. An optimal site, situated 100 km offshore would give LCOE in the range of € 82.0-€ 236.7 per megawatt-hour for the conceptual designs in this paper.}
 }
 
 @InProceedings{Mykhaskiv2017a,
@@ -27330,6 +27568,14 @@ institution     = {Netherlands Ship Model Basin},
 number          = {No. 457},
 type            = {Publication},
 year            = {1975}
+}
+
+@url{OpenFAST260,
+title           = {OpenFAST v2.6.0},
+lastchecked     = {May 14, 2021},
+url             = {https://github.com/OpenFAST/openfast},
+urldate         = {May 14, 2021},
+year            = {May 14, 2021}
 }
 
 @Booklet{Opgenoord2015,
@@ -29416,6 +29662,20 @@ volume          = {411},
 year            = {2020}
 }
 
+@Article{Ramos-Garcia2021,
+author          = {Ramos-Garc{\'\i}a, N{\'e}stor and Sessarego, Matias and Horcas, Sergio Gonz{\'a}lez},
+title           = {Aero-hydro-servo-elastic coupling of a multi-body finite-element solver and a multi-fidelity vortex method},
+doi             = {10.1002/we.2584},
+journal         = {Wind Energy},
+number          = {5},
+pages           = {481--501},
+publisher       = {Wiley Online Library},
+volume          = {24},
+year            = {2021},
+abstract        = {The manuscript presents a novel aero-hydro-servo-elastic coupling framework, MIRAS-HAWC2. In this coupling, the wind turbine blades and rotor-wake aerodynamics are modeled using a modified lifting-line theory which accounts for blade curvature, combined with a hybrid vortex method. The wind turbine structure and foundation are modeled using a finite-element and multi-body system approach. Last, hydrodynamics are modeled using Airy wave theory together with Morison's equation. An initial assessment of the performance of the aeroelastic coupling framework has been performed for steady rotor-only cases, assuming laminar inflow without shear. This included a comparison against fully resolved computational fluid dynamics, for both stiff and flexible blades showing an excellent agreement. In a second stage, the aero-hydro-servo-elastic coupling is used, comparing MIRAS-HAWC2 as well as blade-element momentum-based simulations with selected results from the Offshore Code
+                  Comparison Collaboration projects (OC3 and OC4), which study the NREL 5 MW turbine mounted on different offshore support structures. A good agreement has been obtained for the simulations of a monopile with rigid foundation, a tripod, and jacket support structures.}
+}
+
 @Article{Ranasinghe2019a,
 author          = {Ranasinghe, Kavindu and Guan, Kai and Gardi, Alessandro and Sabatini, Roberto},
 title           = {Review of advanced low-emission technologies for sustainable aviation},
@@ -31184,6 +31444,20 @@ pages           = {020018},
 year            = {2016}
 }
 
+@InProceedings{Saverin2016,
+author          = {Joseph Saverin and Juliane Peukert and David Marten and George Pechlivanoglou and Christian Oliver Paschereit and David Greenblatt},
+title           = {Aeroelastic simulation of multi-{MW} wind turbines using a free vortex model coupled to a geometrically exact beam model},
+doi             = {10.1088/1742-6596/753/8/082015},
+journal         = {Journal of Physics: Conference Series},
+month           = {sep},
+pages           = {082015},
+publisher       = {{IOP} Publishing},
+volume          = {753},
+year            = 2016,
+abstract        = {The current paper investigates the aeroelastic modelling of large, flexible multi- MW wind turbine blades. Most current performance prediction tools make use of the Blade Element Momentum (BEM) model, based upon a number of simplifying assumptions that hold only under steady conditions. This is why a lifting line free vortex wake (LLFVW) algorithm is used here to accurately resolve unsteady wind turbine aerodynamics. A coupling to the structural analysis tool BeamDyn, based on geometrically exact beam theory, allows for time-resolved aeroelastic simulations with highly deflected blades including bend-twist, coupling. Predictions of blade loading and deformation for rigid and flexible blades are analysed with reference to different aerodynamic and structural approaches. The emergency shutdown procedure is chosen as an examplary design load case causing large deflections to place emphasis on the influence of structural coupling and demonstrate the necessity of high
+                  fidelity structural models.}
+}
+
 @Article{Schafer:1997,
 author          = {Schafer, A. and Victor, D. G.},
 title           = {The Past and Future of Global Mobility},
@@ -31585,6 +31859,30 @@ number          = {1},
 pages           = {63--77},
 volume          = {74},
 year            = {2019}
+}
+
+@InProceedings{Scott2019,
+author          = {Scott, Samuel and Macquart, Terence and Rodriguez, Carlos and Greaves, Peter and McKeever, Paul and Weaver, Paul and Pirrera, Alberto},
+title           = {Preliminary validation of ATOM: an aero-servo-elastic design tool for next generation wind turbines},
+booktitle       = {Journal of Physics: Conference Series},
+doi             = {10.1088/1742-6596/1222/1/012012},
+number          = {1},
+organization    = {IOP Publishing},
+pages           = {012012},
+volume          = {1222},
+year            = {2019}
+}
+
+@InProceedings{Scott2020,
+author          = {Scott, S and Greaves, Peter and Weaver, Paul M and Pirrera, Alberto and Macquart, Terence},
+title           = {Efficient structural optimisation of a 20 MW wind turbine blade},
+booktitle       = {Journal of Physics: Conference Series},
+doi             = {10.1088/1742-6596/1618/4/042025},
+number          = {4},
+organization    = {IOP Publishing},
+pages           = {042025},
+volume          = {1618},
+year            = {2020}
 }
 
 @Book{SD,
@@ -36789,6 +37087,15 @@ title           = {Airframe Technologies for Aerodynamic and Structural Efficien
 address         = {Toronto, Canada},
 publisher       = {3rd UTIAS International Workshop on Aviation and Climate Change},
 year            = 2012
+}
+
+@InProceedings{Wainwright2021,
+author          = {Thomas R. Wainwright and Daniel J. Poole and Christian B. Allen and Jamil Appa and Oliver Darbyshire},
+title           = {High Fidelity Aero-Structural Simulation of Occluded Wind Turbine Blades},
+booktitle       = {AIAA Scitech 2021 Forum},
+doi             = {10.2514/6.2021-0950},
+abstract        = {A coupled, high-fidelity simulation framework on GPUs is presented, and is used to perform an aero-structural simulation of large wind turbines, where a turbine is fully-occluded in the wake of another. The GPU-enabled flow solver, zCFD, is coupled with a modal structural model using a multi-variate volume interpolation with radial basis functions (RBFs). Forces and displacements are transferred between non-coincident aerodynamic and structural models through the interpolation. A multi-scale RBF mesh deformation scheme is then used to propagate displacements through the volume mesh. A fully-meshed turbine in freestream flow is modelled, as well as two turbines at five diameters separation. The turbine blades are modified IEA 15MW blades run at the maximum IEA 15MW loading condition (95m/s tip speed in flow at 25m/s). A 10 million cell aerodynamic mesh is used to ensure sufficient capture and transport of the upstream turbine wake. Converged simulations of a fully
+                  occluded turbine are presented, as well as aerodynamic simulations of isolated and occluded turbines. }
 }
 
 @InProceedings{Waitz1997,

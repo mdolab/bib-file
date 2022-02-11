@@ -8599,8 +8599,9 @@
 
 @InProceedings{Cutajar2018,
     author      = {Cutajar, Kurt and Pullin, Mark and Damianou, Andreas and Lawrence, Neil and Gonz{\'a}lez, Javier},
-    title       = {Deep Gaussian processes for multi-fidelity modeling},
-    booktitle   = {Neur IPS 2018, 32nd Neural Information Processing Systems Conference, 2-8 December, 2018, Montreal, Canada},
+    title       = {Deep {Gaussian} processes for multi-fidelity modeling},
+    booktitle   = {Neur IPS 2018, 32nd Neural Information Processing Systems Conference},
+    address     = {Montreal, Canada},
     month       = {December},
     url         = {http://www.eurecom.fr/publication/5755},
     year        = {2018}
@@ -21937,7 +21938,7 @@
     day         = 2,
     doi         = {10.29115/SP-2018-0001},
     journal     = {Survey Practice},
-    month       = january,
+    month       = {January},
     number      = 1,
     volume      = 11,
     year        = 2018
@@ -26358,7 +26359,6 @@
     address     = {San Diego, CA, USA},
     doi         = {10.1016/j.jcp.2011.09.021},
     issn        = {0021-9991},
-    issue_date  = {January, 2012},
     journal     = {Journal of Computational Physics},
     month       = {January},
     number      = {2},
@@ -28165,7 +28165,8 @@
     title       = {Total and Updated Lagrangian Forms of the Co-rotational Finite Element Formulation in Geometrically and Materially Nonlinear Analysis},
     address     = {Universidad Politecnia de Barcelona},
     booktitle   = {Numerical Methods for Nonlinear Problems},
-    year        = {April, 1984}
+    month       = {April},
+    year        = {1984}
 }
 
 @Book{Mattingly,
@@ -43026,7 +43027,7 @@
     title       = {Computational Strategies for Flexible Multibody Systems},
     journal     = {Applied Mechanics Review},
     number      = {6},
-    pages       = {553-613},
+    pages       = {553--613},
     volume      = {56},
     year        = {2003}
 }
@@ -44629,10 +44630,15 @@
 @InProceedings{Yildirim2021d,
     author      = {Anil Yildirim and Charles A. Mader and Joaquim R. R. A. Martins},
     title       = {Accelerating parallel {CFD} codes on modern vector processors using blockettes},
-    booktitle   = {Platform for Advanced Scientific Computing Conference},
+    address     = {New York, NY},
+    booktitle   = {Proceedings of the Platform for Advanced Scientific Computing Conference},
     doi         = {10.1145/3468267.3470615},
     keywords    = {ank, xsede},
-    year        = {2021}
+    month       = {July},
+    number      = {11},
+    year        = {2021},
+    abstract    = {The performance and scalability of computational fluid dynamics (CFD) solvers are essential for many applications, including multidisciplinary design optimization. With the evolution of highperformance computing resources such as Intel's Knights Landing and Skylake architectures in the Stampede2 cluster, CFD solver performance can be improved by modifying how the core computations are performed while keeping the mathematical formulation unchanged. In this work, we introduce a cache-blocking method to improve memory-bound CFD codes that use structured grids. The overall idea is to split computational blocks into smaller, fixed-sized blockettes that are sufficiently small to completely fit into the available cache size for each core on a given architecture. We can fully take advantage of modern vector instruction sets such as AVX2 and AVX512 on these modern architectures with this approach. Using this method, we have achieved up to 3.27 times speedup in the core
+                  routines of the open-source CFD solver, ADflow.}
 }
 
 @PhDThesis{Yildirim2021e,

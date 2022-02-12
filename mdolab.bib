@@ -8600,8 +8600,8 @@
 @InProceedings{Cutajar2018,
     author      = {Cutajar, Kurt and Pullin, Mark and Damianou, Andreas and Lawrence, Neil and Gonz{\'a}lez, Javier},
     title       = {Deep {Gaussian} processes for multi-fidelity modeling},
-    booktitle   = {Neur IPS 2018, 32nd Neural Information Processing Systems Conference},
     address     = {Montreal, Canada},
+    booktitle   = {Neur IPS 2018, 32nd Neural Information Processing Systems Conference},
     month       = {December},
     url         = {http://www.eurecom.fr/publication/5755},
     year        = {2018}
@@ -44617,6 +44617,18 @@
                   built with the OpenMDAO framework to couple 3-D RANS CFD simulations to 1-D thermodynamic cycle analyses. The designs are generated via high-fidelity aeropropulsive design optimizations for a range of fan pressure ratio and thrust values at the cruise conditions for the STARC-ABL concept. Performance analyses are then performed at a range of off-design flight conditions that span the flight envelope, including low-speed and low-altitude flight conditions. This study provides the first set of high-fidelity data for the STARC--ABL configuration at off-design conditions. The results quantify the power savings through BLI compared to a traditional propulsion system across the entire mission profile. Finally, the results and techniques from this study will guide the extension of current aeropropulsive design capabilities to multipoint design optimizations.}
 }
 
+@Article{Yildirim2021b,
+    author      = {Anil Yildirim and Charles A. Mader and Joaquim R. R. A. Martins},
+    title       = {A Surface Mesh Deformation Method Near Component Intersections for High-Fidelity Design Optimization},
+    doi         = {10.1007/s00366-020-01247-w},
+    journal     = {Engineering with Computers},
+    keywords    = {ank, xsede},
+    month       = {January},
+    year        = {2021},
+    abstract    = {Aerodynamic shape optimization based on computational fluid dynamics (CFD) requires three steps: updating the geometry based on the design variables, updating the CFD surface mesh for the new geometry, and updating the CFD volume mesh based on the new surface mesh. While there are many tools available for the first and third steps, the methods available for the second step are insufficient for geometries that have intersecting components. For these geometries, the CFD surface mesh needs to be updated near component intersections to conform to the component geometries and the updated intersection curves. To address this need, we introduce a method that can deform the CFD surface mesh nodes near component intersections. The method can handle arbitrary design changes for each intersecting component as long as the geometric topology is unchanged. Furthermore, the method is suitable for gradient-based optimization because it smoothly deforms every CFD surface node without
+                  introducing topological changes in the CFD surface mesh. In this paper, we detail each step of the proposed method and visualize the range of design changes that can be achieved with this approach. Finally, we use the proposed method in an aerodynamic shape optimization problem to optimize the wing-body intersection of the DLR-F6 configuration. These results demonstrate the effectiveness of the proposed method in a high-fidelity design optimization framework. The method applies to both structured and unstructured CFD meshes and makes it possible to use computer-aided design and conceptual design geometry tools within high-fidelity design optimization.}
+}
+
 @InProceedings{Yildirim2021c,
     author      = {Anil Yildirim and Justin S. Gray and Charles A. Mader and Joaquim R. R. A. Martins},
     title       = {Coupled Aeropropulsive Design Optimization of a Podded Electric Propulsor},
@@ -44657,18 +44669,9 @@
     journal     = {Journal of Aircraft},
     keywords    = {aeroprop, ank, openmdao, xsede},
     note        = {(In Press)},
-    year        = {2022}
-}
-
-@Article{Yildirim2022b,
-    author      = {Anil Yildirim and Charles A. Mader and Joaquim R. R. A. Martins},
-    title       = {A Surface Mesh Warping Method Near Component Intersections for High-Fidelity Design Optimization},
-    doi         = {10.1007/s00366-020-01247-w},
-    journal     = {Engineering with Computers},
-    keywords    = {ank, xsede},
     year        = {2022},
-    abstract    = {Aerodynamic shape optimization based on computational fluid dynamics (CFD) requires three steps: updating the geometry based on the design variables, updating the CFD surface mesh for the new geometry, and updating the CFD volume mesh based on the new surface mesh. While there are many tools available for the first and third steps, the methods available for the second step are insufficient for geometries that have intersecting components. For these geometries, the CFD surface mesh needs to be updated near component intersections to conform to the component geometries and the updated intersection curves. To address this need, we introduce a method that can deform the CFD surface mesh nodes near component intersections. The method can handle arbitrary design changes for each intersecting component as long as the geometric topology is unchanged. Furthermore, the method is suitable for gradient-based optimization because it smoothly deforms every CFD surface node without
-                  introducing topological changes in the CFD surface mesh. In this paper, we detail each step of the proposed method and visualize the range of design changes that can be achieved with this approach. Finally, we use the proposed method in an aerodynamic shape optimization problem to optimize the wing-body intersection of the DLR-F6 configuration. These results demonstrate the effectiveness of the proposed method in a high-fidelity design optimization framework. The method applies to both structured and unstructured CFD meshes and makes it possible to use computer-aided design and conceptual design geometry tools within high-fidelity design optimization.}
+    abstract    = {Boundary-layer ingestion (BLI) offers the potential for significant fuel burn reduction by exploiting tightly coupled aeropropulsive effects. NASA's Single-aisle Turboelectric Aircraft with Aft Boundary-Layer propulsion (STARC-ABL) concept employs BLI on an electrically powered tail cone thruster to take advantage of the technology on what is otherwise a conventional airframe. Despite the traditional airframe of this concept, aeropropulsive integration is critical to the BLI propulsor's performance. Therefore, it is vital to employ tightly coupled aeropropulsive models to design BLI systems. In this work, 3-D RANS simulations are used to model the aerodynamics, and 1-D thermodynamic cycle analyses are used to model the propulsion system. The two models are tightly coupled using NASA's OpenMDAO framework, enabling efficient design optimization through gradient-based optimization with analytic derivatives. Using this coupled aeropropulsive framework, 18 computational
+                  fluid dynamics (CFD)-based aeropropulsive design optimizations are performed to study the power requirements of the BLI configuration and a reference podded configuration where the electric fan ingests freestream air. This study provides the first set of CFD-based performance data for the STARC-ABL concept across the design space of BLI fan size and pressure ratio. The results quantify the power savings through BLI compared to a traditional propulsion system.}
 }
 
 @InProceedings{Yilmaz2020,

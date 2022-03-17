@@ -927,9 +927,9 @@
     doi         = {10.1615/Int.J.UncertaintyQuantification.2013004121},
     journal     = {International Journal for Uncertainty Quantification},
     number      = {1},
+    pages       = {1--20},
     volume      = {4},
-    year        = {2014},
-    pages       = {1--20}
+    year        = {2014}
 }
 
 @Article{Allaire:2004:AAA,
@@ -5198,19 +5198,6 @@
     year        = {2019}
 }
 
-@Article{Brelje2020,
-    author      = {Benjamin J. Brelje and Joshua L. Anibal and Anil Yildirim and Charles A. Mader and Joaquim R. R. A. Martins},
-    title       = {Flexible Formulation of Spatial Integration Constraints in Aerodynamic Shape Optimization},
-    doi         = {10.2514/1.j058366},
-    journal     = {{AIAA} Journal},
-    month       = {June},
-    number      = {6},
-    pages       = {2571--2580},
-    publisher   = {American Institute of Aeronautics and Astronautics ({AIAA})},
-    volume      = {58},
-    year        = {2020}
-}
-
 @Article{Brelje2020a,
     author      = {Benjamin J. Brelje and Joshua Anibal and Anil Yildirim and Charles A. Mader and Joaquim R. R. A. Martins},
     title       = {Flexible Formulation of Spatial Integration Constraints in Aerodynamic Shape Optimization},
@@ -5224,6 +5211,20 @@
     year        = {2020},
     abstract    = {In aircraft design, spatial integration limits aerodynamic and structural performance. While the outer mold line shape determines aircraft aerodynamic characteristics, aircraft systems and passengers or payloads must fit inside. Emerging categories of aircraft, such as electric aircraft, are likely to experience new and critical spatial integration challenges.Existingaerodynamic shape optimization toolsuse anarrowly defined setof geometric constraints. However, no known aerodynamic optimization framework can handle spatial integration constraints derived directly from three-dimensional (3-D) geometry. A general geometric constraint formulation based on triangulated 3-D geometry is proposed. The constraint consists of two metrics: the length of the intersection curve(s) between any two objects, and the Kreisselmeier--Steinhauser function aggregated minimum distance. The proposed implementation of the intersection and distance computations is fast and analytically
                   differentiable with respect to geometric design variables, making it suitable for efficient gradient-based optimization. The constraint formulation is validated using three Reynoldsaveraged Navier--Stokes-based aerodynamic shape optimization problems: a 2-D fairing design problem, a 3-D fairing design problem, and the design of an aeroshell to surround a human avatar. It is shown that this approach is robust and efficient, enabling the aerodynamic optimization of bodies containing objects with arbitrary shapes.}
+}
+
+@PhDThesis{Brelje2021,
+    author      = {Benjamin Brelje},
+    title       = {Multidisciplinary Design Optimization of Electric Aircraft Considering Systems Modeling and Packaging},
+    address     = {Ann Arbor, MI},
+    doi         = {10.7302/2703},
+    keywords    = {ank},
+    school      = {University of Michigan},
+    year        = {2021},
+    abstract    = {Electric aircraft propulsion is an intriguing path towards sustainable aviation, but the technological challenges are significant. Bulky and heavy electrical components such as batteries create spatial integration and aircraft performance challenges, especially for longer-range aircraft. A common thread among all aircraft with electric propulsion is the close coupling of aircraft design disciplines, such as aerodynamics, structures, propulsion, controls, and thermal management. Multidisciplinary design optimization (MDO) is a promising technique for solving design problems with many closely-coupled physical disciplines. The first half of this dissertation focuses on MDO of electric aircraft considering systems modeling. First, design of electric aircraft is reviewed in detail from the perspective of the various disciplines. Next, methods and models for electric aircraft propulsion systems are introduced. A case study involving a general aviation airplane is explored
+                  in order to validate the performance of the methods and generate some insight into the tradespace for series hybrid aircraft. The systems modeling approach is then extended to include basic thermal management systems. The prior case study is revisisted while considering thermal constraints. Impact of thermal management on aircraft performance is assessed. The thermal management analysis methods are validated using flight test data from the Pipistrel Velis Electro, finding good agreement between experiment and simulation. Finally, an MDO model of a parallel hybrid electric transport aircraft with a liquid-cooled thermal management system is constructed. Sensitivities of aircraft performance with respect to important technologies parameters are computed. This first half introduces the first publicly-available simulation tool that can handle unsteady thermal states and that offers efficient and accurate gradients. The methods are very efficient, enabling users to perform
+                  dozens or hundreds of optimization runs in a short amount of time using modest computational resources. Other novel contributions include the first empirical validation of thermal management models for MDO against real flight test data, as well as the only comprehensive look so far at the unsteady thermal management of a transport-scale parallel hybrid aircraft. The second half of the dissertation introduces novel methods for performing high-fidelity shape optimization studies subject to packaging or spatial integration constraints. A new mathematical formulation for generalized packaging constraints is introduced. The constraint formulation is demonstrated on simple aerodynamic shape optimization test cases. Next, a wing design study involving optimal battery packaging is conducted in order to demonstrate the coupling of outer mold line design and propulsion system component design via spatial integration. Finally, a more complex aerostructural optimization involving
+                  the wing of a hydrogen aircraft is constructed and solved. These test cases demonstrate the interdisciplinary coupling introduced by packaging constraints, as well as the impact of spatial integration on aircraft performance. This latter half contributes a powerful new way for MDO engineers to pose realistic spatial constraints in their shape optimization problems, thus solving an important practical barrier to the industrial adoption of MDO for certain relevant problems. This work also represents the first time an MDO problem has been posed and solved for an aircraft using hydrogen fuel in the wing. Altogether, this dissertation significantly advances the state of the art in modeling, simulation, and optimization tools for aircraft with electric propulsion architectures and introduces new insights into the design spaces for several diverse aircraft configurations.}
 }
 
 @InProceedings{Brelje2021a,
@@ -5840,11 +5841,11 @@
     title       = {Aerostructural Design Optimization Using a Multifidelity Quasi-{N}ewton Method},
     doi         = {10.2514/1.C035152},
     journal     = {Journal of Aircraft},
+    number      = {5},
     pages       = {2019--2031},
     publisher   = {American Institute of Aeronautics and Astronautics},
-    year        = {2019},
     volume      = {56},
-    number      = {5}
+    year        = {2019}
 }
 
 @Article{Bucalem1993,
@@ -19747,7 +19748,10 @@
     address     = {Ann Arbor, MI},
     keywords    = {ccavd},
     school      = {University of Michigan},
-    year        = {2019}
+    year        = {2019},
+    abstract    = {Aircraft are multidisciplinary systems that are challenging to design due to interactions between the subsystems. The relevant disciplines, such as aerodynamic, thermal, and propulsion systems, must be considered simultaneously using a path-dependent formulation to accurately assess aircraft performance. The overarching contribution of this work is the construction and exploration of a coupled aero-thermal-propulsive-mission multidisciplinary model to optimize supersonic aircraft considering their path-dependent performance. First, the mission, thermal, and propulsion disciplines are examined in detail. The aerostructural design and mission of a morphing-wing aircraft is optimized before the optimal flight profile for a supersonic strike mission is investigated. Then a fuel thermal management system, commonly used to dissipate excess thermal energy from supersonic aircraft, is constructed and presented. Engine design is then investigated through two main
+                  applications: multipoint optimization of a variable-cycle engine and coupled thermal-engine optimization considering a bypass duct heat exchanger. This culminates into a fully-coupled path-dependent mission optimization problem considering the aerodynamic, propulsion, and thermal systems. This large-scale optimization problem captures non-intuitive design trades that single disciplinary models and path-independent methods cannot resolve. Although the focal application is a supersonic aircraft, the methods presented here are applicable to any air or space vehicle and other path-dependent problems. This level of highly-coupled design optimization considering these disciplines has not been performed before. The framework, modeling, and results from this dissertation will be useful for designers of commercial and military aircraft. Specifically, optimizing the design and trajectory of commercial aircraft to minimize fuel usage leads to a more sustainable and more
+                  connected world as the rate of air travel continues to increase. The methods presented are flexible and powerful enough to design supersonic military aircraft systems, as demonstrated using an application aircraft. This dissertation has been shaped through direct collaborations with NASA, the Air Force Research Lab (AFRL), and other academic institutions, which shows the broad appeal and applicability of this work to a multitude of design problems.}
 }
 
 @InProceedings{Jasa2019b,
@@ -25550,6 +25554,20 @@
     year        = {2020}
 }
 
+@PhDThesis{Liao2021,
+    author      = {Yingqian Liao},
+    title       = {High-fidelity Hydrostructural Optimization of Composite Hydrodynamic Lifting Surfaces},
+    address     = {Ann Arbor, MI},
+    doi         = {10.7302/3050},
+    keywords    = {ank},
+    school      = {University of Michigan},
+    year        = {2021},
+    abstract    = {To improve efficiency, functionality, and reliability of hydrodynamic lifting surfaces, such as propeller blades, control surfaces, and hydrofoils, composite materials are increasingly used because of their high strength-to-weight ratio, corrosion resistance, and desired fatigue properties. Despite these superior properties, their design remains challenging for maritime applications due to the need to operate over a broad range of flow conditions, and associated complex physics, including separation, cavitation, high loading, and complex material failure mechanisms. Additionally, considering both the coupling between fluid forces and structural responses, and the interplay effects between the many geometry and material design variables, the optimal design is not intuitive. Multidisciplinary design optimization (MDO) is a powerful tool that can tackle these design challenges by considering various design requirements simultaneously and effectively evaluating the
+                  tradeoffs. With advances in computing, it is possible to use coupled high-fidelity hydrostructural simulations to better capture the flow physics and predict the structural failure onset. However, using high-fidelity simulations with MDO is still limited due to the high computational cost, especially when considering a large number of design variables needed for composite hydrodynamic lifting surfaces with complex geometries and material configurations. The objective of this dissertation is to use an efficient high-fidelity MDO framework to explore the design of composite hydrodynamic lifting surfaces and examine relevant design and research questions that are important but still unresolved so far. To address the issue of high computational cost, this dissertation uses a gradient-based optimization approach and leverages the adjoint method to compute the gradient efficiently. The contributions of this dissertation are the development of methods that optimize composite
+                  hydrodynamic lifting surface designs. Optimizations are performed to yield novel findings on the tradeoffs and coupling effects between design conditions and design variables. First, a more effective cavitation constraint, a solid composite element for the structural solver, and the corresponding failure initiation criteria are implemented in the framework. Second, this dissertation pioneers the use of a displacement constraint as a surrogate for dynamic loading consideration to yield a safer and more reliable design. With these developments, this dissertation presents an optimized composite hydrofoil with significantly delayed cavitation inception. A series of optimization studies are conducted to investigate how planform variables, material configurations, and failure initiation model uncertainties affect composite lifting surface designs. This dissertation also advances the methodology to consider a more complex detailed geometry problem -- optimization of a
+                  structure with junction shape, which commonly exists and is critical to the overall performance. Specifically, this is demonstrated and investigated with hydrodynamic optimization of a hydrofoil-strut system. These optimization studies show the framework can adjust the junction shape to avoid junction cavitation and flow separation, all while improving efficiency. The framework and presented optimization studies in this dissertation demonstrate the usefulness of the developed methods for hydrodynamic lifting surface designs. The discussions also provide valuable insights for designers and future research. }
+}
+
 @Article{Liao2021a,
     author      = {Yingqian Liao and Joaquim R. R. A. Martins and Yin Lu Young},
     title       = {3-{D} High-Fidelity Hydrostructural Optimization of Cavitation-Free Composite Lifting Surfaces},
@@ -28364,6 +28382,24 @@
                   availability of these benchmarks and the open-source tools is expected to enable further studies and benchmarks in CFD-based aerodynamic design optimization and MDO.}
 }
 
+@Book{Martins2021,
+    author      = {Joaquim R. R. A. Martins and Andrew Ning},
+    title       = {Engineering Design Optimization},
+    doi         = {10.1017/9781108980647},
+    isbn        = {9781108833417},
+    publisher   = {Cambridge University Press},
+    url         = {https://mdobook.github.io},
+    year        = {2021},
+    abstract    = {https://mdobook.github.io
+                  
+                  Based on course-tested material, this rigorous yet accessible graduate textbook covers both fundamental and advanced optimization theory and algorithms. It covers a wide range of numerical methods and topics, including both gradient-based and gradient-free algorithms, multidisciplinary design optimization, and uncertainty, with instruction on how to determine which algorithm should be used for a given application. It also provides an overview of models and how to prepare them for use with numerical optimization, including derivative computation. Over 400 high-quality visualizations and numerous examples facilitate understanding of the theory, and practical tips address common issues encountered in practical engineering design optimization and how to address them. Numerous end-of-chapter homework problems, progressing in difficulty, help put knowledge into practice. Accompanied online by a solutions manual for instructors and source code for problems, this is ideal for
+                  a one- or two-semester graduate course on optimization in aerospace, civil, mechanical, electrical, and chemical engineering departments.
+                  
+                  Table of contents:
+                  
+                  1. Introduction 2. A Short History of Optimization 3. Numerical Models and Solvers 4. Unconstrained Gradient-Based Optimization 5. Constrained Gradient-Based Optimization 6. Computing Derivatives 7. Gradient-Free Optimization 8. Discrete Optimization 9. Multiobjective Optimization 10. Surrogate-Based Optimization 11. Convex Optimization 12. Optimization Under Uncertainty 13. Multidisciplinary Design Optimization }
+}
+
 @Article{Martins2021a,
     author      = {Joaquim R. R. A. Martins and Graeme J. Kennedy},
     title       = {Enabling Large-scale Multidisciplinary Design Optimization through Adjoint Sensitivity Analysis},
@@ -28382,24 +28418,6 @@
     journal     = {Structural and Multidisciplinary Optimization},
     note        = {(In press)},
     year        = {2021}
-}
-
-@Book{Martins2022,
-    author      = {Joaquim R. R. A. Martins and Andrew Ning},
-    title       = {Engineering Design Optimization},
-    doi         = {10.1017/9781108980647},
-    isbn        = {9781108833417},
-    publisher   = {Cambridge University Press},
-    url         = {https://mdobook.github.io},
-    year        = {2022},
-    abstract    = {https://mdobook.github.io
-                  
-                  Based on course-tested material, this rigorous yet accessible graduate textbook covers both fundamental and advanced optimization theory and algorithms. It covers a wide range of numerical methods and topics, including both gradient-based and gradient-free algorithms, multidisciplinary design optimization, and uncertainty, with instruction on how to determine which algorithm should be used for a given application. It also provides an overview of models and how to prepare them for use with numerical optimization, including derivative computation. Over 400 high-quality visualizations and numerous examples facilitate understanding of the theory, and practical tips address common issues encountered in practical engineering design optimization and how to address them. Numerous end-of-chapter homework problems, progressing in difficulty, help put knowledge into practice. Accompanied online by a solutions manual for instructors and source code for problems, this is ideal for
-                  a one- or two-semester graduate course on optimization in aerospace, civil, mechanical, electrical, and chemical engineering departments.
-                  
-                  Table of contents:
-                  
-                  1. Introduction 2. A Short History of Optimization 3. Numerical Models and Solvers 4. Unconstrained Gradient-Based Optimization 5. Constrained Gradient-Based Optimization 6. Computing Derivatives 7. Gradient-Free Optimization 8. Discrete Optimization 9. Multiobjective Optimization 10. Surrogate-Based Optimization 11. Convex Optimization 12. Optimization Under Uncertainty 13. Multidisciplinary Design Optimization }
 }
 
 @Article{Martins2022a,
@@ -34593,7 +34611,6 @@
     keywords    = {LCO, buffet},
     number      = {1},
     pages       = {89--104},
-    url         = {http://www.sciencedirect.com/science/article/pii/S088997461000112X},
     volume      = {27},
     year        = {2011}
 }
@@ -38590,15 +38607,6 @@
     year        = {2015}
 }
 
-@TechReport{Smith2019a,
-    author      = {Benjamin Smith and Timothy R. Brooks and Mark Leader and Ting Wei Chin and Graeme J. Kennedy and Joaquim R. R. A. Martins and Carlos E. S. Cesnik},
-    title       = {Passive Aeroelastic Tailoring},
-    institution = {NASA},
-    number      = {CR-2019-XXXXXX},
-    type        = {Technical report},
-    year        = {2019}
-}
-
 @Article{Smith2019acav,
     author      = {Samuel M. Smith and James A. Venning and Dean R. Giosio and Paul A. Brandner and Bryce W. Pearce and Yin L. Young},
     title       = {Cloud Cavitation Behavior on a Hydrofoil Due to Fluid-Structure Interaction},
@@ -38622,9 +38630,10 @@
 @TechReport{Smith2020,
     author      = {Benjamin Smith and Timothy Brooks and Mark Leader and Ting Wei Chin and Graeme Kennedy and and Joaquim R. R. A. Martins and Carlos E. S. Cesnik},
     title       = {Passive Aeroelastic Tailoring},
+    address     = {Hampton, VA},
     institution = {NASA},
     month       = {February},
-    number      = {CR--2020-220425},
+    number      = {CR-2020-220425},
     year        = {2020}
 }
 
@@ -38639,7 +38648,7 @@
     year        = {2020}
 }
 
-@Article{smith2020b,
+@Article{Smith2020b,
     author      = {Smith, Samuel M. and Venning, James A. and Pearce, Bryce W. and Young, Yin Lu and Brandner, Paul A.},
     title       = {The influence of fluid--structure interaction on cloud cavitation about a flexible hydrofoil. Part 2.},
     doi         = {10.1017/jfm.2020.323},
@@ -38647,6 +38656,17 @@
     pages       = {A28},
     publisher   = {Cambridge University Press},
     volume      = {897},
+    year        = {2020}
+}
+
+@TechReport{Smith2020c,
+    author      = {Benjamin Smith and Timothy R. Brooks and Mark Leader and Ting Wei Chin and Graeme J. Kennedy and Joaquim R. R. A. Martins and Carlos E. S. Cesnik},
+    title       = {Passive Aeroelastic Tailoring},
+    address     = {Hampton, VA},
+    institution = {NASA},
+    month       = {February},
+    number      = {CR--2020-220425},
+    type        = {Technical report},
     year        = {2020}
 }
 
@@ -45297,7 +45317,9 @@
     doi         = {10.7302/3887},
     keywords    = {ank, openmdao, xsede},
     school      = {University of Michigan},
-    year        = {2021}
+    year        = {2021},
+    abstract    = {Design and integration of advanced propulsion systems play a critical role in the development of environmentally sustainable aircraft. Even though these advanced technologies, such as boundary layer ingestion, offer significant aeropropulsive benefits, their design is challenging due to the tightly coupled nature of these systems, as well as the lack of previous experience with their design. Aeropropulsive design optimization offers a promising solution to these design problems where coupled models are used to maximize the aeropropulsive benefits of these propulsion systems. Despite its advantages, the use of aeropropulsive design optimization has been limited due to the shortcomings in robustness of existing design optimization approaches. In this work, we address several key shortcomings in existing design optimization approaches and introduce robust methods for aeropropulsive design optimization. Some of these developments target the shortcomings in CFD-based
+                  design optimization such as geometric parameterization and CFD solver robustness, while the rest of the developments focus on coupled aeropropulsive model development and optimization. Using all of these developments, we performed a series of coupled aeropropulsive design optimizations to quantify the benefit of boundary layer ingestion to the STARC-ABL concept. This first of a kind design study was enabled by the robustness of the overall aeropropulsive design framework we developed herein and will be useful for guiding future design studies of boundary layer ingesting propulsion systems. The robust methods presented in this thesis are crucial for future CFD-based design optimization problems, including aeropropulsive design optimization. These advancements bring us closer to using the ever-growing power of scientific computing in the process of designing future environmentally sustainable aircraft.}
 }
 
 @Article{Yildirim2022a,

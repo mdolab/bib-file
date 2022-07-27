@@ -39691,6 +39691,21 @@
                   weights: 20, 50, and 1000 lb. To enable operation within constrained urban canyons, the effect of restricting maximum vehicle dimensions to 10 ftfor the 1000-lb designs is also examined. An electric transmission model is used in these designs owing to its relative insensitivity of transmission efficiency to the operating RPM. A variable-pitch and variable-RPM rotor design allows for control redundancy within each rotor.}
 }
 
+@Article{Sridharan2022a,
+    author      = {Sridharan, Ananth and Govindarajan, Bharath},
+    title       = {A Multidisciplinary Optimization Approach for Sizing Vertical Lift Aircraft},
+    doi         = {10.4050/JAHS.67.022004},
+    journal     = {Journal of the American Helicopter Society},
+    month       = {April},
+    number      = {2},
+    pages       = {1--15},
+    volume      = {67},
+    year        = {2022},
+    abstract    = {This paper presents an approach to reframe the sizing problem for vertical-lift unmanned aerial vehicles (UAVs) as an optimization problem and obtains a weight-optimal solution with up to two orders of magnitude of savings in wall clock time. Because sizing is performed with higher fidelity models and design variables from several disciplines, the Simultaneous Analysis aNd Design (SAND) approach from fixed-wing multidisciplinary optimization literature is adapted for the UAV sizing task. Governing equations and disciplinary design variables that are usually self-contained within disciplines (airframe tube sizes, trim variables, and trim equations) are migrated to the sizing optimizer and added as design variables and (in)equality constraints. For sizing consistency, the iterative weight convergence loop is replaced by a coupling variable and associated equality consistency constraint for the sizing optimizer. Cruise airspeed is also added as a design variable and
+                  driven by the sizing optimizer. The methodology is demonstrated for sizing a package delivery vehicle (a lift-augment quadrotor biplane tailsitter) with up to 39 design variables and 201 constraints. Gradient-based optimizations were initiated from different starting points; without blade shape design in sizing, all processes converged to the same minimum, indicating that the design space is convex for the chosen bounds, constraints, and objective function. Several optimization schemes were investigated by moving combinations of relevant disciplines (airframe sizing with finite element analysis, vehicle trim, and blade aerodynamic shape design) to the sizing optimizer. The biggest advantage of the SAND strategy is its scope for parallelization, and the inherent ability to drive the design away from regions where disciplinary analyses (e.g., trim) cannot find a solution, obviating the need for ad hoc penalty functions. Even in serial mode, the SAND optimization
+                  strategy yields results in the shortest wall clock time compared to all other approaches.}
+}
+
 @InProceedings{Stalewski2012,
     author      = {Stalewski, Wie{\'n}czys{\l}aw and {\.Z}{\'o}{\l}tak, Jerzy},
     title       = {Optimisation of the Helicopter Fuselage with Simulation of Main and Tail Rotor Influence},

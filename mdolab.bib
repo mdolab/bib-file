@@ -309,6 +309,16 @@
                   the thermoacoustic refrigeration system beneficial compared to conventional refrigeration in certain use cases, such as low-altitude missions.}
 }
 
+@InProceedings{Adler2022c,
+    author      = {Eytan J. Adler and Alasdair Christison Gray and Joaquim R. R. A. Martins},
+    title       = {To {CFD} or not to {CFD}? {C}omparing {RANS} and viscous panel methods for airfoil shape optimization},
+    booktitle   = {33rd Congress of the International Council of the Aeronautical Sciences},
+    month       = {September},
+    year        = {2022},
+    abstract    = {As the computational resources available to aerodynamicists increase, so does the number of tools with which they can analyze their designs. The key skill of a good engineer is understanding when each tool produces realistic results. Even if no available tool can capture all relevant physical phenomena, this knowledge allows engineers to alter their designs to account for the missing physics. However, with the increasing use of numerical optimization for aerodynamic shape design, the opportunity for this intuition to shape the design is reduced as the optimizer makes design decisions based purely on numerical results. This makes the choice of analysis method critical. Previous studies have compared panel-based aerodynamic tools and RANS CFD to predict and analyze the key aerodynamic phenomena in different flight conditions. But few, if any, have compared the impact of proper tool selection on the optimal aerodynamic shapes. In this work we show the effect of
+                  aerodynamic analysis method selection on the optimal aerodynamic shape and the consequences of choosing one that does not capture the relevant flow physics. In particular, we show that modelling boundary layer transition can produce significantly lower drag designs across almost the entire range of Reynolds numbers at which airfoils are used in practice. Additionally, we find that the simple compressibility correction used in XFOIL is sufficient to produce well performing airfoils for flight Mach numbers up to 0.65, after which point the ability for the flow solver to model shock formation is critical. Our results will provide aerodynamicists with the data and intuition to make informed decisions when selecting analysis methods for optimization.}
+}
+
 @webpage{ADtools,
     title       = {Tools for Automatic Differentiation},
     keywords    = {AD},
@@ -12336,6 +12346,16 @@
     publisher   = {American Institute of Aeronautics and Astronautics ({AIAA})},
     volume      = {53},
     year        = {2015}
+}
+
+@InProceedings{Fouda2022,
+    author      = {Mahmoud Fouda and Eytan J. Adler and Jasper H. Bussemaker and Joaquim R. R. A. Martins and D. F. Kurtulus and Luca Boggero and Bj\"orn Nagel},
+    title       = {Automated Hybrid Propulsion Model Construction for Conceptual Aircraft Design and Optimization},
+    booktitle   = {33rd Congress of the International Council of the Aeronautical Sciences},
+    month       = {September},
+    year        = {2022},
+    abstract    = {Electric and hybrid-electric propulsion systems are key technologies for sustainable aviation. Electric propulsion systems introduce many design possibilities, which must be considered in the conceptual design stage to take full advantage of electrification. This makes for a challenging conceptual design problem. Architecture optimization can be applied to explore large design spaces and au tomatically find the best architectures for a set of requirements. Electric propulsion architecture optimization requires automated and flexible propulsion system modeling. It also requires the analysis of the propulsion architecture at an aircraft level to compute a meaningful objective function for the optimization. In this study, we present an approach for defining the propulsion system architectures and evaluating their aircraft-level performance. A propulsion architecture is defined using a modular interface, allowing architectures to be automatically evaluated on the
+                  aircraft-level for a predefined mission. OpenConcept, an open source conceptual design and optimization toolkit, is used to implement the multidisciplinary problem. We present a case study of the electrification of a regional transport aircraft Beechcraft King Air C90GT with automated definition, integration and evaluation of five different propulsion systems. We perform multidisciplinary design optimization to minimize fuel burn and maximum takeoff weight for a sweep of design ranges and battery specific energies. Our approach opens the door to electric propulsion architecture optimization.}
 }
 
 @Article{Fourie:2002,

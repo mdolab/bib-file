@@ -3196,6 +3196,36 @@
     year        = {1982}
 }
 
+@InProceedings{Bedonian2021accounting,
+    author      = {Garo Bedonian and Jason E. Hicken},
+    title       = {Accounting for model error in optimization under uncertainty using efficient propagation techniques},
+    booktitle   = {AIAA Aviation 2021 Forum},
+    doi         = {10.2514/6.2021-3042},
+    keywords    = {CCAVD},
+    location    = {Virtual Event},
+    month       = aug,
+    note        = {AIAA 2021-3042},
+    pages       = {14},
+    year        = {2021}
+}
+
+@InProceedings{Bedonian2022adaptive,
+    author      = {Garo Bedonian and Jason E. Hicken},
+    title       = {An Adaptive Sampling Method for Gradient-Enhanced Surrogate Modeling},
+    booktitle   = {AIAA AVIATION 2022 Forum},
+    doi         = {10.2514/6.2022-3998},
+    keywords    = {CCAVD},
+    year        = {2022}
+}
+
+@Article{Bedonian2022gradient,
+    author      = {Garo Bedonian and Jason Hicken and Edwin Forster},
+    title       = {A Gradient-Enhanced Surrogate Model and Adaptive Sampling Strategy Without Hyperparameter Tuning},
+    journal     = {Structural and Multidisciplinary Optimization},
+    keywords    = {CCAVD},
+    year        = {2022}
+}
+
 @Book{Beer2014,
     author      = {Ferdinand P. Beer and E. Russell Johnston, Jr. and John T. DeWolf and David F. Mazurek},
     title       = {Mechanics of Materials, 7th Edition},
@@ -4712,8 +4742,12 @@
     title       = {Aerostructural wing optimization of a regional jet considering mission fuel burn},
     doi         = {10.1115/1.4055630},
     journal     = {ASME Open Journal of Engineering},
-    note        = {(In press)},
-    year        = {2022}
+    month       = {October},
+    pages       = {011046},
+    volume      = {1},
+    year        = {2022},
+    abstract    = {High-fidelity multidisciplinary design optimization (MDO) promises rigorous balancing of the multidisciplinary trade-offs inherent to aircraft wings. However, collaborations between academia and industry rarely put MDO to the test on practical design problems. In this work, MDO is applied to the design of a regional jet wing to minimize fuel burn. High-fidelity aerostructural analysis is used to model the wing and capture tradeoffs between structural weight and aerodynamic performance. A novel approach is used to calculate fuel burn for climb and descent using a low-fidelity model, improving the relevancy of the optimization results for short-haul missions. A wing-only geometry is used to explore the design space and generate a series of Pareto fronts for different geometric parametrizations. Finally, an aerostructural optimization is conducted with a complete wing-body-tail geometry of an Embraer regional jet. The optimizer increases the wingspan and decreases the
+                  sweep of the original wing to achieve a 3.6\% decrease in fuel burn.}
 }
 
 @Book{Booch2005,
@@ -5293,7 +5327,7 @@
     title       = {Multidisciplinary Design Optimization of Electric Aircraft Considering Systems Modeling and Packaging},
     address     = {Ann Arbor, MI},
     doi         = {10.7302/2703},
-    keywords    = {ank},
+    keywords    = {ccavd, ank},
     school      = {University of Michigan},
     year        = {2021},
     abstract    = {Electric aircraft propulsion is an intriguing path towards sustainable aviation, but the technological challenges are significant. Bulky and heavy electrical components such as batteries create spatial integration and aircraft performance challenges, especially for longer-range aircraft. A common thread among all aircraft with electric propulsion is the close coupling of aircraft design disciplines, such as aerodynamics, structures, propulsion, controls, and thermal management. Multidisciplinary design optimization (MDO) is a promising technique for solving design problems with many closely-coupled physical disciplines. The first half of this dissertation focuses on MDO of electric aircraft considering systems modeling. First, design of electric aircraft is reviewed in detail from the perspective of the various disciplines. Next, methods and models for electric aircraft propulsion systems are introduced. A case study involving a general aviation airplane is explored
@@ -5307,7 +5341,7 @@
     title       = {Aerostructural Wing Optimization for a Hydrogen Fuel Cell Aircraft},
     booktitle   = {Proceedings of the AIAA SciTech Forum},
     doi         = {10.2514/6.2021-1132},
-    keywords    = {ank},
+    keywords    = {ccavd, ank},
     month       = {January},
     year        = {2021},
     abstract    = {Hydrogen has been identified as a potential fuel for air transportation without carbon emissions. Hydrogen contains much higher energy per unit mass than any conceivable rechargeable battery, potentially making longer-range missions possible than pure electric configurations. However, hydrogen's low volumetric energy density presents practical challenges. Hydrogen must either be kept under deep cryogenic conditions or compressed under very high pressure. Either solution is likely to require adding significant drag and tank weight to the airplane. This is a packing optimization problem subject to aerostructural physics, and we can employ multidisciplinary design optimization techniques to provide insight into optimal wing design for novel hydrogen aircraft concepts. In this paper, we extend prior work on wing packing optimization subject to aerodynamics only, and now incorporate structural analysis and structure geometry into the problem. We optimize the range of a
@@ -9394,6 +9428,7 @@
 @Article{DeBuck2022,
     author      = {Pieter De Buck and Joaquim R. R. A. Martins},
     title       = {Minimum lap time trajectory optimization of performance vehicles with four-wheel drive and active aerodynamic control},
+    doi         = {10.1080/00423114.2022.2101930},
     journal     = {Vehicle System Dynamics},
     note        = {(In press)},
     year        = {2022}
@@ -12560,6 +12595,15 @@
     pages       = {105--121},
     volume      = {36},
     year        = {1999}
+}
+
+@InProceedings{Frigoletto2023,
+    author      = {B. E. Frigoletto and V. Ojha, K. J. Fidkowski and C. E. S. Cesnik},
+    title       = {Development of a High-Order Fluid-Structure Interaction Solver for Flexible Wings},
+    booktitle   = {AIAA SciTech Forum},
+    keywords    = {CCAVD},
+    note        = {(to appear)},
+    year        = {2023}
 }
 
 @TechReport{Frisch1955a,
@@ -17264,9 +17308,12 @@
 @Article{He2022c,
     author      = {Sicheng He and Eirikur Jonsson and Joaquim R. R. A. Martins},
     title       = {Adjoint-based Limit Cycle Oscillation Instability Sensitivity and Suppression},
+    doi         = {10.1007/s11071-022-07989-0},
     journal     = {Nonlinear Dynamics},
     note        = {(In press)},
-    year        = {2022}
+    year        = {2022},
+    abstract    = {Dynamical systems often exhibit limit cycle oscillations (LCOs), self-sustaining oscillations of limited amplitude. LCOs can be supercritical or subcritical. The supercritical response is benign, while the subcritical response can be bi-stable and exhibit a hysteretic response. Subcritical responses can be avoided in design optimization by enforcing LCO stability. However, many high-fidelity system models are computationally expensive to evaluate. Thus, there is a need for an efficient computational approach that can model instability and handle hundreds or thousands of design variables. To address this need, we propose a simple metric to determine the LCO stability using a fitted bifurcation diagram slope. We develop an adjoint-based formula to efficiently compute the stability derivative with respect to many design variables. To evaluate the stability derivative, we only need to compute the time-spectral adjoint equation three times, regardless of the number of
+                  design variables. The proposed adjoint method is verified with finite differences, achieving a five-digit agreement between the two approaches. We consider a stability-constrained LCO parameter optimization problem using an analytic model to demonstrate that the optimizer can suppress the instability. We also consider a more realistic LCO speed and stability-constrained airfoil problem that minimizes the normalized mass and stiffness. The proposed method could be extended to optimization problems with a partial differential equation (PDE) based model, opening the door to other applications where high-fidelity models are needed.}
 }
 
 @InProceedings{Hearn2016a,
@@ -19941,7 +19988,7 @@
     address     = {Orlando, FL},
     booktitle   = {2018 AIAA/ASCE/AHS/ASC Structures, Structural Dynamics, and Materials Conference; AIAA SciTech Forum},
     doi         = {10.2514/6.2018-1382},
-    keywords    = {OpenMDAO, OpenAeroStruct},
+    keywords    = {CCAVD, OpenMDAO, OpenAeroStruct},
     month       = {January},
     year        = {2018}
 }
@@ -19952,7 +19999,7 @@
     address     = {Atlanta, GA},
     booktitle   = {AIAA/ISSMO Multidisciplinary Analysis and Optimization Conference},
     doi         = {10.2514/6.2018-3884},
-    keywords    = {OpenMDAO, ank},
+    keywords    = {CCAVD, OpenMDAO, ank},
     month       = {June},
     year        = {2018}
 }
@@ -19996,7 +20043,7 @@
     address     = {San Diego, CA},
     booktitle   = {57th AIAA Aerospace Sciences Meeting, AIAA SciTech Forum, 2019},
     doi         = {10.2514/6.2019-0172},
-    keywords    = {OpenMDAO},
+    keywords    = {CCAVD, OpenMDAO},
     month       = {January},
     year        = {2019}
 }
@@ -21341,6 +21388,39 @@
     publisher   = {American Institute of Aeronautics and Astronautics ({AIAA})},
     volume      = {58},
     year        = {2020}
+}
+
+@InProceedings{Kedward2020a,
+    author      = {Kedward, Laurence and Allen, Christian B. and Rendall, T.},
+    title       = {Towards Generic Modal Design Variables for Aerodynamic Shape Optimisation},
+    booktitle   = {AIAA Scitech 2020 Forum},
+    doi         = {10.2514/6.2020-0543},
+    month       = jan,
+    pages       = {0543},
+    publisher   = {American Institute of Aeronautics and Astronautics},
+    year        = {2020}
+}
+
+@InProceedings{Kedward2020b,
+    author      = {Kedward, Laurence and Allen, Christian B. and Rendall, T.},
+    title       = {Generic Modal Design Variables for Aerodynamic Shape Optimisation},
+    booktitle   = {AIAA AVIATION 2020 Forum},
+    doi         = {10.2514/6.2020-2707},
+    month       = jun,
+    pages       = {2707},
+    publisher   = {American Institute of Aeronautics and Astronautics},
+    year        = {2020}
+}
+
+@Article{Kedward2022a,
+    author      = {Kedward, Laurence J. and Allen, Christian B. and Poole, Daniel J. and Rendall, Thomas C. S.},
+    title       = {Generic Modal Design Variables for Efficient Aerodynamic Optimization},
+    doi         = {10.2514/1.j061727},
+    journal     = {AIAA Journal},
+    month       = nov,
+    pages       = {1--17},
+    publisher   = {American Institute of Aeronautics and Astronautics},
+    year        = {2022}
 }
 
 @Article{Keller2000,
@@ -24022,6 +24102,17 @@
     abstract    = {Constraint aggregation makes it feasible to solve large-scale stress-constrained mass minimization problems efficiently using gradient-based optimization where the gradients are computed using adjoint methods. However, it is not always clear which constraint aggregation method is more effective, and which values to use for the aggregation parameters. In this work, the accuracy and efficiency of several aggregation methods are compared for an aircraft wing design problem. The effect of the type of aggregation function, the number of constraints, and the value of the aggregation parameter are studied. Recommendations are provided for selecting a constraint aggregation scheme that balances computational effort with the accuracy of the computed optimal design. Using the recommended aggregation method and associated parameters, a mass of within 0.5\% of the true optimal design was obtained. }
 }
 
+@InProceedings{Lamkin2022,
+    author      = {Andrew H.R. Lamkin and Anil Yildirim and Joaquim R. R. A. Martins},
+    title       = {Coupled aeropropulsive analysis and optimization of a high bypass turbofan engine},
+    booktitle   = {33rd Congress of the International Council of the Aeronautical Sciences},
+    keywords    = {CCAVD},
+    month       = {September},
+    year        = {2022},
+    abstract    = {Advances in aeropropulsive design optimization provide new capabilities for the study of tightly integrated propulsion systems. New techniques that couple CFD solvers to thermodynamic cycle analyses showed increased robustness and proved the viability of a fully coupled approach using gradient-based optimization. However, existing work in this area has been limited to simple benchmark cases and does not contain complete engine models. In this study, we extend these methodologies beyond an electrically driven propulsor to consider a complete high-bypass turbofan engine. The high-bypass turbofan model incorporates CFD and thermodynamic cycle sub-systems into a unified model for aeropropulsive design optimization by utilizing multiple coupling techniques from prior benchmark aeropropulsive cases. We present a high-bypass turbofan design optimized for thrust specific fuel consumption with respect to coupling, geometric, and practical design constraints using this coupled
+                  approach. The integration of high-fidelity aerodynamic shape optimization with one-dimensional cycle modeling on a large scale is a major milestone for coupled propulsion system design. These developments advance the use of coupled aeropropulsive optimization earlier in the design cycle for propulsion systems.}
+}
+
 @Article{lamousin1994nurbs,
     author      = {Lamousin, Henry J and Waggenspack Jr, Warren N},
     title       = {NURBS-based free-form deformations},
@@ -25635,9 +25726,14 @@
 @Article{Li2022,
     author      = {Jichao Li and Xiaosong Du and Joaquim R. R. A. Martins},
     title       = {Machine Learning in Aerodynamic Shape Optimization},
+    doi         = {10.1016/j.paerosci.2022.100849},
     journal     = {Progress in Aerospace Sciences},
-    note        = {(In press)},
-    year        = {2022}
+    month       = {October},
+    pages       = {100849},
+    volume      = {134},
+    year        = {2022},
+    abstract    = {Machine learning (ML) has been increasingly used to aid aerodynamic shape optimization (ASO), thanks to theavailability of aerodynamic data and continued developments in deep learning. We review the applications ofML in ASO to date and provide a perspective on the state-of-the-art and future directions. We first introduceconventional ASO and current challenges. Next, we introduce ML fundamentals and detail ML algorithms thathave been successful in ASO. Then, we review ML applications to ASO addressing three aspects: compactgeometric design space, fast aerodynamic analysis, and efficient optimization architecture. In addition toproviding a comprehensive summary of the research, we comment on the practicality and effectiveness ofthe developed methods. We show how cutting-edge ML approaches can benefit ASO and address challengingdemands, such as interactive design optimization. Practical large-scale design optimizations remain a challengebecause of the high cost of ML
+                  training. Further research on coupling ML model construction with priorexperience and knowledge, such as physics-informed ML, is recommended to solve large-scale ASO problems. }
 }
 
 @Article{Li2022a,
@@ -25836,7 +25932,9 @@
     title       = {{RANS}-based Optimization of a {T}-shaped Hydrofoil Considering Junction Design},
     journal     = {Ocean Engineering},
     note        = {(In press)},
-    year        = {2022}
+    year        = {2022},
+    abstract    = {Hydrodynamic lifting surfaces usually include junctions. High-fidelity simulations are necessary to capture critical physics near these regions, such as separation, junction vortices, and cavitation. We present RANS-based hydrodynamic optimizations of a T-shaped hydrofoil, including changes in the junction geometry. The optimized hydrofoils avoid separation and delay cavitation compared to the baseline. The full optimization design with planform, cross-section, and junction geometry variables yields a total drag reduction of 6.4\%. The optimized results show that the relative locations of the maximum foil thickness and the maximum strut thickness significantly impact the junction cavitation. Including the translation between the strut and the foil and more strut geometric variables as design variables will provide further improvement. The comparison between optimized designs demonstrates that optimizing planform and detailed junction geometry provides further
+                  improvement in addition to designing the cross-sectional geometry. The Hydrostructural analyses show that the optimized T-foils have lower stress at the junction than the baseline because of the resultant junction fairing. However, these hydrodynamic-optimized T-foils have higher deformation and maximum stress, which could result in accelerated fatigue, highlighting the need for hydrostructural responses in design optimization. The results demonstrate that the developed methodology is useful for designing next-generation complex hydrodynamic lifting surfaces.}
 }
 
 @Article{Librescu:1992,
@@ -27077,6 +27175,7 @@
     title       = {An Efficient Algorithm for Determining Flutter of Geometrically Nonlinearly Deformed Aircraft},
     address     = {Bristol, UK},
     booktitle   = {RAeS 6th Aircraft Structural Design Conference},
+    keywords    = {CCAVD},
     publisher   = {RAeS},
     year        = {2018}
 }
@@ -27086,6 +27185,7 @@
     title       = {A Gradient-Based Flutter Constraint Including Geometrically Nonlinear Deformations},
     address     = {San Diego, California},
     booktitle   = {2019 AIAA/ASCE/AHS/ASC Structures, Structural Dynamics, and Materials Conference},
+    keywords    = {CCAVD},
     publisher   = {AIAA},
     year        = {2019}
 }
@@ -27095,6 +27195,33 @@
     title       = {Including Geometrically Nonlinear Flutter Constraints in High Fidelity Aircraft Optimization},
     booktitle   = {International Forum on Aeroelasticity and Structural Dynamics ({IFASD} 2019)},
     year        = {2019}
+}
+
+@PhDThesis{Lupp2020,
+    author      = {Christopher A. Lupp},
+    title       = {Inclusion of Geometrically Nonlinear Aeroelastic Effects into Gradient-Based Aircraft Optimization},
+    address     = {Ann Arbor, MI},
+    keywords    = {CCAVD},
+    school      = {University of Michigan},
+    year        = {2020}
+}
+
+@Article{Lupp2022,
+    author      = {Lupp, Christopher A. and Cesnik, Carlos E. S.},
+    title       = {A Gradient-Based Flutter Constraint Including Geometrically Nonlinear Deformations},
+    journal     = {AIAA Journal},
+    keywords    = {CCAVD},
+    note        = {(under preparation)},
+    year        = {2022}
+}
+
+@Article{Lupp2022a,
+    author      = {C. A. Lupp and C. E. S. Cesnik},
+    title       = {Methods for Robustly Determining and Interpreting Flutter of Geometrically Nonlinearly Deformed Aircraft},
+    journal     = {Aeronautical Journal},
+    keywords    = {CCAVD},
+    note        = {(under preparation)},
+    year        = {2022}
 }
 
 @Book{Lutz:1996:PP,
@@ -28719,11 +28846,11 @@
 @Article{Martins2021b,
     author      = {Joaquim R. R. A. Martins and Graeme Kennedy},
     title       = {Enabling Large-scale Multidisciplinary Design Optimization through Adjoint Sensitivity Analysis},
+    doi         = {10.1007/s00158-021-03067-y},
     journal     = {Structural and Multidisciplinary Optimization},
     month       = {October},
     pages       = {2959--2974},
     volume      = {64},
-    doi         = {10.1007/s00158-021-03067-y},
     year        = {2021}
 }
 
@@ -28876,6 +29003,19 @@
     year        = {2017},
     abstract    = { A comprehensive review of aerofoil shape parameterization methods that can be used for aerodynamic shape optimization is presented. Seven parameterization methods are considered for a range of design variables: class--shape transformations; B-splines; Hicks--Henne bump functions; a radial basis function domain element approach; B{\`e}zier surfaces; a singular-value decomposition modal extraction method; and the parameterized sections method. Because of the large range of variables involved, the most effective way to implement each method is first investigated. Their performances are then analyzed by considering the geometric shape recovery of over 2000 aerofoils using a range of design variables, testing the efficiency of design space coverage with respect to a given tolerance. It is shown that, for all the methods, between 20 and 25 design variables are needed to cover the full design space to within a geometric tolerance, with the singular-value decomposition
                   method doing this most efficiently. A set of transonic aerofoil case studies are also presented, with geometric error and convergence of the resulting aerodynamic properties explored. These results show a strong relationship between geometric error and aerodynamic convergence and demonstrate that between 38 and 66 design variables may be needed to ensure aerodynamic convergence to within one drag and one lift count. }
+}
+
+@Article{Masters2017b,
+    author      = {Masters, D. A. and Taylor, N. J. and Rendall, T. C. S. and Allen, C. B.},
+    title       = {Multilevel Subdivision Parameterization Scheme for Aerodynamic Shape Optimization},
+    doi         = {10.2514/1.j055785},
+    journal     = {AIAA Journal},
+    month       = oct,
+    number      = {10},
+    pages       = {3288--3303},
+    publisher   = {American Institute of Aeronautics and Astronautics},
+    volume      = {55},
+    year        = {2017}
 }
 
 @Article{masters2017multilevel,
@@ -31545,6 +31685,18 @@
                   similarities. Using the same material for both the prototype and reduced length-scale models results in imperfect scaling; the steady-state and dynamic hydroelastic responses are not scaled, and smaller length-scale models exhibit delayed hydroelastic instabilities. The conclusion is that using appropriate materials for model scale tests to satisfy Cauchy number similarity is necessary for similar steady-state response, but dynamic similarity additionally requires similar solid-to-fluid added mass ratio. Proper scaling allows one to accurately interpret and assess the performance and stability of full-scale flexible composite lifting surfaces such as foils, propulsors, turbines, fins, rudders, energy saving devices, and energy harvesters.}
 }
 
+@Article{Ng2022b,
+    author      = {Ng, Galen W and Martins, Joaquim R R A and Young, Yin L},
+    title       = {Optimizing steady and dynamic hydroelastic performance of composite foils with low-order models},
+    doi         = {j.compstruct.2022.116101},
+    issn        = {0263-8223},
+    journal     = {Composite Structures},
+    keywords    = {Anisotropy, Design optimization, Fluid--structure interaction, Hydroelasticity, Marine dynamics, Reduced-order modeling, Marine composite},
+    pages       = {116101},
+    volume      = {301},
+    year        = {2022}
+}
+
 @Article{Ng:2010:A,
     author      = {Ng, W. H. and Salvi, A. G. and Waas, A. M.},
     title       = {Characterization of the in-situ non-linear shear response of laminated fiber reinforcedcomposites},
@@ -32099,6 +32251,60 @@
     month       = {June},
     publisher   = {American Institute of Aeronautics and Astronautics},
     year        = {2019}
+}
+
+@PhDThesis{Ojha2022,
+    author      = {Ojha, V.},
+    title       = {Goal-Oriented Mesh Adaptation for High-Fidelity Aeroelastic Simulations},
+    address     = {Ann Arbor, MI},
+    keywords    = {CCAVD},
+    school      = {University of Michigan},
+    year        = {2022}
+}
+
+@TechReport{Ojha_etal_2020_SciTech,
+    author      = {Vivek Ojha and Krzysztof J. Fidkowski and Carlos E. Cesnik and Philip S. Beran and Nathan A. Wukie},
+    title       = {Assessment of Mesh Resolution Requirements for Adaptive High-Order Fluid Structure Interaction Simulations},
+    doi         = {10.2514/6.2020-1051},
+    keywords    = {CCAVD},
+    number      = {2020--1051},
+    type        = {AIAA Paper},
+    year        = {2020}
+}
+
+@TechReport{Ojha_Fidkowski_Cesnik_2019_Aviation,
+    author      = {Vivek Ojha and Krzysztof J. Fidkowski and Carlos E. Cesnik},
+    title       = {High-Fidelity Coupled Fluid-Structure Interaction Simulations with Adaptive Meshing},
+    doi         = {10.2514/6.2019-3056},
+    keywords    = {CCAVD},
+    number      = {2019--3056},
+    pdf         = {Ojha_Fidkowski_Cesnik_2019_Aviation.pdf},
+    tags        = {MYPUBS FSI},
+    type        = {AIAA Paper},
+    year        = {2019}
+}
+
+@TechReport{Ojha_Fidkowski_Cesnik_2021,
+    author      = {Vivek Ojha and Krzysztof J. Fidkowski and Carlos E. S. Cesnik},
+    title       = {Adaptive Mesh Refinement for Fluid-Structure Interaction Simulations},
+    doi         = {10.2514/6.2021-0731},
+    keywords    = {CCAVD},
+    number      = {2021--0731},
+    pdf         = {Ojha_Fidkowski_Cesnik_2021.pdf},
+    tags        = {MYPUBS FSI ADAPTATION},
+    type        = {AIAA Paper},
+    year        = {2021}
+}
+
+@Article{Ojha_Fidkowski_Cesnik_2021_AIAAJ,
+    author      = {Vivek Ojha and Krzysztof J. Fidkowski and Carlos E. S. Cesnik},
+    title       = {Adaptive High-Order Fluid-Structure Interaction Simulations with Reduced Mesh-Motion Errors},
+    doi         = {10.2514/1.J059730},
+    journal     = {AIAA Journal},
+    keywords    = {CCAVD},
+    number      = {6},
+    volume      = {59},
+    year        = {2021}
 }
 
 @Article{OLeary-Roseberry2021,
@@ -32703,16 +32909,26 @@
 }
 
 @InProceedings{Panda2018hessian,
-    author      = {Panda, Kinshuk and Hicken, Jason E},
-    title       = {Hessian-based Dimension Reduction for Optimization Under Uncertainty},
+    author      = {Panda, Kinshuk and Hicken, Jason E.},
+    title       = {Hessian-based dimension reduction for optimization under uncertainty},
     booktitle   = {2018 Multidisciplinary Analysis and Optimization Conference},
-    day         = {24},
+    day         = {25},
     doi         = {10.2514/6.2018-3102},
-    month       = {Jun},
-    pages       = {3102},
+    keywords    = {CCAVD},
+    location    = {Atlanta, Georgia},
+    month       = jun,
+    note        = {AIAA 2018-3102},
     publisher   = {American Institute of Aeronautics and Astronautics},
-    url         = {https://doi.org/10.2514/6.2018-3102},
     year        = {2018}
+}
+
+@PhDThesis{Panda2019thesis,
+    author      = {Panda, Kinshuk},
+    title       = {Hessian-based dimension reduction for uncertainty propagation and robust design optimization},
+    address     = {Troy, New York},
+    keywords    = {CCAVD},
+    school      = {Rensselaer Polytechnic Institute},
+    year        = {2019}
 }
 
 @Article{Pang2021,
@@ -36208,6 +36424,15 @@
     year        = {2010}
 }
 
+@InProceedings{Rosatelli2023,
+    author      = {P. Rosatelli and C. E. S. Cesnik and C. A. Lupp},
+    title       = {Fuel Burn Minimization Including Dynamic Aeroelastic Constraint for Free-Flying Vehicles Under Geometrically Nonlinear Deformations},
+    booktitle   = {AIAA SciTech Forum},
+    keywords    = {CCAVD},
+    note        = {(to appear)},
+    year        = {2023}
+}
+
 @Article{Rosenbrock1960,
     author      = {Rosenbrock, Howard H.},
     title       = {An Automatic Method for Finding the Greatest or Least Value of a Function},
@@ -37743,6 +37968,14 @@
     pages       = {057103(1)--057103(14)},
     volume      = {31},
     year        = {2019}
+}
+
+@Book{Selig1996,
+    author      = {Selig, Michael S.},
+    title       = {{UIUC} airfoil data site},
+    publisher   = {Department of Aeronautical and Astronautical Engineering University of Illinois at Urbana-Champaign},
+    url         = {https://m-selig.ae.illinois.edu/ads/coord_database.html},
+    year        = {1996}
 }
 
 @Book{selig1997,

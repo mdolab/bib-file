@@ -319,6 +319,17 @@
                   aerodynamic analysis method selection on the optimal aerodynamic shape and the consequences of choosing one that does not capture the relevant flow physics. In particular, we show that modelling boundary layer transition can produce significantly lower drag designs across almost the entire range of Reynolds numbers at which airfoils are used in practice. Additionally, we find that the simple compressibility correction used in XFOIL is sufficient to produce well performing airfoils for flight Mach numbers up to 0.65, after which point the ability for the flow solver to model shock formation is critical. Our results will provide aerodynamicists with the data and intuition to make informed decisions when selecting analysis methods for optimization.}
 }
 
+@Article{Adler2022d,
+    author      = {Adler, Eytan J. and Martins, Joaquim R. R. A.},
+    title       = {Efficient Aerostructural Wing Optimization Considering Mission Analysis},
+    doi         = {10.2514/1.c037096},
+    issn        = {1533-3868},
+    journal     = {Journal of Aircraft},
+    month       = {December},
+    publisher   = {American Institute of Aeronautics and Astronautics},
+    year        = {2022}
+}
+
 @webpage{ADtools,
     title       = {Tools for Automatic Differentiation},
     keywords    = {AD},
@@ -13314,6 +13325,14 @@
     year        = {2002}
 }
 
+@Conference{Gazaix2019,
+    author      = {A. Gazaix and F. Gallard and V. Ambert and D. Gu{\'e}not and M. Hamadi and P. Sarouille and S. Grihon and T. Druot and J. Br{\'e}zillon and T. Lefebvre andN. Bartoli and R. Lafage and V. Gachelin and J. Plakoo and N. Desfachelles and S. Gurol B. Pauwels and C. Vanaret},
+    title       = {Industrial Application of an Advanced Bi-level MDO Formulation to an Aircraft Engine Pylon Optimization},
+    booktitle   = {AIAA Aviation Forum},
+    month       = {June},
+    year        = {2019}
+}
+
 @Article{gcrot,
     author      = {Sturler, E.},
     title       = {Truncation Strategies for Optimal {K}rylov Subspace Methods},
@@ -22087,7 +22106,9 @@
     number      = {5},
     pages       = {935--951},
     volume      = {52},
-    year        = {2014}
+    year        = {2014},
+    abstract    = {The NASA Common Research Model (CRM) has become a standard test case for verification and validation of Reynolds averaged Navier--Stokes computational fluid dynamics codes. In this paper we evaluate the suitability of the CRM for aerostructural and aeroelastic optimization studies. Since the CRM was originally intended for aerodynamic studies only, the undeformed geometry is not available. To address this issue, we designed a jig shape and the corresponding wingbox structure for the CRM using an inverse design procedure. The results are verified by computing the drag coefficient of the aerostructural solution with the jig shape at the nominal CRM operating conditions. The drag differs by less than one drag count relative to the CRM original shape. Using the CRM jig geometry, a sample high-fidelity aerostructural optimization is performed to determine the potential decrease in fuel burn for a long-range design mission when varying wing planform and airfoil shapes. The
+                  optimization increases the aspect ratio of the wing from 9.0 to 12.6 and reduces the fuel burn by 8.8\%. We also perform a series of gust load analysis on both the initial and optimized designs and determine that the optimized structure is critical under gust loads. The aerostructural optimization produces a high aspect ratio wing with effective passive aeroelastic tailoring, but additional load cases with cruise-like lift distributions are required to produce a more realistic wing design.}
 }
 
 @Article{Kenway2014c,
@@ -22100,7 +22121,9 @@
     pages       = {144--160},
     pdfurl      = {https://www.researchgate.net/profile/Joaquim_Martins/publication/262188627_Multi-Point_High-Fidelity_Aerostructural_Optimization_of_a_Transport_Aircraft_Configuration/links/598c71c6458515c333a982a8/Multi-Point-High-Fidelity-Aerostructural-Optimization-of-a-Transport-Aircraft-Configuration.pdf},
     volume      = {51},
-    year        = {2014}
+    year        = {2014},
+    abstract    = {This paper presents multi-point high-fidelity aerostructural optimizations of a long-range wide-body transonic transport aircraft configuration. The aerostructural analysis employs Euler CFD with a 2 million cell mesh and a structural finite element model with 300 000 degrees of freedom. The coupled adjoint sensitivity method is used to efficiently compute gradients, enabling the use of gradient-based optimization with respect to hundreds of aerodynamic shape and structural sizing variables. The NASA Common Research Model is used as the baseline configuration, together with a wingbox structure that was designed for this study. Two design optimization problems are solved: one where takeoff gross weight is minimized, and another where fuel burn is minimized. Each optimization uses a multi-point formulation with 5 cruise conditions and 2 maneuver conditions. Each of the optimization problems have 476 design variables, including wing planform, airfoil shape, and
+                  structural thickness variables. Optimized results are obtained within 36 hours of wall time using 435 processors. The resulting optimal configurations are discussed and analyzed for the aerostructural trade-offs resulting from each objective. The takeoff gross weight minimization results in a 4.2\% reduction in takeoff gross weight with a 6.6\% fuel burn reduction, while the fuel-burn optimization resulted in an 11.2\% fuel burn reduction with no significant change in the takeoff gross weight.}
 }
 
 @Conference{Kenway2014d,
@@ -24710,6 +24733,14 @@
     number      = 8,
     volume      = 57,
     year        = {2019}
+}
+
+@InProceedings{Leader2021,
+    author      = {Mark K. Leader and Graeme J. Kennedy},
+    title       = {Thermoelastic Topology Optimization Using Steady-State and Transient Analysis for Stress and Thermal Performance},
+    booktitle   = {AIAA SciTech Forum},
+    month       = {January},
+    year        = {2021}
 }
 
 @Article{Leader:2018:Frequency-opt,

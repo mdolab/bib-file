@@ -106,6 +106,17 @@
     year        = {1959}
 }
 
+@InProceedings{AbdulKaiyoom2023a,
+    author      = {M. A. Saja {Abdul Kaiyoom} and Anil Yildirim and and Joaquim R. R. A. Martins},
+    title       = {Coupled Aeropropulsive Design Optimization of an Over-Wing Nacelle Configuration},
+    booktitle   = {AIAA SciTech Forum},
+    keywords    = {aeropropulsion, openmdao, over-wing nacelle, under-wing nacelle, low fan pressure ratio},
+    month       = {January},
+    year        = {2023},
+    abstract    = {Optimal nacelle placement is critical to commercial or transport aircraft designs that use engines mounted with nacelles. Over-wing nacelle (OWN) configuration has a high potential to improve upon the conventional under-wing nacelle (UWN) configuration. OWN configurations have two critical benefits when compared to the conventional UWN configuration: 1. they ease the integration of high BPR and ultra-high BPR engines by alleviating ground clearance issues, and 2. they provide a significant amount of noise reduction because the wing blocks the noise of the fan and the jet. Despite their advantages, the OWN technology is not used in practical aircraft designs due to the difficulties in the aeropropulsive integration of the propulsion system. In this work, we propose using a coupled aeropropulsive design optimization framework to study the aeropropulsive integration for OWN configurations. The coupling behavior between the aerodynamics of the wing and the propulsion
+                  system is extremely important. Especially in OWN configurations, the propulsion system is highly influenced by the aerodynamic performance of the wing. In this paper, we address the design problem of coupling between the aerodynamic and the propulsion system. We also explore wide range of design space to achieve the best practical design. The changes in wing shape are insignificant when the OWN configuration is optimized for different FPR. Wing in OWN performs better when the propulsor is close to the wing's root; however, the overall drag increases when the propulsor is close to the root. This increases the shaft power need. In addition, nacelle placement at the aft of the trailing edge shows better performance than forward of the trailing edge of the wing. These advancements in design optimization capabilities will be critical in the future design of OWN configurations to achieve more environmentally sustainable aircraft designs.}
+}
+
 @Article{abel,
     author      = {Mukhopadhyay, V. and Newsom, J. R. and Abel, I.},
     title       = {Nonlinear Control of a Prototypical Wing Section with a Torsional Nonlinearity},
@@ -1610,6 +1621,17 @@
     year        = {2022},
     abstract    = {Aerodynamic shape optimization has become a well-established process, with designers routinely performing wing and full aircraft optimizations with hundreds of geometric design variables. However, with increased geometric design freedom comes increased optimization difficulty. These optimizations tend to converge very slowly, often taking many hundreds of design iterations. In addition, designers have to manually obtain suitable design variable scaling through trial and error in order to have a well-behaved optimization problem, which is a tedious and time-consuming task. In this work, we propose a sensitivity-based geometric parameterization approach that, while keeping the same optimization problem, maps the design space onto one which is better suited for gradient-based optimization. At the same time, we can automatically determine appropriate design variable scaling such that the new optimization problem can be solved more rapidly. We demonstrate the approach on
                   aerodynamic optimizations, and show improved convergence behaviour compared to the traditional approach.}
+}
+
+@InProceedings{Anibal2023a,
+    author      = {Joshua L. Anibal and Sabet Seraj and Anil Yildirim and Joaquim R. R. A. Martins},
+    title       = {Mixed continuation methods for robust {CFD} {Newton} solvers},
+    booktitle   = {AIAA SciTech Forum},
+    keywords    = {CFD, solver, continuation},
+    month       = {January},
+    year        = {2023},
+    abstract    = { Computational fluid dynamics (CFD) has become a vital tool for aerospace engineers. The ability to rapidly assess the performance of a design without a wind tunnel experiment or flight test has greatly increased the rate at which engineers can iterate on a design. Despite CFD's widespread adoption, its automated use remains challenging. One challenge is the development of robust and high-performance solver algorithms for a broad range of problems. Globalized Newton's methods offer a promising solution to this issue. However, selecting a suitable globalization strategy for this task requires careful analysis of possible candidates. In this work, we investigate the use of combinations of existing globalization strategies over a range of test cases. Specifically, we will compare the relative performance of combinations of pseudo-transient, boundary condition, and dissipation-based continuation. We find well tuned methods that use a mix of pseudo-transient and
+                  dissipation-based continuation to be the most robust for our test problems. }
 }
 
 @TechReport{Anon1978,
@@ -7775,6 +7797,15 @@
     year        = {2011}
 }
 
+@Conference{Chin1993,
+    author      = {V. D. Chin and D. W. Peters and F. W. Spaid and R. J. McGhee},
+    title       = {Flowfield measurements about multi-element airfoil at high {Reynolds} numbers},
+    booktitle   = {AIAA Fluid Dynamics Conference},
+    doi         = {10.2514/6.1993-3137},
+    month       = {July},
+    year        = {1993}
+}
+
 @InProceedings{Chin2015a,
     author      = {Jeffrey C. Chin and Justin S. Gray},
     title       = {Open-Source Conceptual Sizing Models for the Hyperloop Passenger Pod},
@@ -8597,6 +8628,18 @@
     year        = {2014}
 }
 
+@InProceedings{Coppeans2023a,
+    author      = {Alexander W. C. Coppeans and Krzysztof J. Fidkowski and Joaquim R. R. A. Martins},
+    title       = {Comparison of Finite Volume and High-Order Discontinuous {Galerkin} Based Aerodynamic Shape Optimization},
+    address     = {National Harbor, MD},
+    booktitle   = {AIAA SciTech Forum},
+    keywords    = {CFD, High-Order, Adaptation, optimization},
+    month       = {January},
+    year        = {2023},
+    abstract    = {Aerodynamic shape optimization (ASO) requires a robust, accurate, and efficient flow solver. The second order finite volume method (FVM) has been shown to satisfy these constraints when using a sufficiently fine mesh. However, during aerodynamic shape optimization, there are large geometry and flow solution changes that can lead to a decrease in solution accuracy over the course of the optimization. If the solution loses accuracy, the optimizer can find a spurious optimum. The discontinuous Galerkin (DG) method yields high-order accurate solutions that have less discretization error. However, the higher accuracy comes at a higher computational cost, so the advantage of DG is not always clear. DG is suitable for both local order and mesh refinement which can allow it to be more accurate per degree of freedom than the FVM. In this work we show the benefits of using DG over FVM for optimization. We also develop a strategy for p-adaptation during optimization that
+                  reduces computational cost and obtains the same optimum as a fine-space solution.}
+}
+
 @Book{Corliss:2001:ADF,
     title       = {Automatic Differentiation: From Simulation to Optimization},
     editor      = {George Corliss and Christele Faure and Andreas Griewank and Laurent Hasco{\"e}t and Uwe Naumann},
@@ -9096,6 +9139,11 @@
     pages       = {1561--1568},
     volume      = {33},
     year        = {1995}
+}
+
+@Misc{DAFoamAirfoilOptGUI,
+    title       = {DAFoam GUI for airfoil aerodynamic optimization},
+    url         = {https://dafoam.github.io/mydoc_gui_pvoptairfoil.html}
 }
 
 @TechReport{Dagenhart1999,
@@ -14031,6 +14079,10 @@
     abstract    = {Fast ships can suffer important negative effects from vertical accelerations. The sea-sickness of passengers is related, in a cumulative form, to these accelerations. Our research deals with the alleviation of vertical accelerations, using appendages that can move under control to counteract each incident wave: a T-foil near the bow and transom flaps . After a long modelling work, involving experiments in a towing tank institution, the conditions for the study of control design have been established. First experimental confirmations of the efficacy of controlled appendages have been achieved. A well tuned P.D. has been tested, with very promising results. The paper begins with a short recapitulation of the previous research. Next, the paper focus on the experiments with a replica with appendages.}
 }
 
+@webpage{gittacs,
+    url         = {https://github.com/gjkennedy/tacs}
+}
+
 @InProceedings{Giunta1995,
     author      = {Anthony Giunta and Robert Narducci and Susan Burgee and Bernard Grossman and William Mason and Layne Watson and Raphael Haftka},
     title       = {Variable-complexity response surface aerodynamic design of an {HSCT} wing},
@@ -16202,6 +16254,18 @@
     year        = {2016}
 }
 
+@InProceedings{Hajdik2023a,
+    author      = {Hannah M. Hajdik and Anil Yildirim and Joaquim R. R. A. Martins},
+    title       = {Aerodynamic Shape Optimization with {CAD}-Based Geometric Parameterization},
+    address     = {National Harbor, MD},
+    booktitle   = {AIAA SciTech Forum},
+    keywords    = {CAD, geometry, parameterization, optimization},
+    month       = {January},
+    year        = {2023},
+    abstract    = {Multidisciplinary design optimization (MDO) is a powerful tool for aircraft design. These design optimization methods often rely on the free-form deformation (FFD) method to parameterize geometry. However, the geometric parameterization with the FFD approach is not based on the original computer aided design (CAD)-based geometry definition. As a result, the optimized designs obtained from the FFD approach are not compatible with standard design and manufacturing workflows. CAD in the loop of a high-fidelity MDO framework can then bridge this gap between MDO methods and design or manufacturing needs. To effectively integrate CAD into optimization, the surface mesh points' relationship to the CAD geometry needs to be tracked in order to calculate derivatives for gradient-based optimization and morph the mesh as the geometry changes. In this work, we present ongoing efforts on coupling MDO to CAD as well as a comparison of results obtained from traditional FFD methods.
+                  Results for aerodynamic shape optimization are discussed. We show that FFD-based optimizations and CAD-based optimizations for airfoil cases and a wing case starting from the same baseline designs can achieve the same optimized design, validating both the surface mesh tracking algorithm and the derivatives for the CAD method. The presented method is a critical prerequisite for integrating CAD-based geometric parameterizations in simulation based MDO frameworks.}
+}
+
 @Article{Hajela1983,
     author      = {Hajela, P.},
     title       = {A root locus-based flutter synthesis procedure},
@@ -17498,6 +17562,13 @@
     title       = {Eigenvalue problem derivatives computation for a complex matrix using the adjoint method},
     journal     = {Mechanical Systems and Signal Processing},
     month       = {February},
+    year        = {2023}
+}
+
+@InProceedings{He2023b,
+    author      = {He, Ping and Koyuncuoglu, Heyecan and Hu, Helen and Dhulipalla, Anvesh and Hu, Haiyang and Hu, Hui},
+    title       = {High-fidelity aerodynamic and aerostructural optimization of {UAV} propellers using the adjoint method},
+    booktitle   = {AIAA SciTech 2023 Forum},
     year        = {2023}
 }
 
@@ -20255,7 +20326,7 @@
     title       = {Large-Scale Path-Dependent Optimization of Supersonic Aircraft},
     doi         = {10.3390/aerospace7100152},
     journal     = {Aerospace},
-    keywords    = {ccavd, ank},
+    keywords    = {ccavd, ank, OpenMDAO},
     month       = {October},
     number      = {152},
     volume      = {7},
@@ -22925,6 +22996,28 @@
     year        = {2015}
 }
 
+@TechReport{Klausmeyer1997,
+    author      = {Steven M. Klausmeyer and John C. Lin},
+    title       = {Comparative Challenge High-Lift Results From a {CFD} Over a {2D} Three-Element Airfoil},
+    address     = {Hampton, VA},
+    institution = {NASA},
+    month       = {May},
+    number      = {112858},
+    type        = {Technical Memorandum},
+    year        = {1997}
+}
+
+@InProceedings{Kleb023a,
+    author      = {Alex Kleb and Krzysztof J. Fidkowski and Joaquim R. R. A. Martins},
+    title       = {Development of a {Cartesian} Cut-Cell Solver for Viscous Flows},
+    booktitle   = {AIAA SciTech Forum},
+    keywords    = {cut-cells, Cartesian},
+    month       = {January},
+    year        = {2023},
+    abstract    = {Mesh generation in Computational Fluid Dynamics (CFD) is one of the most critical and time consuming parts of the analysis process. Cartesian cut-cell methods with adjoint based adaptive mesh refinement (AMR) have been used on inviscid problems to automate the meshing procedure for arbitrary geometries. However, these methods struggle with viscous equations because they lack a robust way to account for varying scales in spatial dimensions. A Viscous Aerodynamic Cartesian Cut-cell (VACC) toolbox has been developed to facilitate Cartesian cut-cell research on high Reynolds number viscous flows. We found that directional limiters perform better than scalar limiters for maintaining accuracy and total variation diminishing solutions. Implicit residual smoothing and variations of the Runge-Kutta time marching scheme proved effective for accelerating our explicit time marching scheme. VACC shows excellent parallel scaling. This paper outlines the progress made so far on the
+                  mesh generator and the flow solver.}
+}
+
 @InProceedings{Kleb2019a,
     author      = {Kleb, William L. and Park, Michael A. and Wood, William A. and Bibb, Karen L. and Thompson, Kyle B. and Gomez, Reynaldo J.},
     title       = {Sketch-to-Solution: An Exploration of Viscous {CFD} with Automatic Grids},
@@ -23445,6 +23538,23 @@
     year        = {2003},
     abstract    = {In order to mitigate the impact of the growing gap between CPU speed and main memory performance, today's computer architectures implement hierarchical memory structures. The idea behind this approach is to hide both the low main memory bandwidth and the latency of main memory accesses which is slow in contrast to the floating-point performance of the CPUs. Usually, there is a small and expensive high speed memory sitting on top of the hierarchy which is usually integrated within the processor chip to provide data with low latency and high bandwidth; i.e., the CPU registers. Moving further away from the CPU, the layers of memory successively become larger and slower. The memory components which are located between the processor core and main memory are called cache memories or caches. They are intended to contain copies of main memory blocks to speed up accesses to frequently needed data [378], [392]. The next lower level of the memory hierarchy is the main memory
                   which is large but also comparatively slow. While external memory such as hard disk drives or remote memory components in a distributed computing environment represent the lower end of any common hierarchical memory design, this paper focuses on optimization techniques for enhancing cache performance.}
+}
+
+@Article{Koyuncuoglu2022,
+    author      = {Koyuncuoglu, Heyecan U and He, Ping},
+    title       = {Simultaneous wing shape and actuator parameter optimization using the adjoint method},
+    journal     = {Aerospace Science and Technology},
+    pages       = {107876},
+    publisher   = {Elsevier},
+    volume      = {130},
+    year        = {2022}
+}
+
+@InProceedings{Koyuncuoglu2023,
+    author      = {Koyuncuoglu, Heyecan and He, Ping},
+    title       = {{CFD} Based Multi-Component Aerodynamic Optimization for Wing Propeller Coupling},
+    booktitle   = {AIAA SciTech 2023 Forum},
+    year        = {2023}
 }
 
 @Article{Koziel2013,
@@ -24175,6 +24285,17 @@
     volume      = {431},
     year        = {2001},
     abstract    = {Partial cavitation forming on the vertex of a wedge and on the leading edge of a stationary hydrofoil was experimentally examined. The geometry of these test objects varied in the spanwise direction (i.e. three-dimensional test objects). Closed cavities formed on these test objects. The interface of the closed cavities curved smoothly to form a re-entrant jet at the cavity terminus, and the re-entrant flow was directed spanwise, thus preventing its impingement on the cavity interface. The cavity shape and the pressure gradients near the closure of the closed cavities were qualitatively similar to those predicted with the two-dimensional free-streamline theory. These cavities had a steady, laminar flow reattachment. The flow around the closed cavity was largely irrotational.}
+}
+
+@Conference{Lacy2022,
+    author      = {Doug Lacy and Adam M. Clark},
+    title       = {Definition of Initial Landing and Takeoff Reference Configurations for the High Lift Common Research Model ({CRM-HL})},
+    booktitle   = {AIAA Aviation Forum},
+    doi         = {10.2514/6.2020-2771},
+    month       = {June},
+    year        = {2022},
+    abstract    = {The High Lift version of the Common Research Model (CRM-HL) is a geometry set developed to enable high lift configurations representative of those found on modern commercial airliners to be made available in the public domain. An effort is underway to create an ecosystem around this geometry set that will enable multiple users to collaborate on key common configurations that produce flow physics scenarios of shared interest. Such configurations will be referred to as reference configurations. Anticipated collaborative topics include CFD tool improvement and validation, technology development, and wind tunnel data acquisition methodology development. This paper will define two such reference configurations with the goal of establishing common geometry for these future efforts. It will include a discussion of the objectives for these configurations as well as the rationale behind their selection. It will also provide detailed configuration descriptions, broken down
+                  into the individual geometry elements.}
 }
 
 @Article{Laflin2005a,
@@ -31072,6 +31193,10 @@
     year        = {2002}
 }
 
+@webpage{MPhys,
+    url         = {https://github.com/OpenMDAO/mphys}
+}
+
 @Article{MPI:1994,
     author      = {MPI Forum},
     title       = {{MPI}: A Message-Passing Interface Standard},
@@ -33124,6 +33249,33 @@
     year        = {2021},
     abstract    = {Urban air mobility vehicles have taken form as advanced rotorcraft with sets of wings, rotors, canards, and other appendages. Noise generation is an important technical barrier that must be addressed to prevent these vehicles from causing excessive disturbance to the communities they are intended to service. There is a need for efficient and low-fidelity analysis tools specifically for the conceptual design and sizing phase of urban air mobility vehicle development. Such tools must be computationally efficient to allow for repeated analyses needed for design optimization. This paper presents coupled aerodynamic and aeroacoustic analysis formulated for gradient-based design optimization. Rotor performance is modeled using HELIX, a hybrid blade element momentum theory tool, coupled with PULSE, an aeroacoustic analysis tool based on the Ffowcs Williams and Hawkings aeroacoustic analogy, reformulated as Farassat Formulation 1A. This work presents a methodology for
                   computing implicit derivatives of the coupled aerodynamic and aeroacoustic models implemented within the software package OpenMDAO. Both models are validated independently, and derivatives are verified using finite difference and complex step approximations. These tools are used to analyze and optimize the rotors on the single passenger NASA N+1 quadrotor vehicle with respect to blade-shape parameters. This paper aims to introduce aeroacoustic analysis into gradient-based optimization efficiently and demonstrate the impact that such optimization can have for minimizing the noise footprint of an urban air mobility vehicle.}
+}
+
+@InProceedings{Pacini2023,
+    author      = {Pacini, Bernardo and Prajapati, Malhar and Duraisamy, Karthik and Martins, Joaquim R. R. A. and He, Ping},
+    title       = {Towards Aerostructural Optimization for Urban Air Mobility Vehicle Design},
+    booktitle   = {AIAA SciTech 2023 Forum},
+    year        = {2023}
+}
+
+@InProceedings{Pacini2023a,
+    author      = {Pacini, Bernardo and Prajapati, Malhar and Duraisamy, Karthik and Martins, Joaquim R. R. A. and He, Ping},
+    title       = {Understanding Distributed Propulsion on the {NASA} Tiltwing Concept Vehicle with Aerodynamic Shape Optimization},
+    booktitle   = {AIAA Scitech Forum 2023},
+    month       = {January},
+    year        = {2023},
+    abstract    = {Many urban air mobility vehicle designs are under development, featuring configurations that combine propellers with wings, tails, fuselage, and additional appendages. These complex geometries introduce physical phenomena such as propeller-wing and propeller-propeller interactions. Understanding these phenomena and optimizing a vehicle design considering their effects can lead to improved efficiency throughout a vehicle's mission. This work considers the NASA urban air mobility tiltwing concept vehicle and analyzes the performance of its wing considering varying numbers of propellers. The tiltwing's wing is analyzed and subsequently optimized for zero to five propellers to understand the potential for wing design improvements. This work finds that the tiltwing vehicle in cruise flight does benefit from wing-mounted propellers, however the strongest improvement in efficiency is found with a single propeller at the wingtip, with decreasing benefit as the number of
+                  propellers is increased. While this work considers only aerodynamic shape optimization without structural and packaging constraints or power plant design, it provides quantitative and qualitative insight into the advantages and disadvantages of distributed propulsors in cruise flight. Additionally, this work shows that while aerodynamic shape optimization is a useful tool for improving wing performance, considering propeller-wing interaction effects leads to a negligible improvement in optimized design.}
+}
+
+@InProceedings{Pacini2023b,
+    author      = {Pacini, Bernardo and Prajapati, Malhar and Duraisamy, Karthik and Martins, Joaquim R. R. A. and He, Ping},
+    title       = {Towards Aerostructural Optimization for Urban Air Mobility Vehicle Design},
+    booktitle   = {AIAA Scitech Forum 2023},
+    month       = {January},
+    year        = {2023},
+    abstract    = {Many urban air mobility vehicle designs include several rotors and propellers integrated with complex fuselage, wing, and appendage geometries. These designs feature advanced technologies that demand further modeling and understanding of optimization tradeoffs. Given the complexity of the vehicle geometries being developed as well as the advanced materials used for integral components, aerostructural analysis and optimization can provide insight into the performance of urban air mobility vehicles, and how the structure and lifting surfaces can be designed to further improve vehicle efficiency. This work details an aerostructural optimization toolchain built with the MACH and OpenMDAO tools, embedded within the high-fidelity modeling and optimization framework called MPhys. This multiphysics analysis and optimization framework is used to perform aerostructural optimization of advanced vehicles, using DAFoam, a discrete adjoint implementation for OpenFOAM, as well as
+                  TACS, a finite element solver developed for gradient-based optimization of composite structures. These tools are applied to the NASA tiltwing concept vehicle to optimize the design of the wing considering structural deflection.}
 }
 
 @Article{Padron2019,

@@ -110,6 +110,7 @@
     author      = {M. A. Saja {Abdul Kaiyoom} and Anil Yildirim and and Joaquim R. R. A. Martins},
     title       = {Coupled Aeropropulsive Design Optimization of an Over-Wing Nacelle Configuration},
     booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2023-0327},
     keywords    = {aeropropulsion, openmdao, over-wing nacelle, under-wing nacelle, low fan pressure ratio},
     month       = {January},
     year        = {2023},
@@ -438,6 +439,16 @@
     booktitle   = {International Forum on Aeroelasticity and Structural Dynamics ({IFASD} 2022)},
     month       = {June 13--17},
     year        = {2022}
+}
+
+@Article{AGray2023a,
+    author      = {Alasdair C. Gray and Cristina Riso and Eirikur Jonsson and Joaquim R. R. A. Martins and Carlos E. S. Cesnik},
+    title       = {High-fidelity Aerostructural Optimization with a Geometrically Nonlinear Flutter Constraint},
+    journal     = {AIAA Journal},
+    note        = {(In press)},
+    year        = {2023},
+    abstract    = {When designing aircraft, avoiding dynamic aeroelastic instabilities such as flutter is a key requirement. One way to meet this requirement is to use a multidisciplinary design optimization subject to a flutter constraint. Flutter-constrained design optimizations have used geometrically linear detailed models, which do not accurately predict flutter for very flexible aircraft, or geometrically nonlinear low-order models, which do not accurately trade off cruise range and structural mass. This paper presents a framework for integrating a geometrically nonlinear, subsonic flutter constraint that captures the large in-flight deflections of very flexible aircraft into high-fidelity gradient-based aerostructural optimization. The cruise range and stress constraints are computed accurately with detailed aerostructural analyses, which use a built-up finite element model coupled to RANS CFD. The detailed model is condensed to a low-order aeroelastic model to compute the
+                  geometrically nonlinear flutter constraint and its adjoint derivatives with computational cost and robustness suitable for optimization. The framework is demonstrated by maximizing the cruise range of a subsonic high-aspect-ratio wing with respect to panel thicknesses, sweep, and span. The impact of the geometrically nonlinear flutter constraint highly depends on the in-flight deformation level. At low deflection levels, sweeping the wing backward is the most effective flutter prevention method, and the flutter constraint has little impact on the achievable cruise range. At high deflection levels, shortening the wing span is necessary to suppress flutter, reducing the achievable cruise range by up to 5.9\%. This work is a step toward making multidisciplinary design optimization a practical tool for designing the energy-efficient, very flexible aircraft of the future, which require geometrically nonlinear flutter analyses early in the design cycle to prevent flutter. }
 }
 
 @Article{Agte2010,
@@ -1625,13 +1636,14 @@
 
 @InProceedings{Anibal2023a,
     author      = {Joshua L. Anibal and Sabet Seraj and Anil Yildirim and Joaquim R. R. A. Martins},
-    title       = {Mixed continuation methods for robust {CFD} {Newton} solvers},
+    title       = {Combined continuation methods for robust {CFD} {Newton} solvers},
     booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2023-2296},
     keywords    = {CFD, solver, continuation},
     month       = {January},
     year        = {2023},
-    abstract    = { Computational fluid dynamics (CFD) has become a vital tool for aerospace engineers. The ability to rapidly assess the performance of a design without a wind tunnel experiment or flight test has greatly increased the rate at which engineers can iterate on a design. Despite CFD's widespread adoption, its automated use remains challenging. One challenge is the development of robust and high-performance solver algorithms for a broad range of problems. Globalized Newton's methods offer a promising solution to this issue. However, selecting a suitable globalization strategy for this task requires careful analysis of possible candidates. In this work, we investigate the use of combinations of existing globalization strategies over a range of test cases. Specifically, we will compare the relative performance of combinations of pseudo-transient, boundary condition, and dissipation-based continuation. We find well tuned methods that use a mix of pseudo-transient and
-                  dissipation-based continuation to be the most robust for our test problems. }
+    abstract    = {Computational fluid dynamics (CFD) has become a vital tool for aerospace engineers. The ability to rapidly assess the performance of a design without a wind tunnel experiment or flight test has greatly increased the rate at which engineers can iterate on a design. Despite CFD's widespread adoption, its automated use remains challenging. One challenge is the development of robust and high-performance solver algorithms for a broad range of problems. Globalized Newton's methods offer a promising solution to this issue. However, selecting a suitable globalization strategy for this task requires careful analysis of possible candidates. In this work, we investigate the use of combinations of existing globalization strategies over a range of test cases. Specifically, we will compare the relative performance of combinations of pseudo-transient, boundary condition, and dissipation-based continuation. We find well tuned methods that use a mix of pseudo-transient and
+                  dissipation-based continuation to be the most robust for our test problems.}
 }
 
 @TechReport{Anon1978,
@@ -6807,6 +6819,15 @@
     year        = {1996}
 }
 
+@Article{Cea2022,
+    author      = {Cea, A. and Palacios, R.},
+    title       = {Geometrically Nonlinear Effects on the Aeroelastic Response of a Transport Aircraft Configuration},
+    doi         = {10.2514/1.C036740},
+    journal     = {Journal of Aircraft},
+    pages       = {1--16},
+    year        = {2022}
+}
+
 @InCollection{cebeci1977general,
     author      = {Cebeci, Tuncer and Kaups, Kalle and Ramsey, Judy A},
     title       = {A general method for calculating three-dimensional compressible laminar and turbulent boundary layers on arbitrary wings},
@@ -6934,6 +6955,17 @@
     pages       = {1580--1591},
     volume      = {51},
     year        = {2014}
+}
+
+@Article{Cestino2019,
+    author      = {Cestino, E. and Frulla, G. and Catelani, D. and Linari, M.},
+    title       = {Numerical Simulation and Experimental Validation of Slender Wings Flutter Behaviour},
+    doi         = {10.1177/0954410019879820},
+    journal     = {Proceedings of the Institution of Mechanical Engineers, Part G: Journal of Aerospace Engineering},
+    number      = {16},
+    pages       = {5913--5928},
+    volume      = {233},
+    year        = {2019}
 }
 
 @Article{Cetin:2005:MCA,
@@ -8633,6 +8665,7 @@
     title       = {Comparison of Finite Volume and High-Order Discontinuous {Galerkin} Based Aerodynamic Shape Optimization},
     address     = {National Harbor, MD},
     booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2023-1845},
     keywords    = {CFD, High-Order, Adaptation, optimization},
     month       = {January},
     year        = {2023},
@@ -10354,6 +10387,28 @@
     year        = {2022}
 }
 
+@Article{Drachinsky2022a,
+    author      = {Drachinsky, Ariel and Raveh, Daniella E.},
+    title       = {Nonlinear Aeroelastic Analysis of Highly Flexible Wings using the Modal Rotation Method},
+    doi         = {10.2514/1.j061065},
+    journal     = {AIAA Journal},
+    note        = {article in advance},
+    pages       = {1--13},
+    year        = {2022}
+}
+
+@InProceedings{Drachinsky2022b,
+    author      = {Drachinsky, A. and Avin, O. and Raveh, D. E. and Ben-Shmuel, Y. and Tur, M.},
+    title       = {Flutter Tests of the Pazy Wing},
+    address     = {San Diego, CA and Online},
+    booktitle   = {2022 AIAA SciTech Forum},
+    doi         = {10.2514/6.2022-2186},
+    month       = {3--7 January},
+    note        = {AIAA-2022-2186},
+    pages       = {1--19},
+    year        = {2022}
+}
+
 @Unpublished{Drela-08-spl8,
     author      = {Mark Drela},
     title       = {Lab 8 Notes---Basic Aircraft Design Rules},
@@ -10658,6 +10713,38 @@
     year        = {2021},
     abstract    = {Aerodynamic optimization based on computational fluid dynamics (CFD) is a powerful design approach because it significantly reduces the design time compared with the human manual design. However, CFD-based optimization can still take hours to converge because it requires repeatedly running computationally expensive flow simulations. To further shorten the design optimization time, we propose a fast, interactive design framework that allows us to complete an airfoil aerodynamic optimization within a few seconds. This framework is made efficient through a B-spline-based generative adversarial network model for shape parameterization, which filters out unrealistic airfoils for a reduced design space that contains all relevant airfoil shapes. Moreover, we use a combination of multilayer perceptron, recurrent neural networks, and mixture of experts for surrogate modeling to enable both scalar (drag and lift) and vector (pressure distribution) response predictions for a
                   wide range of Mach numbers (0.3 to 0.7) and Reynolds numbers (104 to 1010). To verify our proposed framework, we compare the optimization results with the ones computed by direct CFD-based optimization for subsonic and transonic conditions. The results show that the optimal designs and the aerodynamic quantities (lift, drag, and pressure distribution) obtained by our proposed framework agree well with the ones computed by direct CFD-based optimizations and evaluations. The proposed framework is being integrated into a web-based interactive aerodynamic design framework that allows users to predict drag, lift, moment, pressure distribution, and optimal airfoil shapes for a wide range of flow conditions within seconds.}
+}
+
+@InProceedings{Du2023,
+    author      = {Xiaosong Du and Joaquim R. R. A. Martins},
+    title       = {Super Resolution Generative Adversarial Networks for Multi-Fidelity Pressure Distribution Prediction},
+    booktitle   = {AIAA Scitech Forum},
+    doi         = {10.2514/6.2023-0533},
+    month       = {January},
+    year        = {2023}
+}
+
+@InProceedings{Du2023a,
+    author      = {Xiaosong Du and Jiachen Wang and Joaquim R. R. A. Martins},
+    title       = {A Fully Automated Adaptive Sampling Strategy for Reduced-Order Modeling of Flow Fields},
+    booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2023-0534},
+    month       = {January},
+    year        = {2023},
+    abstract    = {Effective access to aerodynamic flow fields reveals essential physical insights (such as shock waves and boundary layer separation) related to aerodynamic efficiency. Thus, an adequate description on flows fields is advantageous for airfoil design optimization with reference to achieving desirable aerodynamic performance. Conventional flow field computation, however, relies on high-fidelity but time-consuming computational fluid dynamics models. Alternatively, surrogate modeling (such as reduced-order modeling) arises for fast flow field prediction, but randomly sampling an input space could result in intensive training data cost. To tackle these issues, in this work we propose a fully automated adaptive sampling strategy for the proper orthogonal decomposition-based reduced order modeling. In particular, we leverage a mathematical sampling criteria (known as potential) for intelligent selection among sample candidates. Moreover, we propose to select the number of
+                  reduced-order bases and switch to a second strategy on the fly, instead of user-defined and fixed throughout the whole process. Therefore, "fully automated" refers to the fact that the sampling strategy exerts fully automated control over the adaptive selection to the samples and bases. We demonstrated the proposed sampling strategy on airfoil flow field prediction within transonic regime in this work. Results showed that the surrogate predictions based on random sampling via Latin hypercube sampling had a error of 1.6E−3 over the input space of Mach number ([0.55, 0.75]) and angle of attack ([-1, 3] deg). In contrast, the fully automated strategy made a mean error of 7.69E−4 and a small standard deviation of 5.72E−5 over the input space for 10 different trials. The worst predictive performance has an error of 8.01E−4. Furthermore, we compared the fully automated strategy against the fix-switch strategy. The mean error of fixed-switch strategy varies from
+                  6.83E−4 to 8.01E−4 depending on when to switch to the second strategy. The worst predictive performance has an error up to 1.4E−3. Note that we set 40 training samples as the total computational budget and compared predictive performance under this condition. Therefore, we can conclude the fully automated algorithm has promising predictive performance with sufficient robustness with respect to sample candidate pools. Note that the proposed strategy is also extensible to other engineering fields.}
+}
+
+@InProceedings{Du2023b,
+    author      = {Xiaosong Du and Joaquim R. R. A. Martins and Thomas O'Leary-Roseberry and Anirban Chaudhuri and Omar Ghattas and Karen E. Willcox},
+    title       = {Learning Optimal Aerodynamic Designs through Multi-Fidelity Reduced-Dimensional Neural Networks},
+    booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2023-0334},
+    month       = {January},
+    year        = {2023},
+    abstract    = {For the minimum drag at desired flight requirements, aerodynamic optimization plays an important role in automating the aircraft design process. Specifically, existing optimization approaches commonly adopt derivative-free algorithms for low-dimensional design space, while gradient-based algorithms enabled by adjoint methods alleviate computational expenses of large-scale designs. However, repeatedly evaluating simulation models results in the fact that conventional optimizations still rely on high-performance computing clusters. Consequently, with the development of machine learning and deep learning emerge surrogate models in lieu of computationally intensive simulation models. In this paper, we propose a novel optimal design concept, namely, learning the mapping directly from design requirements to the optimal designs through neural network surrogates. Thus, the trained surrogate model directly predicts optimal designs with no need to run any optimizations.
+                  Considering the complex mapping and costly training data (one training sample corresponds to one simulation-based optimization), we first exploited the low-rank representation of the output space, i.e., optimal designs. Moreover, we developed the multi-fidelity version of the reduced-dimensional neural networks to reduce the computational cost even further. Results revealed that the reduced-dimensional neural networks achieved 95% predictive accuracy on the optimal designs using 120 high-fidelity training samples while full-space networks required 140. In addition, when provided with very few data (such as 20), reduced-dimensional networks increased the predictive accuracy by more than 5%. Furthermore, the multi-fidelity reduced-dimensional networks achieved 95% accuracy using 80 high-fidelity and 40 low-fidelity samples, computationally equal to 82 high-fidelity samples, making it 31.7% reduction on the computational cost.}
 }
 
 @Article{Duan2019a,
@@ -12705,7 +12792,7 @@
 
 @InProceedings{Fredericks:1948:A,
     author      = {William J. Fredericks and Kevin R. Antcliff and Guillermo Costa and Nachiket Deshpande and Mark D. Moore and Edric A. San Miguel and Alison N. Snyder},
-    title       = {Aircraft Conceptual Design Using Vehicle Sketch Pad},
+    title       = {Aircraft Conceptual Design Using {Vehicle Sketch Pad}},
     address     = {Orlando,~FL},
     booktitle   = {Proceedings of the 48th AIAA Aerospace Sciences Meeting},
     month       = {January},
@@ -16147,7 +16234,7 @@
 
 @InProceedings{Hahn2010a,
     author      = {Hahn, Andrew},
-    title       = {Vehicle Sketch Pad: A Parametric Geometry Modeler for Conceptual Aircraft Design},
+    title       = {{Vehicle Sketch Pad}: A Parametric Geometry Modeler for Conceptual Aircraft Design},
     booktitle   = {48th {AIAA} Aerospace Sciences Meeting Including the New Horizons Forum and Aerospace Exposition},
     doi         = {10.2514/6.2010-657},
     month       = {January},
@@ -16199,8 +16286,8 @@
 
 @InProceedings{Haimes2013a,
     author      = {Haimes, Robert and Dannenhoffer, John},
-    title       = {The Engineering Sketch Pad: A Solid-Modeling, Feature-Based, Web-Enabled System for Building Parametric Geometry},
-    booktitle   = {21st {AIAA} {Computational} {Fluid} {Dynamics} {Conference}},
+    title       = {The {Engineering Sketch Pad}: A Solid-Modeling, Feature-Based, Web-Enabled System for Building Parametric Geometry},
+    booktitle   = {21st AIAA Computational Fluid Dynamics Conference},
     doi         = {10.2514/6.2013-3073},
     month       = {June},
     publisher   = {American Institute of Aeronautics and Astronautics},
@@ -16259,6 +16346,7 @@
     title       = {Aerodynamic Shape Optimization with {CAD}-Based Geometric Parameterization},
     address     = {National Harbor, MD},
     booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2023-0726},
     keywords    = {CAD, geometry, parameterization, optimization},
     month       = {January},
     year        = {2023},
@@ -18431,6 +18519,17 @@
     pages       = {1735--1780},
     volume      = {9},
     year        = {1997}
+}
+
+@TechReport{Hodges1974,
+    author      = {Hodges, Dewey H. and Dowell, Earl H.},
+    title       = {{Nonlinear equations of motion for the elastic bending and torsion of twisted nonuniniform rotor blades}},
+    booktitle   = {NASA Technical Note D-7818},
+    pages       = {D--7818, NASA, December 1974},
+    url         = {https://ntrs.nasa.gov/citations/19750005242},
+    year        = {1974},
+    abstract    = {The equations of motion are developed by two complementary methods, Hamilton's principle and the Newtonian method. The former is more mathematically rigorous and systematic, while the latter provides more physical insight. The resulting equations are valid to second order for long, straight, slender, homogeneous, isotropic beams undergoing moderate displacements. The ordering scheme is based on the restriction that squares of the bending slopes, the torsion deformation, and the chord/radius and thickness/radius ratios are negligible with respect to unity. All remaining nonlinear terms are retained. The equations are valid for beams with mass centroid axis and area centroid (tension) axis offsets from the elastic axis, nonuniform mass and stiffness section properties, variable pretwist, and a small precone angle. The straindisplacement relations are developed from an exact transformation between the deformed and undeformed coordinate systems. These nonlinear relations
+                  form an important contribution to the final equations. Several nonlinear structural and inertial terms in the final equations are identified that can substantially influence the aeroelastic stability and response of hingeless helicopter rotor blades.}
 }
 
 @Book{Hodges2014a,
@@ -23018,6 +23117,7 @@
     author      = {Alex Kleb and Krzysztof J. Fidkowski and Joaquim R. R. A. Martins},
     title       = {Development of a {Cartesian} Cut-Cell Solver for Viscous Flows},
     booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2023-1795},
     keywords    = {cut-cells, Cartesian},
     month       = {January},
     year        = {2023},
@@ -27881,6 +27981,11 @@
     year        = {1997}
 }
 
+@webpage{MACH-Aero,
+    note        = {MACH-Aero Documentation},
+    url         = {https://mdolab-mach-aero.readthedocs-hosted.com/en/latest/}
+}
+
 @TechReport{Mack1977,
     author      = {L. M. Mack},
     title       = {Transition Prediction and Linear Stability Theory},
@@ -28004,9 +28109,8 @@
 @Article{Mader2011a,
     author      = {Charles A. Mader and Joaquim R. R. A. Martins},
     title       = {Computation of Aircraft Stability Derivatives Using an Automatic Differentiation Adjoint Approach},
-    doi         = {10.2514/1.J051147},
+    doi         = {https://arc.aiaa.org/doi/10.2514/1.J051147},
     journal     = {AIAA Journal},
-    month       = {December},
     number      = {12},
     pages       = {2737--2750},
     volume      = {49},
@@ -28122,17 +28226,6 @@
     keywords    = {aerodynamics, CFD, sensitivities, adjoint, AD},
     school      = {University of Toronto Institute for Aerospace Studies},
     year        = {2007}
-}
-
-@Article{Mader:2011:A,
-    author      = {Charles A. Mader and Joaquim R. R. A. Martins},
-    title       = {Computation of Aircraft Stability Derivatives Using an Automatic Differentiation Adjoint Approach},
-    doi         = {10.2514/1.55678},
-    journal     = {AIAA Journal},
-    number      = {12},
-    pages       = {2737--2750},
-    volume      = {49},
-    year        = {2011}
 }
 
 @Article{Madsen2000,
@@ -29998,6 +30091,19 @@
     pages       = {042009},
     volume      = {1037},
     year        = {2018}
+}
+
+@Article{Medeiros2021,
+    author      = {Medeiros, R. R. and Cesnik, C. E.S. and Stodieck, O. and Calderon, D. E. and Cooper, J. E. and Coetzee, E. B.},
+    title       = {Comparison of structural model reduction methods applied to a large-deformation wing box},
+    doi         = {10.1017/aer.2021.73},
+    journal     = {Aeronautical Journal},
+    keywords    = {Aeroelasticity,Nonlinear beam models,Reduced order models,Wingbox modelling},
+    number      = {1292},
+    pages       = {1687--1709},
+    volume      = {125},
+    year        = {2021},
+    abstract    = {In this paper, the accuracy and practical capabilities of three different reduced-order models (ROMs) are explored: an enhanced implicit condensation and expansion (EnICE) model, a finite element beam model, and a finite volume beam model are compared for their capability to accurately predict the nonlinear structural response of geometrically nonlinear built-up wing structures. This work briefly outlines the different order reduction methods, highlighting the associated assumptions and computational effort. The ROMs are then used to calculate the wing deflection for different representative load cases and these results are compared with the global finite element model (GFEM) predictions when possible. Overall, the ROMs are found to be able to capture the nonlinear GFEM behaviour accurately, but differences are noticed at very large displacements and rotations due to local geometrical effects.}
 }
 
 @Article{Mee:2002:TLS,
@@ -33258,17 +33364,11 @@
                   computing implicit derivatives of the coupled aerodynamic and aeroacoustic models implemented within the software package OpenMDAO. Both models are validated independently, and derivatives are verified using finite difference and complex step approximations. These tools are used to analyze and optimize the rotors on the single passenger NASA N+1 quadrotor vehicle with respect to blade-shape parameters. This paper aims to introduce aeroacoustic analysis into gradient-based optimization efficiently and demonstrate the impact that such optimization can have for minimizing the noise footprint of an urban air mobility vehicle.}
 }
 
-@InProceedings{Pacini2023,
-    author      = {Pacini, Bernardo and Prajapati, Malhar and Duraisamy, Karthik and Martins, Joaquim R. R. A. and He, Ping},
-    title       = {Towards Aerostructural Optimization for Urban Air Mobility Vehicle Design},
-    booktitle   = {AIAA SciTech 2023 Forum},
-    year        = {2023}
-}
-
 @InProceedings{Pacini2023a,
     author      = {Pacini, Bernardo and Prajapati, Malhar and Duraisamy, Karthik and Martins, Joaquim R. R. A. and He, Ping},
     title       = {Understanding Distributed Propulsion on the {NASA} Tiltwing Concept Vehicle with Aerodynamic Shape Optimization},
     booktitle   = {AIAA Scitech Forum 2023},
+    doi         = {10.2514/6.2023-0143},
     month       = {January},
     year        = {2023},
     abstract    = {Many urban air mobility vehicle designs are under development, featuring configurations that combine propellers with wings, tails, fuselage, and additional appendages. These complex geometries introduce physical phenomena such as propeller-wing and propeller-propeller interactions. Understanding these phenomena and optimizing a vehicle design considering their effects can lead to improved efficiency throughout a vehicle's mission. This work considers the NASA urban air mobility tiltwing concept vehicle and analyzes the performance of its wing considering varying numbers of propellers. The tiltwing's wing is analyzed and subsequently optimized for zero to five propellers to understand the potential for wing design improvements. This work finds that the tiltwing vehicle in cruise flight does benefit from wing-mounted propellers, however the strongest improvement in efficiency is found with a single propeller at the wingtip, with decreasing benefit as the number of
@@ -33277,8 +33377,9 @@
 
 @InProceedings{Pacini2023b,
     author      = {Pacini, Bernardo and Prajapati, Malhar and Duraisamy, Karthik and Martins, Joaquim R. R. A. and He, Ping},
-    title       = {Towards Aerostructural Optimization for Urban Air Mobility Vehicle Design},
+    title       = {Multipoint Aerostructural Optimization for Urban Air Mobility Vehicle Design},
     booktitle   = {AIAA Scitech Forum 2023},
+    doi         = {10.2514/6.2023-0326},
     month       = {January},
     year        = {2023},
     abstract    = {Many urban air mobility vehicle designs include several rotors and propellers integrated with complex fuselage, wing, and appendage geometries. These designs feature advanced technologies that demand further modeling and understanding of optimization tradeoffs. Given the complexity of the vehicle geometries being developed as well as the advanced materials used for integral components, aerostructural analysis and optimization can provide insight into the performance of urban air mobility vehicles, and how the structure and lifting surfaces can be designed to further improve vehicle efficiency. This work details an aerostructural optimization toolchain built with the MACH and OpenMDAO tools, embedded within the high-fidelity modeling and optimization framework called MPhys. This multiphysics analysis and optimization framework is used to perform aerostructural optimization of advanced vehicles, using DAFoam, a discrete adjoint implementation for OpenFOAM, as well as
@@ -33832,6 +33933,26 @@
     number      = {1},
     pages       = {107--132},
     volume      = {15},
+    year        = {2001}
+}
+
+@Article{Patil2001a,
+    author      = {Patil,M. J. and Hodges, D. H. and Cesnik, C. E. S.},
+    title       = {Limit-Cycle Oscillations in High-Aspect-Ratio Wings},
+    journal     = {Journal of Fluids and Structures},
+    number      = {1},
+    pages       = {107--132},
+    volume      = {15},
+    year        = {2001}
+}
+
+@Article{Patil2001b,
+    title       = {Nonlinear aeroelasticity and flight dynamics of high-altitude long-endurance aircraft},
+    doi         = {10.2514/2.2738},
+    journal     = {Journal of Aircraft},
+    number      = {1},
+    pages       = {88--94},
+    volume      = {38},
     year        = {2001}
 }
 
@@ -36496,12 +36617,54 @@
     year        = {2021}
 }
 
+@InProceedings{Riso2021c,
+    author      = {Cristina Riso and Carlos E. S. Cesnik and Bogdan I. Epureanu and Patrick Teufel},
+    title       = {A Post-Flutter Response Constraint for Gradient-Based Aircraft Design Optimization},
+    address     = {Online},
+    booktitle   = {AIAA AVIATION Forum},
+    doi         = {10.2514/6.2021-3082},
+    month       = {August 2--6},
+    note        = {AIAA-2021-3082},
+    pages       = {1--23},
+    year        = {2021}
+}
+
+@Article{Riso2022,
+    author      = {Riso, C. and Cesnik, C. E. S.},
+    title       = {Impact of Low-Order Modeling on Aeroelastic Solution Accuracy for Very Flexible Wings},
+    journal     = {Journal of Aircraft},
+    note        = {to appear},
+    year        = {2022}
+}
+
+@InProceedings{Riso2022b,
+    author      = {Riso, C. and Cesnik, C. E. S.},
+    title       = {Low-Order Geometrically Nonlinear Aeroelastic Modeling and Analysis of the {Pazy} Wing Experiment},
+    address     = {San Diego, CA \& Online},
+    booktitle   = {2022 AIAA SciTech Forum},
+    doi         = {10.2514/6.2022-2313},
+    month       = {2--7 January},
+    note        = {{AIAA-2022-2313}},
+    pages       = {1--30},
+    year        = {2022}
+}
+
 @PhDThesis{risse2016preliminary,
     author      = {Risse, K},
     title       = {Preliminary Overall Aircraft Design with Hybrid Laminar Flow Control: Vorentwurf von Flugzeugen mit hybrider laminarer Str{\"o}mungskontrolle. RWTH Aachen University},
     address     = {Aachen, Germany},
     school      = {RWTH Aachen University},
     year        = {2016}
+}
+
+@InProceedings{Ritter2021,
+    author      = {Ritter, Markus and Hilger, Jonathan and Zimmer, Markus},
+    title       = {Static and Dynamic Simulations of the Pazy Wing Aeroelastic Benchmark by Nonlinear Potential Aerodynamics and Detailed FE Model},
+    booktitle   = {2021 AIAA SciTech Forum},
+    doi         = {10.2514/6.2021-1713},
+    month       = {11--15 and 19--21 January},
+    pages       = {1--16},
+    year        = {2021}
 }
 
 @Article{Rizk:2002a,
@@ -39009,6 +39172,15 @@
     eprint      = {1912.10944},
     primaryclass= {cs.MA},
     year        = {2019}
+}
+
+@InProceedings{Sharma2023,
+    author      = {Abhinav Sharma and Jeffrey D. Keller and Joaquim R. R. A. Martins},
+    title       = {MDO Framework for DEP Aircraft Design Including Flight Controls},
+    booktitle   = {{AIAA} Scitech Forum},
+    doi         = {10.2514/6.2023-1364},
+    month       = {January},
+    year        = {2023}
 }
 
 @InProceedings{Sharpe2019a,

@@ -936,16 +936,6 @@
     year        = {2001}
 }
 
-@Article{Alexandrov:2002:ACA,
-    author      = {Natalia M. Alexandrov and Robert Michael Lewis},
-    title       = {Analytical and Computational Aspects of Collaborative Optimization for Multidisciplinary Design},
-    journal     = {AIAA Journal},
-    number      = 2,
-    pages       = {301--309},
-    volume      = 40,
-    year        = 2002
-}
-
 @InProceedings{Alexandrov:Optimization,
     author      = {N. Alexandrov and R. Lewis and C. Gumbert and L. Green and P. Newman},
     title       = {Optimization with Variable-Resolution Models Applied to Aerodynamic Wing Design},
@@ -21454,6 +21444,29 @@
     year        = {2022},
     abstract    = {The conceptual design process of aircraft starts by deciding the representative mission requirements, followed by optimization of design variables to satisfy the given requirements. However, selecting appropriate mission requirements is not an obvious task, particularly when designing the package delivery UAVs because UAVs must accommodate the various combinations of package weight and delivery distances. The complexity increases further when designing a heterogeneous fleet of UAVs that serves a large number of customers. In this work, we tackle this problem by solving the coupled design-operation optimization to find the optimal mission requirements and the optimal UAV designs simultaneously. We formulate this problem as mixed-integer nonlinear optimization and propose a sequential heuristic algorithm to solve the coupled problem. The benchmark study of the proposed algorithm against a non-convex branch-and-cut solver shows that the sequential heuristics are
                   effective. We also demonstrate that the simultaneous UAV design and routing optimization reduces the fleet acquisition cost by more than 10\% on average compared to the conventional baseline.}
+}
+
+@InProceedings{Kaneko2023a,
+    author      = {Kaneko, Shugo and Martins, Joaquim R. R. A.},
+    title       = {Simultaneous Optimization of Conceptual Design and Takeoff Trajectory of a Lift-Plus-Cruise {UAV}},
+    booktitle   = {10th Autonomous VTOL Technical Meeting},
+    keywords    = {OpenMDAO, Dymos},
+    month       = {January},
+    year        = {2023},
+    abstract    = {Vertical takeoff and landing (VTOL) aircraft design requires consideration of an efficiency trade-off between various flight conditions, including hover, transition, and cruise. To capture this trade-off, we propose simultaneous optimization of aircraft conceptual design and takeoff trajectory. Design- trajectory optimization, also called open-loop control co-design, allows us to find the optimal aircraft design that balances the flight efficiency between various flight conditions for maximum system-level performance. In this paper, we maximize the payload weight capacity of a lift-plus-cruise unmanned aerial vehicle (UAV) for package delivery. As a result, simultaneous optimization increases the payload weight by up to 5.3\% compared to the conventional approach, which does not couple takeoff trajectory optimization to UAV conceptual design. We identify that the cruise speed and pusher motor sizing have a significant influence on takeoff trajectory. Simultaneous
+                  optimization finds the optimal cruise speed and motor sizing that enables energy-efficient wing-borne climb, which is not always possible with conventional sequential optimization.}
+}
+
+@Article{Kaneko2023b,
+    author      = {Kaneko, Shugo and Martins, Joaquim R. R. A.},
+    title       = {Fleet Design Optimization of Package Delivery Unmanned Aerial Vehicles Considering Operations},
+    doi         = {10.2514/1.C036921},
+    journal     = {Journal of Aircraft},
+    month       = {February},
+    publisher   = {American Institute of Aeronautics and Astronautics},
+    year        = {2023},
+    abstract    = {The conceptual design process of aircraft starts by deciding the representative mission requirements, followed by optimization of design variables to satisfy the given requirements. However, the appropriate mission requirements are not obvious, especially when designing package delivery UAVs (also called drones). The UAVs must accommodate various combinations of package weights and delivery distances. The complexity increases further when designing a heterogeneous fleet of UAVs that serves a large number of customers. This work addresses this problem by solving coupled design-operation optimization to find optimal mission requirements and optimal UAV designs simultaneously. We formulate this problem as mixed-integer nonlinear optimization and propose a sequential heuristic algorithm to solve the coupled problem. The benchmark study of the proposed algorithm against a nonconvex branch-and-cut solver shows that the sequential heuristics are effective. We also
+                  demonstrate that the simultaneous UAV design and routing optimization reduces the UAV weight across the fleet by more than 12\% on average compared to the conventional baseline.}
 }
 
 @Article{KANG2019,

@@ -1,0 +1,21 @@
+name: test-bib
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+          sudo apt-get install bibtool -y
+      - name: Test formatting
+        run: |
+          bibtool -i mdolab.bib -o mdolab-formatted.bib -r bibdesk2mdolab.bibtoolrsc
+          diff mdolab.bib mdolab-formatted.bib
+

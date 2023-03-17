@@ -337,6 +337,7 @@
     doi         = {10.2514/1.c037096},
     issn        = {1533-3868},
     journal     = {Journal of Aircraft},
+    keywords    = {OpenMDAO, OpenConcept, OpenAeroStruct},
     month       = {December},
     publisher   = {American Institute of Aeronautics and Astronautics},
     year        = {2022},
@@ -12649,6 +12650,7 @@
     author      = {Mahmoud Fouda and Eytan J. Adler and Jasper H. Bussemaker and Joaquim R. R. A. Martins and D. F. Kurtulus and Luca Boggero and Bj\"orn Nagel},
     title       = {Automated Hybrid Propulsion Model Construction for Conceptual Aircraft Design and Optimization},
     booktitle   = {33rd Congress of the International Council of the Aeronautical Sciences},
+    keywords    = {OpenMDAO. OpenConcept},
     month       = {September},
     year        = {2022},
     abstract    = {Electric and hybrid-electric propulsion systems are key technologies for sustainable aviation. Electric propulsion systems introduce many design possibilities, which must be considered in the conceptual design stage to take full advantage of electrification. This makes for a challenging conceptual design problem. Architecture optimization can be applied to explore large design spaces and au tomatically find the best architectures for a set of requirements. Electric propulsion architecture optimization requires automated and flexible propulsion system modeling. It also requires the analysis of the propulsion architecture at an aircraft level to compute a meaningful objective function for the optimization. In this study, we present an approach for defining the propulsion system architectures and evaluating their aircraft-level performance. A propulsion architecture is defined using a modular interface, allowing architectures to be automatically evaluated on the
@@ -23155,18 +23157,6 @@
     year        = {1997}
 }
 
-@InProceedings{Kleb023a,
-    author      = {Alex Kleb and Krzysztof J. Fidkowski and Joaquim R. R. A. Martins},
-    title       = {Development of a {Cartesian} Cut-Cell Solver for Viscous Flows},
-    booktitle   = {AIAA SciTech Forum},
-    doi         = {10.2514/6.2023-1795},
-    keywords    = {cut-cells, Cartesian},
-    month       = {January},
-    year        = {2023},
-    abstract    = {Mesh generation in Computational Fluid Dynamics (CFD) is one of the most critical and time consuming parts of the analysis process. Cartesian cut-cell methods with adjoint based adaptive mesh refinement (AMR) have been used on inviscid problems to automate the meshing procedure for arbitrary geometries. However, these methods struggle with viscous equations because they lack a robust way to account for varying scales in spatial dimensions. A Viscous Aerodynamic Cartesian Cut-cell (VACC) toolbox has been developed to facilitate Cartesian cut-cell research on high Reynolds number viscous flows. We found that directional limiters perform better than scalar limiters for maintaining accuracy and total variation diminishing solutions. Implicit residual smoothing and variations of the Runge-Kutta time marching scheme proved effective for accelerating our explicit time marching scheme. VACC shows excellent parallel scaling. This paper outlines the progress made so far on the
-                  mesh generator and the flow solver.}
-}
-
 @InProceedings{Kleb2019a,
     author      = {Kleb, William L. and Park, Michael A. and Wood, William A. and Bibb, Karen L. and Thompson, Kyle B. and Gomez, Reynaldo J.},
     title       = {Sketch-to-Solution: An Exploration of Viscous {CFD} with Automatic Grids},
@@ -23176,6 +23166,18 @@
     publisher   = {American Institute of Aeronautics and Astronautics},
     series      = {{AIAA} {AVIATION} {Forum}},
     year        = {2019}
+}
+
+@InProceedings{Kleb2023a,
+    author      = {Alex Kleb and Krzysztof J. Fidkowski and Joaquim R. R. A. Martins},
+    title       = {Development of a {Cartesian} Cut-Cell Solver for Viscous Flows},
+    booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2023-1795},
+    keywords    = {cut-cells, Cartesian},
+    month       = {January},
+    year        = {2023},
+    abstract    = {Mesh generation in Computational Fluid Dynamics (CFD) is one of the most critical and time consuming parts of the analysis process. Cartesian cut-cell methods with adjoint based adaptive mesh refinement (AMR) have been used on inviscid problems to automate the meshing procedure for arbitrary geometries. However, these methods struggle with viscous equations because they lack a robust way to account for varying scales in spatial dimensions. A Viscous Aerodynamic Cartesian Cut-cell (VACC) toolbox has been developed to facilitate Cartesian cut-cell research on high Reynolds number viscous flows. We found that directional limiters perform better than scalar limiters for maintaining accuracy and total variation diminishing solutions. Implicit residual smoothing and variations of the Runge-Kutta time marching scheme proved effective for accelerating our explicit time marching scheme. VACC shows excellent parallel scaling. This paper outlines the progress made so far on the
+                  mesh generator and the flow solver.}
 }
 
 @Article{Kleijnen2009,

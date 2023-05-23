@@ -450,6 +450,16 @@
     year        = {2022}
 }
 
+@InProceedings{AGray2023,
+    author      = {Alasdair C. Gray and Graeme J. Kennedy and Joaquim R. R. A. Martins},
+    title       = {Geometrically Nonlinear High-fidelity Aerostructural Optimization Including Geometric Design Variables},
+    address     = {San Diego, CA},
+    booktitle   = {AIAA Aviation Forum},
+    keywords    = {xsede, ank, OpenMDAO, MPhys},
+    month       = {June},
+    year        = {2023}
+}
+
 @Article{AGray2023a,
     author      = {Alasdair C. Gray and Cristina Riso and Eirikur Jonsson and Joaquim R. R. A. Martins and Carlos E. S. Cesnik},
     title       = {High-fidelity Aerostructural Optimization with a Geometrically Nonlinear Flutter Constraint},
@@ -1643,7 +1653,7 @@
 
 @InProceedings{Anibal2023a,
     author      = {Joshua L. Anibal and Sabet Seraj and Anil Yildirim and Joaquim R. R. A. Martins},
-    title       = {Combined continuation methods for robust {CFD} {Newton} solvers},
+    title       = {Mixed continuation methods for robust {CFD} {Newton} solvers},
     booktitle   = {AIAA SciTech Forum},
     doi         = {10.2514/6.2023-2296},
     keywords    = {CFD, solver, continuation},
@@ -38980,6 +38990,18 @@
     year        = {2022},
     abstract    = {The aerodynamic design of aircraft often involves evaluating flow conditions that span low subsonic to transonic, or even supersonic Mach numbers. Compressible flow solvers are a natural choice for such design problems, but these solvers encounter reduced accuracy and efficiency at low Mach numbers. In addition, simulations with supersonic conditions can be challenging to converge because of large gradients in the flow field. This paper presents three contributions to address these issues in the context of an approximate Newton--Krylov solver for the Reynolds-averaged Navier--Stokes equations. First, we propose a method for scaling artificial dissipation that improves accuracy at low Mach numbers while retaining the simplicity of the original scalar dissipation scheme. Second, we show that characteristic time-stepping combined with an approximate Newton method can accelerate convergence for low Mach number flows by reducing the stiffness in the linear system for each
                   Newton iteration. Third, we introduce a dissipation-based continuation method for flows with shocks that improves robustness and accelerates convergence without sacrificing accuracy. These methods can be used to make compressible flow solvers more accurate and efficient across low and high Mach number regimes.}
+}
+
+@InProceedings{Seraj2023a,
+    author      = {Sabet Seraj and Joaquim R. R. A. Martins},
+    title       = {Minimum Trim Drag for a Three-Surface Supersonic Transport Aircraft},
+    booktitle   = {AIAA Aviation Forum},
+    doi         = {10.2514/6.2023-3472},
+    keywords    = {ank, scalos, OpenMDAO},
+    month       = {June},
+    year        = {2023},
+    abstract    = {Three-surface configurations offer theoretical drag benefits over two-surface configurations, but the literature is unclear on what is the best configuration for a supersonic aircraft. This work uses trim-constrained drag minimization to compare the trim drag for three-surface, canard, and conventional variants of a supersonic transport aircraft. We first use RANS-based optimization to determine the minimum trim drag for a fixed planform geometry at a subsonic takeoff condition and a supersonic cruise condition. The three-surface configuration has the lowest trim drag at the supersonic condition. The canard and three-surface configurations have comparable trim drag at the subsonic condition. We then construct a supersonic buildup model to study the effects of variable trim surface sizing. When the trim surface spans are included as design variables, the design for minimum supersonic drag has practically no tail and a canard sized at 36% of the wing half-span. These
+                  results suggest that a canard configuration is best for supersonic trim drag.}
 }
 
 @Article{Serani2016,

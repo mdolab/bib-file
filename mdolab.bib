@@ -16440,6 +16440,18 @@
                   Results for aerodynamic shape optimization are discussed. We show that FFD-based optimizations and CAD-based optimizations for airfoil cases and a wing case starting from the same baseline designs can achieve the same optimized design, validating both the surface mesh tracking algorithm and the derivatives for the CAD method. The presented method is a critical prerequisite for integrating CAD-based geometric parameterizations in simulation based MDO frameworks.}
 }
 
+@InProceedings{Hajdik2023b,
+    author      = {Hannah M. Hajdik and Bernardo Pacini and Anil Yildirim and Benjamin J. Brelje and Joaquim R. R. A. Martins},
+    title       = {Combined systems packaging and aerodynamic shape optimization of a full aircraft configuration},
+    address     = {San Diego, CA},
+    booktitle   = {AIAA Aviation Forum},
+    doi         = {10.2514/6.2023-3589},
+    keywords    = {OpenMDAO, MPhys, packaging},
+    month       = {June},
+    year        = {2023},
+    abstract    = {Aerodynamic shape optimization is a valuable tool for aircraft design, but geometric constraints have had limited design freedom or have failed to capture spatial integration requirements in sufficient detail. Using a detailed representation of an aircraft's systems and payload geometries in a packaging constraint allows for more accurate and higher-performance spatial integration. We use a previously developed general and differentible packaging constraint formulated for gradient-based optimization for aerodynamic shape optimization of a full aircraft configuration. We explore the design of the NASA tiltwing concept vehicle with aerodynamic shape optimization using packaging constraints to examine the tradeoffs between aerodynamics and mission performance. The resulting design can be more targeted to our design requirements than one that can be achieved with conventional geometric constraints.}
+}
+
 @Article{Hajela1983,
     author      = {Hajela, P.},
     title       = {A root locus-based flutter synthesis procedure},
@@ -23252,19 +23264,6 @@
     year        = {1997}
 }
 
-@InProceedings{Kleb023b,
-    author      = {Alex Kleb and Krzysztof J. Fidkowski and Joaquim R. R. A. Martins},
-    title       = {Extension of a Viscous Cartesian Cut-cell Solver to the Compressible {RANS} Equations},
-    address     = {San Diego, CA},
-    booktitle   = {AIAA Aviation Forum},
-    doi         = {10.2514/6.2023-3978},
-    keywords    = {VACC},
-    month       = {June},
-    year        = {2023},
-    abstract    = {Generating a computational mesh often consumes considerable time for the user during the analysis process. This can be circumvented by using cut-cell mesh generation techniques to automatically generate meshes. Previously, we developed Viscous Aerodynamic Cartesian Cut-cells (VACC), a toolbox for solving the laminar Navier--Stokes equations. In this work, we extend VACC to include the Reynolds-Averaged Navier--Stokes (RANS) equations with the Spalart--Allmaras (SA) turbulence model. We present a novel Eikonal solver that utilizes 2D unconstrained optimizations with variable bounds at every step of a fast marching method to improve accuracy on non-uniform meshes. We implemented a constant forcing distance wall function to reduce the need for anisotropic elements near the body with high Reynolds numbers. The generality of the Eikonal solver is demonstrated on several configurations with deep concavities and sharp convexities. The SA formulation is demonstrated with
-                  preliminary investigations of rotated flat plates and 2D bump-in-channel case from the NASA Turbulence Modeling Resource website with skin friction and eddy viscosity that compares well with CFL3D.}
-}
-
 @InProceedings{Kleb2019a,
     author      = {Kleb, William L. and Park, Michael A. and Wood, William A. and Bibb, Karen L. and Thompson, Kyle B. and Gomez, Reynaldo J.},
     title       = {Sketch-to-Solution: An Exploration of Viscous {CFD} with Automatic Grids},
@@ -23286,6 +23285,19 @@
     year        = {2023},
     abstract    = {Mesh generation in Computational Fluid Dynamics (CFD) is one of the most critical and time consuming parts of the analysis process. Cartesian cut-cell methods with adjoint based adaptive mesh refinement (AMR) have been used on inviscid problems to automate the meshing procedure for arbitrary geometries. However, these methods struggle with viscous equations because they lack a robust way to account for varying scales in spatial dimensions. A Viscous Aerodynamic Cartesian Cut-cell (VACC) toolbox has been developed to facilitate Cartesian cut-cell research on high Reynolds number viscous flows. We found that directional limiters perform better than scalar limiters for maintaining accuracy and total variation diminishing solutions. Implicit residual smoothing and variations of the Runge-Kutta time marching scheme proved effective for accelerating our explicit time marching scheme. VACC shows excellent parallel scaling. This paper outlines the progress made so far on the
                   mesh generator and the flow solver.}
+}
+
+@InProceedings{Kleb2023b,
+    author      = {Alex Kleb and Krzysztof J. Fidkowski and Joaquim R. R. A. Martins},
+    title       = {Extension of a Viscous Cartesian Cut-cell Solver to the Compressible {RANS} Equations},
+    address     = {San Diego, CA},
+    booktitle   = {AIAA Aviation Forum},
+    doi         = {10.2514/6.2023-3978},
+    keywords    = {VACC},
+    month       = {June},
+    year        = {2023},
+    abstract    = {Generating a computational mesh often consumes considerable time for the user during the analysis process. This can be circumvented by using cut-cell mesh generation techniques to automatically generate meshes. Previously, we developed Viscous Aerodynamic Cartesian Cut-cells (VACC), a toolbox for solving the laminar Navier--Stokes equations. In this work, we extend VACC to include the Reynolds-Averaged Navier--Stokes (RANS) equations with the Spalart--Allmaras (SA) turbulence model. We present a novel Eikonal solver that utilizes 2D unconstrained optimizations with variable bounds at every step of a fast marching method to improve accuracy on non-uniform meshes. We implemented a constant forcing distance wall function to reduce the need for anisotropic elements near the body with high Reynolds numbers. The generality of the Eikonal solver is demonstrated on several configurations with deep concavities and sharp convexities. The SA formulation is demonstrated with
+                  preliminary investigations of rotated flat plates and 2D bump-in-channel case from the NASA Turbulence Modeling Resource website with skin friction and eddy viscosity that compares well with CFL3D.}
 }
 
 @Article{Kleijnen2009,

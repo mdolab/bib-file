@@ -569,6 +569,18 @@
     year        = {2021}
 }
 
+@TechReport{AIAAVV1998,
+    author      = {Anonymous},
+    title       = {{AIAA} Guide for the Verification and Validation of Computational Fluid Dynamics Simulations},
+    doi         = {10.2514/4.472855},
+    eisbn       = {978-1-56347-285-5},
+    keywords    = {verification, validation, cfd},
+    note        = {{AIAA} Computational Fluid Dynamics Committee},
+    number      = {AIAA G-077-1998(2002)},
+    publisher   = {American Institute of aeronautics and astronautics},
+    year        = {1998}
+}
+
 @Article{airfoilmode3,
     author      = {Daniel J. Poole and Christian B. Allen and Thomas C. S. Rendall},
     title       = {Metric-Based Mathematical Derivation of Efficient Airfoil Design Variables},
@@ -4384,16 +4396,6 @@
     journal     = {{SIAM} Journal on Scientific Computing},
     number      = {2},
     pages       = {714--739},
-    volume      = {27},
-    year        = {2005}
-}
-
-@Article{Biros:2005:A,
-    author      = {George Biros and Omar Ghattas},
-    title       = {Parallel {L}argrange--{N}ewton--{K}rylov--{S}chur methods for {PDE}-constrained optimization. Part I: The {K}rylov--{S}chur solver},
-    journal     = {{SIAM} Journal on Scientific Computing},
-    number      = {2},
-    pages       = {687--713},
     volume      = {27},
     year        = {2005}
 }
@@ -26811,6 +26813,7 @@
     journal     = {Composite Structures},
     month       = {March},
     pages       = {116650},
+    pdfurl      = {https://www.researchgate.net/profile/Yingqian-Liao/publication/366853217_Hydrostructural_optimization_of_single-layer_and_multi-layer_composite_lifting_surfaces/links/6555b591b1398a779d909180/Hydrostructural-optimization-of-single-layer-and-multi-layer-composite-lifting-surfaces.pdf?origin=publicationDetail&_sg%5B0%5D=jW1sYat6MunugQTF_U22ViSO8pL6Flwn69PNFxLAq5FEsxGZ7HgZYVduK5Pbk1HEU4UrLt8Mb_5KQ4JLqFNwnA.JXL9M-30ukoFR_CmStn2cX_D4yn1IMdQ-xrG1iEOdqQg5t5aZV-y0P8hKE1BIUBl5cJejbZbRn31KDdX33IXzw&_sg%5B1%5D=fPfHKU2FbxftCfnSg6EFVBH1ICU688Y4oveQYt1qEBA7nxVj9L7fwyDAZx8LgQyZeenHQhwGfu0cH9GmTULv_l_AlNky6dE9LmG-FzktfFzI.JXL9M-30ukoFR_CmStn2cX_D4yn1IMdQ-xrG1iEOdqQg5t5aZV-y0P8hKE1BIUBl5cJejbZbRn31KDdX33IXzw&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoicHVibGljYXRpb24iLCJwcmV2aW91c1BhZ2UiOiJzZWFyY2giLCJwb3NpdGlvbiI6InBhZ2VIZWFkZXIifX0},
     volume      = {307},
     year        = {2023}
 }
@@ -29348,7 +29351,9 @@
     author      = {Joaquim R. R. A. Martins},
     title       = {A Coupled-Adjoint Method for High-Fidelity Aero-Structural Optimization},
     school      = {Stanford University},
-    year        = {2002}
+    year        = {2002},
+    abstract    = {A new integrated aero-structural design method for aerospace vehicles is presented. The approach combines an aero-structural analysis solver, a coupled aero-structural adjoint solver, a geometry engine, and an efficient gradient-based optimization algorithm. The aero-structural solver ensures accurate solutions by using high-fidelity models for the aerodynamics, structures, and coupling procedure. The coupled aero-structural adjoint solver is used to calculate the sensitivities of aerodynamic and structural cost functions with respect to both aerodynamic shape and structural variables. The aero-structural adjoint sensitivities are compared with those given by the complex-step derivative approximation and finite differences. The proposed method is shown to be both accurate and efficient, exhibiting a significant cost advantage when the gradient of a small number of functions with respect to a large number of design variables is needed. The optimization of a supersonic
+                  business jet configuration demonstrates the usefulness and importance of computing aero-structural sensitivities using the coupled-adjoint method.}
 }
 
 @InProceedings{Martins2002a,
@@ -38359,6 +38364,17 @@
                   fidelity structural models.}
 }
 
+@Article{Saves2024,
+    author      = {Paul Saves and R{\'e}mi Lafage and Nathalie Bartoli and Youssef Diouane and Jasper Bussemaker and Thierry Lefebvre and John T. Hwang and Joseph Morlier and Joaquim R.R.A. Martins},
+    title       = {{SMT} 2.0: A Surrogate Modeling Toolbox with a focus on Hierarchical and Mixed Variables Gaussian Processes},
+    doi         = {10.1016/j.advengsoft.2023.103571},
+    journal     = {Advances in Engineering Software},
+    pages       = {103571},
+    pdfurl      = {https://www.researchgate.net/profile/Paul-Saves-2/publication/370982021_SMT_20_A_Surrogate_Modeling_Toolbox_with_a_focus_on_Hierarchical_and_Mixed_Variables_Gaussian_Processes/links/64e61e9a434d3f628c432f9c/SMT-20-A-Surrogate-Modeling-Toolbox-with-a-focus-on-Hierarchical-and-Mixed-Variables-Gaussian-Processes.pdf},
+    volume      = {188},
+    year        = {2024}
+}
+
 @Article{Sbester2006,
     author      = {Andr{\'{a}}s S{\'{o}}bester and Andy J. Keane},
     title       = {Supervised Learning Approach to Parametric Computer-Aided Design Geometry Repair},
@@ -39300,12 +39316,19 @@
     journal     = {Journal of Computational Physics},
     keywords    = {scalos, ank},
     month       = {October},
-    number      = {4},
     pages       = {112358},
     volume      = {491},
     year        = {2023},
     abstract    = {Aircraft aerodynamic design often involves evaluating flow conditions that span low subsonic to transonic or even supersonic Mach numbers. Compressible flow solvers are a natural choice for such design problems, but these solvers suffer from reduced accuracy and efficiency at low Mach numbers. In addition, simulations with supersonic conditions can be challenging to converge because of large gradients in the flow field. This paper presents three contributions to address these issues in the context of an approximate Newton--Krylov solver for the Reynolds-averaged Navier--Stokes equations. First, we propose a method for scaling the artificial dissipation terms in the Jameson--Schmidt--Turkel scheme to improve its accuracy at low Mach numbers while retaining the simplicity of the original scalar dissipation formulation. Second, we show that characteristic time-stepping combined with an approximate Newton method can accelerate convergence for low Mach number flows by
                   reducing the stiffness in the linear system for each Newton iteration. Third, we introduce a dissipation-based continuation method for flows with shocks that improves robustness and accelerates convergence without sacrificing accuracy. These methods can make compressible flow solvers more accurate and efficient across low and high Mach number regimes.}
+}
+
+@PhDThesis{Seraj2024a,
+    author      = {Sabet Seraj},
+    title       = {Aerodynamic Design Optimization of a Supersonic Transport Aircraft Considering Low-Speed Stability},
+    address     = {Ann Arbor, MI},
+    school      = {University of Michigan},
+    year        = {2024}
 }
 
 @Article{Serani2016,
@@ -40234,7 +40257,9 @@
     number      = {10},
     pages       = {101002},
     volume      = {133},
-    year        = {2011}
+    year        = {2011},
+    abstract    = {Complex engineered systems are typically designed using a systems engineering framework that is showing its limitations. Multidisciplinary design optimization (MDO), which has evolved remarkably since its inception 25 years ago, offers alternatives to complement and enhance the systems engineering approach to help address the challenges inherent in the design of complex engineered systems. To gain insight into these challenges, a one-day workshop was organized that gathered 48 people from industry, academia, and government agencies. The goal was to examine MDO's current and future role in designing complex engineered systems. This paper summarizes the views of five distinguished speakers on the ``state of the research'' and discussions from an industry panel comprised of representatives from Boeing, Caterpillar, Ford, NASA Glenn Research Center, and United Technologies Research Center on the ``state of the practice''. Future research topics to advance MDO are also
+                  identified in five key areas: (1) modeling and the design space, (2) metrics, objectives, and requirements, (3) coupling in complex engineered systems, (4) dealing with uncertainty, and (5) people and workflow. Finally, five overarching themes are offered to advance MDO practice. First, MDO researchers need to engage disciplines outside of engineering and target opportunities outside of their traditional application areas. Second, MDO problem formulations must evolve to encompass a wider range of design criteria. Third, effective strategies are needed to put designers ``back in the loop'' during MDO. Fourth, the MDO community needs to do a better job of publicizing its successes to improve the ``buy in'' that is needed to advance MDO in academia, industry, and government agencies. Fifth, students and practitioners need to be better educated on systems design, optimization, and MDO methods and tools along with their benefits and drawbacks. }
 }
 
 @Book{Simpson2011b,

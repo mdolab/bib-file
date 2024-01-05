@@ -364,6 +364,7 @@
     title       = {Hydrogen-Powered Aircraft: Fundamental Concepts, Key Technologies, and Environmental Impacts},
     doi         = {10.1016/j.paerosci.2023.100922},
     journal     = {Progress in Aerospace Sciences},
+    month       = {August},
     pages       = {100922},
     pdfurl      = {https://www.researchgate.net/publication/366157885},
     volume      = {141},
@@ -21761,6 +21762,19 @@
                   demonstrate that the simultaneous UAV design and routing optimization reduces the UAV weight across the fleet by more than 12\% on average compared to the conventional baseline.}
 }
 
+@InProceedings{Kaneko2024a,
+    author      = {Shugo Kaneko and Joaquim R. R. A. Martins},
+    title       = {{MDO} Formulations for Simultaneous Design and Trajectory Optimization},
+    address     = {Orlando, FL},
+    booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2024-2231},
+    keywords    = {OpenMDAO, OpenAeroStruct},
+    month       = {January},
+    year        = {2024},
+    abstract    = {Simultaneous design and trajectory optimization aims to find the best possible design of a dynamic engineering system, such as an aircraft, by considering the coupling between a physical system design and its trajectory. Multidisciplinary design optimization (MDO) fully considers this coupling and corresponding design trade-offs. This article discusses the computational efficiency of MDO formulations for design-trajectory optimization. We perform numerical studies to compare two MDO architectures and two design-trajectory coupling strategies on aircraft design test problems. The test problems concurrently optimize a climb trajectory, wing design based on a low-fidelity aerostructural analysis, and aircraft sizing variables. The results indicate that surrogate-based coupling is more efficient than direct coupling when there are only a few coupling variables from a trajectory to a disciplinary model, whereas direct coupling is preferable otherwise. The simultaneous
+                  analysis and design (SAND) architecture outperforms the multidisciplinary feasible (MDF) architecture when using direct coupling, whereas the costs of SAND and MDF are comparable with surrogate-based coupling. The results and discussion in this paper provide general guidelines for selecting a computationally efficient MDO formulation for simultaneous design and trajectory optimization. }
+}
+
 @Article{KANG2019,
     author      = {Kyeonghwan Kang and Caiyan Qin and Bongjae Lee and Ikjin Lee},
     title       = {Modified screening-based Kriging method with cross validation and application to engineering design},
@@ -28909,6 +28923,20 @@
     year        = {2022},
     abstract    = {The decarbonization of the electric grid is a fundamental technological and socio-economical challenge to address the looming threat of climate change. The reduction of the levelized cost of energy is a critical step to expand the application of carbon-free technologies that rely on high-potential, renewable energy sources such as wind power. Advanced computational tools are instrumental to capturing the tightly-coupled, multi-physics interactions that characterize modern highly-flexible wind turbine rotors. In this work, we use our high-fidelity multidisciplinary design optimization software to perform aerostructural optimization studies of a large wind turbine configuration, using an efficient, highly-scalable, gradient-based approach on a coupled CFD/FEM model. We investigate the trade-offs between steady-state aerodynamic efficiency and structural cost of a benchmark rotor using more than 100 structural and geometric design variables. Mass and torque are
                   simultaneously used as performance metrics as we constrain the maximum stress and tip displacement of the rotor at below-rated operating conditions. We discuss both the optimized design features and the general design trends in the form of Pareto front analyses as we sweep over different prescribed torque values and objective weights. The results highlight the benefits of the coupled model with respect to a single-discipline strategy and showcase the additional insight that high-fidelity analysis tools offer to designers. As we work towards a more refined structural model and the inclusion of a larger set of shape variables to extend the optimization capabilities of the tool, the results support the idea that such high-fidelity approaches can complement conventional low-fidelity tools in the design of light and efficient turbine blades.}
+}
+
+@PhDThesis{Mangano2024,
+    author      = {Marco Mangano},
+    title       = {High-Fidelity Aerostructural Design Optimization of Wind Turbine Rotors},
+    address     = {Ann Arbor, MI},
+    keywords    = {ank, xsede, ADflow},
+    school      = {University of Michigan},
+    year        = {2024},
+    abstract    = {The mitigation of climate change effects through the decarbonization of the global production system is one of the most pressing challenges of our time. Wind and solar power will account for tenths of petawatt-hour yearly by the second half of this century. Thus, efficient energy harvesting systems need to be rapidly developed to match the demand for low-cost-per-kilowatt electricity from renewable sources. Wind energy technology has matured prominently in the last few decades. However, the growing size and complexity of modern wind turbines is pushing the boundaries of conventional design tools and methodologies. Large and highly flexible rotors are characterized by complex multiphysics interactions and unconventional design features that require novel investigation strategies. High-fidelity design tools promise to address these arising challenges. Their application however has been limited by their computational and implementation costs so far. The outcome of my
+                  doctoral work is the first set of large-scale high-fidelity wind turbine rotor aerostructural design optimization studies. I use a framework that couples computational fluid dynamics (CFD) and computational structural mechanics (CSM) analyses with an efficient gradient-based optimization algorithm. The coupled-adjoint sensitivity solver implementation makes the problem numerically tractable and highly scalable. The optimization studies I perform account for multiple representative steady-state below-rated operating conditions and use hundreds of structural and geometric design variables simultaneously. First, I adapt an existing aircraft design framework to handle a wind turbine rotor and its system sensitivities. Both the aerodynamic solver and geometry manipulation tool are enhanced, and a newly developed aerostructural rotor model is verified. Following that, I demonstrate the framework optimization capabilities on this benchmark rotor model. I dissect optimal
+                  design features and explore tradeoffs between steady-state aerodynamic efficiency and structural weight, quantifying the impact of design freedom and objective formulation on the final design. A more refined aerostructural model is then used to perform composite fiber angle tailoring. The optimizer leverages material anisotropic properties to increase local stiffness and reduce the sandwich panel thickness. The resulting designs are more than 10\% lighter than the benchmark for the same planform shape. Next, I optimize the rotor for multiple wind and rotation velocities. Single-point designs are outperformed over a larger operational envelope and flow separation at off-design conditions is mitigated. Enabling modifications to airfoil geometry leads to radical rotor redesign. Using the full set of geometrical and structural variables leads to an aeroelastically tailored rotor with more than 10\% higher average torque and a 40\% lighter structure than the baseline
+                  model. Finally, I collaborated to the development of a mixed-fidelity framework combining our high-fidelity code with conventional design tools. This prototype software enables high-fidelity optimization including life-cycle sizing constraints. We use state-of-the-art software to predict extreme loads and fatigue damage from time-accurate multiphysics simulations. Two different approaches are proposed to integrate these constraints within our original framework. Modelling the full range of operating conditions and improving the tradeoffs between accuracy and cost remain open challenges. Nevertheless, this work demonstrates how coupled CFD-CSM approaches can capture unconventional design tradeoffs and provide an unprecedented level of insight on the optimal blade design features. High-fidelity optimization can complement conventional design approaches using more realistic blade-resolved rotor models and leveraging a larger design space. The results I present pave the
+                  way for more comprehensive design studies and holistic multifidelity design optimization workflows.}
 }
 
 @TechReport{Mangler1938,
@@ -38366,7 +38394,7 @@
 
 @Article{Saves2024,
     author      = {Paul Saves and R{\'e}mi Lafage and Nathalie Bartoli and Youssef Diouane and Jasper Bussemaker and Thierry Lefebvre and John T. Hwang and Joseph Morlier and Joaquim R.R.A. Martins},
-    title       = {{SMT} 2.0: A Surrogate Modeling Toolbox with a focus on Hierarchical and Mixed Variables Gaussian Processes},
+    title       = {{SMT} 2.0: A Surrogate Modeling Toolbox with a focus on Hierarchical and Mixed Variables {Gaussian} Processes},
     doi         = {10.1016/j.advengsoft.2023.103571},
     journal     = {Advances in Engineering Software},
     pages       = {103571},

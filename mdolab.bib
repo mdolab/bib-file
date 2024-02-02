@@ -98,7 +98,7 @@
     year        = {2011}
 }
 
-@Book{Abbott:1959:A,
+@Book{Abbott1959,
     author      = {Abbott, Ira Herbert and Von Doenhoff, Albert Edward},
     title       = {Theory of wing sections, including a summary of airfoil data},
     address     = {New York},
@@ -345,20 +345,6 @@
                   aerodynamic analysis method selection on the optimal aerodynamic shape and the consequences of choosing one that does not capture the relevant flow physics. In particular, we show that modelling boundary layer transition can produce significantly lower drag designs across almost the entire range of Reynolds numbers at which airfoils are used in practice. Additionally, we find that the simple compressibility correction used in XFOIL is sufficient to produce well performing airfoils for flight Mach numbers up to 0.65, after which point the ability for the flow solver to model shock formation is critical. Our results will provide aerodynamicists with the data and intuition to make informed decisions when selecting analysis methods for optimization.}
 }
 
-@Article{Adler2022d,
-    author      = {Adler, Eytan J. and Martins, Joaquim R. R. A.},
-    title       = {Efficient Aerostructural Wing Optimization Considering Mission Analysis},
-    doi         = {10.2514/1.c037096},
-    issn        = {1533-3868},
-    journal     = {Journal of Aircraft},
-    keywords    = {OpenMDAO, OpenConcept, OpenAeroStruct},
-    month       = {December},
-    publisher   = {American Institute of Aeronautics and Astronautics},
-    year        = {2022},
-    abstract    = {Aerostructural optimization traditionally uses a single or small number of cruise conditions to estimate the mission fuel burn objective function. In reality, a mission includes other flight segments contributing to fuel burn, such as climbing and descent. We aim to quantify how much performance is sacrificed by optimizing the design for a fuel burn approximation that ignores these other flight segments and flight conditions. To do this, we compare traditional approaches to mission-based optimization, which uses an accurate fuel burn objective computed by numerically integrating fuel flow across the mission profile. We find that mission-based optimization offers only marginal benefits over traditional single-point and multipoint approaches for aerostructural optimization of a narrowbody aircraft---only 1--2\% in the most extreme cases. Thus, the traditional aerostructural optimization is acceptable, especially in cases where most fuel is burned during cruise. For the
-                  cases where climb fuel burn is significant, we introduce a simple change to traditional fuel burn approximation methods that allows the optimizer to find nearly all the fuel burn reduction of mission-based optimization but at the computational cost of multipoint optimization.}
-}
-
 @Article{Adler2023,
     author      = {Eytan J. Adler and Joaquim R. R. A. Martins},
     title       = {Hydrogen-Powered Aircraft: Fundamental Concepts, Key Technologies, and Environmental Impacts},
@@ -383,6 +369,37 @@
     year        = {2023},
     abstract    = {Hydrogen aircraft have the potential to achieve greater climate impact reductions at a lower cost than aircraft powered by biofuels or other drop-in sustainable aviation fuels. But even as a liquid, hydrogen requires four times more volume than kerosene to store the same energy. Companies and researchers have suggested that the blended wing body configuration is well-suited to hydrogen because it can efficiently store the large fuel tanks. However, nobody has quantified this claim, at least publicly. We address this gap by comparing optimized kerosene and hydrogen versions of blended wing body and tube and wing aircraft. We find that the blended wing body configuration has only a small advantage for onboard hydrogen storage compared to a conventional tube and wing aircraft. Our models predict that with ambitious hydrogen tank technology assumptions, a hydrogen blended wing body uses 3.1\% more energy than a kerosene blended wing body, while the energy increase for a
                   tube and wing is 5.1\%. An advantage of the blended wing body is that the energy consumption increase when adapting from kerosene to hydrogen fuel appears to be far less sensitive than the tube and wing's to empty weight and drag changes. Because we only compare hydrogen and kerosene usage within the same configuration, a hydrogen blended wing body may still consume substantially less energy than a hydrogen tube and wing. However, these results do call into question the assumed tank storage benefit of a hydrogen-powered blended wing body aircraft.}
+}
+
+@Article{Adler2023b,
+    author      = {Adler, Eytan J. and Martins, Joaquim R. R. A.},
+    title       = {Efficient Aerostructural Wing Optimization Considering Mission Analysis},
+    doi         = {10.2514/1.c037096},
+    issn        = {1533-3868},
+    journal     = {Journal of Aircraft},
+    keywords    = {OpenMDAO, OpenConcept, OpenAeroStruct},
+    month       = {May},
+    number      = {3},
+    publisher   = {American Institute of Aeronautics and Astronautics},
+    volume      = {60},
+    year        = {2023},
+    abstract    = {Aerostructural optimization traditionally uses a single or small number of cruise conditions to estimate the mission fuel burn objective function. In reality, a mission includes other flight segments contributing to fuel burn, such as climbing and descent. We aim to quantify how much performance is sacrificed by optimizing the design for a fuel burn approximation that ignores these other flight segments and flight conditions. To do this, we compare traditional approaches to mission-based optimization, which uses an accurate fuel burn objective computed by numerically integrating fuel flow across the mission profile. We find that mission-based optimization offers only marginal benefits over traditional single-point and multipoint approaches for aerostructural optimization of a narrowbody aircraft---only 1--2\% in the most extreme cases. Thus, the traditional aerostructural optimization is acceptable, especially in cases where most fuel is burned during cruise. For the
+                  cases where climb fuel burn is significant, we introduce a simple change to traditional fuel burn approximation methods that allows the optimizer to find nearly all the fuel burn reduction of mission-based optimization but at the computational cost of multipoint optimization.}
+}
+
+@Article{Adler2024,
+    author      = {Adler, Eytan J. and Martins, Joaquim R. R. A.},
+    title       = {Blended Wing Body Configuration for Hydrogen-Powered Aviation},
+    doi         = {10.2514/1.C037582},
+    issn        = {1533-3868},
+    journal     = {Journal of Aircraft},
+    keywords    = {OpenMDAO, OpenConcept, OpenAeroStruct},
+    month       = {January},
+    pdfurl      = {https://www.researchgate.net/profile/Eytan-Adler/publication/377749153_Blended_wing_body_configuration_for_hydrogen-powered_aviation/links/65b5a5f81e1ec12eff5180e3/Blended-wing-body-configuration-for-hydrogen-powered-aviation.pdf},
+    publisher   = {American Institute of Aeronautics and Astronautics},
+    year        = {2024},
+    abstract    = {Hydrogen aircraft have the potential to achieve more significant climate impact reductions at a lower cost than aircraft powered by biofuels or other drop-in sustainable aviation fuels. Nevertheless, even as a liquid, hydrogen requires four times more volume than kerosene to store the same energy. Companies and researchers have suggested that the blended wing body configuration is well-suited to hydrogen because it can efficiently store large fuel tanks. However, nobody has quantified this claim, at least publicly. We address this gap by comparing optimized kerosene and hydrogen versions of blended wing body and tube and wing aircraft. Our models predict that, with ambitious hydrogen tank technology assumptions, a hydrogen blended wing body has a 3.8% energy penalty compared to a kerosene blended wing body. In contrast, the energy penalty for a tube and wing is 5.1%. These results suggest that the blended wing body configuration is slightly better suited to hydrogen
+                  than a tube and wing. However, the conclusion breaks down under less optimistic scenarios where lightweight conformal liquid hydrogen tanks are unavailable. Nonetheless, the energy penalties of switching the two configurations to hydrogen have a similar order of magnitude. Any kerosene blended wing body fuel burn benefit over a tube and wing also applies to hydrogen versions. As a result, kerosene blended wing body technology developments, such as maturing the structural design of the noncircular pressurized passenger cabin, remain valuable for future hydrogen-powered aircraft.}
 }
 
 @webpage{ADtools,
@@ -1486,6 +1503,14 @@
     year        = 1967
 }
 
+@Book{Anderson1991,
+    author      = {John D. Anderson},
+    title       = {Fundamentals of Aerodynamics},
+    keywords    = {aerodynamics},
+    publisher   = {McGraw--Hill},
+    year        = {1991}
+}
+
 @Book{Anderson1999,
     author      = {John D. {Anderson~Jr}.},
     title       = {Aircraft Performance and Design},
@@ -1562,14 +1587,6 @@
     publisher   = {American Institute of Aeronautics and Astronautics},
     volume      = 57,
     year        = {2019}
-}
-
-@Book{Anderson:1991:A,
-    author      = {John D. Anderson},
-    title       = {Fundamentals of Aerodynamics},
-    keywords    = {aerodynamics},
-    publisher   = {McGraw--Hill},
-    year        = {1991}
 }
 
 @TechReport{Anderson:1997:AAD,
@@ -29838,6 +29855,7 @@
     keywords    = {AFRL, NASA},
     month       = {May},
     pages       = {105391},
+    pdfurl      = {https://www.researchgate.net/profile/Joaquim-Martins-4/publication/359128152_Aerodynamic_design_optimization_Challenges_and_perspectives/links/63b5944b03aad5368e64a900/Aerodynamic-design-optimization-Challenges-and-perspectives.pdf?origin=publicationDetail&_sg%5B0%5D=Jy7_HOIVsfdAOdab-G5DJpZteyAoOto72k8zSwVvyeuvz2DC3KzM7Y7nWaDCU3g9MhK_qjk_XOP8775LQOf57Q.tEPBeh4HWmtZZC7legh0g8pLtqcCAyXHkoduwYRKQMpJ6DoIBvsDxVt6thcyApnKfA4zk0naACsmR7cy35zuJg&_sg%5B1%5D=1icqPj4kjTRXG3xwQVTSPbhr8IvP09F3x8xX8RzyhsO-11Gmcxem1FHdfviOqSgBPDtm863HDKkyeLTMyz80ujlSNU5EfoqlgLoAc5xC-YgF.tEPBeh4HWmtZZC7legh0g8pLtqcCAyXHkoduwYRKQMpJ6DoIBvsDxVt6thcyApnKfA4zk0naACsmR7cy35zuJg&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6ImhvbWUiLCJwYWdlIjoicHVibGljYXRpb24iLCJwcmV2aW91c1BhZ2UiOiJzZWFyY2giLCJwb3NpdGlvbiI6InBhZ2VIZWFkZXIifX0},
     volume      = {239},
     year        = {2022},
     abstract    = {Antony Jameson pioneered CFD-based aerodynamic design optimization in the late 1980s. In addition to developing the fundamental theory, Jameson implemented that theory in codes that were practical enough to be used in industry. As a result of Jameson's seminal efforts, a research community has been established in aerodynamic design optimization. This research area has experienced sustained improvements in CFD solvers, mesh deformation, sensitivity computation, and optimization tools. We review recent developments for each of these components and present open-source tools available for aerodynamic shape optimization. A variety of applications is presented, including the optimization of a supercritical airfoil starting from a circle, a web application that optimizes airfoils within a few seconds, aircraft aerodynamic and aerostructural optimization, and aeropropulsive optimization. We also review the Aerodynamic Design Optimization Discussion Group (ADODG) benchmarks

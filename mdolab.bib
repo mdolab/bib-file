@@ -525,6 +525,20 @@
     year        = {2023}
 }
 
+@InProceedings{AGray2024a,
+    author      = {Alasdair C. Gray and Joaquim R. R. A. Martins},
+    title       = {A Proposed Benchmark Model for Practical Aerostructural Optimization of Aircraft Wings},
+    address     = {Orlando, FL},
+    booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2024-2775},
+    keywords    = {xsede, ank, OpenMDAO, MPhys},
+    month       = {January},
+    pdfurl      = {https://www.researchgate.net/profile/Alasdair-Christison-Gray/publication/377154425_A_Proposed_Benchmark_Model_for_Practical_Aeroelastic_Optimization_of_Aircraft_Wings/links/659763a12468df72d3fad247/A-Proposed-Benchmark-Model-for-Practical-Aeroelastic-Optimization-of-Aircraft-Wings.pdf},
+    year        = {2024},
+    abstract    = {The increasing flexibility of modern aircraft wings makes the consideration of aeroelasticity increasingly important in the earliest stages of the design process. In response to this need, the past decades have seen significant advances in the development of tools for the numerical optimization of aircraft wings considering aeroelastic interactions. These aeroelastic optimization tools optimize the structural sizing, and occasionally surface geometry, of a wing, subject to constraints such as structural failure and flutter stability, computed using aeroelastic analyses. The models used by these tools range from simple lifting line and beam models to RANS CFD and shell finite element models, each with their advantages and drawbacks. However, there have been few, if any, efforts to compare these different frameworks, mainly due to a lack of open benchmark models. In this paper, we propose a new benchmark model intended to be accessible to different researchers while
+                  remaining relevant to industrial use cases in modern transport aircraft. The proposed model consists of a wing-only outer mold line, based on that of a small single-aisle transport aircraft, and a moderately detailed conformal wingbox model. We also define a set of aeroelastic optimization problems of varying complexity, ranging from a structural sizing problem with fixed geometry to more complex problems involving optimization of the structural sizing and geometry for minimum fuel burn. We present results for each of the three optimization problems generated using RANS CFD, a shell finite element model, and the MPhys multiphysics coupling library. We show that allowing the wing planform to vary from the baseline results in a 17.5% reduction in fuel burn. These models and optimization problems are intended to act as a starting point for discussions on the choice of benchmark problems for the aeroelastic optimization community.}
+}
+
 @Article{Agte1999,
     author      = {Jeremy S. Agte and Jaroslaw Sobieszczanski-Sobieski and Robert R. {Sandusky~Jr.}},
     title       = {Supersonic Business Jet Design Through Bi-level Integrated System Synthesis},
@@ -15311,20 +15325,6 @@
     year        = {2020},
     abstract    = {Boundary-layer ingestion (BLI) promises increased aircraft efficiency, but excessive inlet distortion must be avoided to prevent fans that are too heavy or structurally infeasible. We propose a new approach to study the effect of distortion on BLI propulsors via an aeropropulsive design optimization with a constraint on inlet distortion using highly efficient gradient-based methods with analytic derivatives. The fully coupled aeropropulsive model includes a three-dimensional Reynolds-averaged Navier--Stokes aerodynamic analysis of the flow and a thermodynamic cycle model of the propulsor fan. We minimize the shaft power required at cruise for the aft BLI thruster by varying the propulsor size and the shape of the propulsor nacelle and aft fuselage. Optimizations are performed with and without the inlet distortion constraint for different aft-propulsor sizes to study the impact of the constraint on overall BLI performance. The results show that imposing a distortion
                   constraint increased the required propulsor shaft power by up to 1.2\% relative to the unconstrained case, and that smaller propulsors suffer lower performance degradation than larger ones. The results underline the importance of using a fully coupled aeropropulsive model to predict BLI performance and demonstrate the power of aeropropulsive optimization in the design of BLI configurations.}
-}
-
-@InProceedings{Gray2024,
-    author      = {Alasdair C. Gray and Joaquim R. R. A. Martins},
-    title       = {A Proposed Benchmark Model for Practical Aerostructural Optimization of Aircraft Wings},
-    address     = {Orlando, FL},
-    booktitle   = {AIAA SciTech Forum},
-    doi         = {10.2514/6.2024-2775},
-    keywords    = {xsede, ank, OpenMDAO, MPhys},
-    month       = {January},
-    pdfurl      = {https://www.researchgate.net/profile/Alasdair-Christison-Gray/publication/377154425_A_Proposed_Benchmark_Model_for_Practical_Aeroelastic_Optimization_of_Aircraft_Wings/links/659763a12468df72d3fad247/A-Proposed-Benchmark-Model-for-Practical-Aeroelastic-Optimization-of-Aircraft-Wings.pdf},
-    year        = {2024},
-    abstract    = {The increasing flexibility of modern aircraft wings makes the consideration of aeroelasticity increasingly important in the earliest stages of the design process. In response to this need, the past decades have seen significant advances in the development of tools for the numerical optimization of aircraft wings considering aeroelastic interactions. These aeroelastic optimization tools optimize the structural sizing, and occasionally surface geometry, of a wing, subject to constraints such as structural failure and flutter stability, computed using aeroelastic analyses. The models used by these tools range from simple lifting line and beam models to RANS CFD and shell finite element models, each with their advantages and drawbacks. However, there have been few, if any, efforts to compare these different frameworks, mainly due to a lack of open benchmark models. In this paper, we propose a new benchmark model intended to be accessible to different researchers while
-                  remaining relevant to industrial use cases in modern transport aircraft. The proposed model consists of a wing-only outer mold line, based on that of a small single-aisle transport aircraft, and a moderately detailed conformal wingbox model. We also define a set of aeroelastic optimization problems of varying complexity, ranging from a structural sizing problem with fixed geometry to more complex problems involving optimization of the structural sizing and geometry for minimum fuel burn. We present results for each of the three optimization problems generated using RANS CFD, a shell finite element model, and the MPhys multiphysics coupling library. We show that allowing the wing planform to vary from the baseline results in a 17.5% reduction in fuel burn. These models and optimization problems are intended to act as a starting point for discussions on the choice of benchmark problems for the aeroelastic optimization community.}
 }
 
 @Article{Grbic2013,

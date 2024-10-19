@@ -12167,6 +12167,7 @@
     doi         = {10.2514/6.2024-0374},
     keywords    = {OpenMDAO, OpenAeroStruct},
     month       = {January},
+    pdfurl      = {https://www.researchgate.net/publication/377788523},
     year        = {2024},
     abstract    = {Propeller-wing configurations are expected to return to the aviation industry due to their high propulsive efficiency and applicability in urban and regional air mobility. A knowledge gap exists around wing-propeller optimization because of the complexity of the propeller-wing system and the absence of a computationally efficient way to assess the coupled system. This paper addresses this gap by providing and validating a computationally efficient, mid-fidelity framework. The paper presents optimization results and recommendations for future iterations of the framework. The TU Delft PROWIM propeller is optimized with the framework, comparing sequential isolated optimization, trim optimization, and fully coupled optimization. The studies gives a conservative estimate of the efficiency gains that can be achieved by using coupled optimization, as compared to isolated optimization. Lastly, recommendations are given for future studies, such as including a battery weight
                   model and including swirl velocities. It is expected that such model additions will affect the optimization results, and further emphasize the importance of coupled aerostructural optimization. }
@@ -22230,6 +22231,7 @@
     doi         = {10.2514/6.2022-1503},
     keywords    = {OpenMDAO, routing, UAV, xsede},
     month       = {January},
+    pdfurl      = {https://www.researchgate.net/publication/368710700},
     year        = {2022},
     abstract    = {The conceptual design process of aircraft starts by deciding the representative mission requirements, followed by optimization of design variables to satisfy the given requirements. However, selecting appropriate mission requirements is not an obvious task, particularly when designing the package delivery UAVs because UAVs must accommodate the various combinations of package weight and delivery distances. The complexity increases further when designing a heterogeneous fleet of UAVs that serves a large number of customers. In this work, we tackle this problem by solving the coupled design-operation optimization to find the optimal mission requirements and the optimal UAV designs simultaneously. We formulate this problem as mixed-integer nonlinear optimization and propose a sequential heuristic algorithm to solve the coupled problem. The benchmark study of the proposed algorithm against a non-convex branch-and-cut solver shows that the sequential heuristics are
                   effective. We also demonstrate that the simultaneous UAV design and routing optimization reduces the fleet acquisition cost by more than 10\% on average compared to the conventional baseline.}
@@ -22241,6 +22243,7 @@
     booktitle   = {10th Autonomous VTOL Technical Meeting},
     keywords    = {OpenMDAO, Dymos},
     month       = {January},
+    pdfurl      = {https://www.researchgate.net/publication/384302581},
     year        = {2023},
     abstract    = {Vertical takeoff and landing (VTOL) aircraft design requires consideration of an efficiency trade-off between various flight conditions, including hover, transition, and cruise. To capture this trade-off, we propose simultaneous optimization of aircraft conceptual design and takeoff trajectory. Design- trajectory optimization, also called open-loop control co-design, allows us to find the optimal aircraft design that balances the flight efficiency between various flight conditions for maximum system-level performance. In this paper, we maximize the payload weight capacity of a lift-plus-cruise unmanned aerial vehicle (UAV) for package delivery. As a result, simultaneous optimization increases the payload weight by up to 5.3\% compared to the conventional approach, which does not couple takeoff trajectory optimization to UAV conceptual design. We identify that the cruise speed and pusher motor sizing have a significant influence on takeoff trajectory. Simultaneous
                   optimization finds the optimal cruise speed and motor sizing that enables energy-efficient wing-borne climb, which is not always possible with conventional sequential optimization.}
@@ -22253,6 +22256,7 @@
     journal     = {Journal of Aircraft},
     keywords    = {xsede},
     month       = {February},
+    pdfurl      = {https://www.researchgate.net/publication/368710700},
     publisher   = {American Institute of Aeronautics and Astronautics},
     year        = {2023},
     abstract    = {The conceptual design process of aircraft starts by deciding the representative mission requirements, followed by optimization of design variables to satisfy the given requirements. However, the appropriate mission requirements are not obvious, especially when designing package delivery UAVs (also called drones). The UAVs must accommodate various combinations of package weights and delivery distances. The complexity increases further when designing a heterogeneous fleet of UAVs that serves a large number of customers. This work addresses this problem by solving coupled design-operation optimization to find optimal mission requirements and optimal UAV designs simultaneously. We formulate this problem as mixed-integer nonlinear optimization and propose a sequential heuristic algorithm to solve the coupled problem. The benchmark study of the proposed algorithm against a nonconvex branch-and-cut solver shows that the sequential heuristics are effective. We also
@@ -22284,6 +22288,7 @@
     doi         = {10.2514/6.2024-2231},
     keywords    = {OpenMDAO, OpenAeroStruct},
     month       = {January},
+    pdfurl      = {https://www.researchgate.net/publication/377269618},
     year        = {2024},
     abstract    = {Simultaneous design and trajectory optimization aims to find the best possible design of a dynamic engineering system, such as an aircraft, by considering the coupling between a physical system design and its trajectory. Multidisciplinary design optimization (MDO) fully considers this coupling and corresponding design trade-offs. This article discusses the computational efficiency of MDO formulations for design-trajectory optimization. We perform numerical studies to compare two MDO architectures and two design-trajectory coupling strategies on aircraft design test problems. The test problems concurrently optimize a climb trajectory, wing design based on a low-fidelity aerostructural analysis, and aircraft sizing variables. The results indicate that surrogate-based coupling is more efficient than direct coupling when there are only a few coupling variables from a trajectory to a disciplinary model, whereas direct coupling is preferable otherwise. The simultaneous
                   analysis and design (SAND) architecture outperforms the multidisciplinary feasible (MDF) architecture when using direct coupling, whereas the costs of SAND and MDF are comparable with surrogate-based coupling. The results and discussion in this paper provide general guidelines for selecting a computationally efficient MDO formulation for simultaneous design and trajectory optimization. }
@@ -22294,24 +22299,14 @@
     title       = {Simultaneous optimization of design and takeoff trajectory for an {eVTOL} aircraft},
     doi         = {10.1016/j.ast.2024.109617},
     journal     = {Aerospace Science and Technology},
-    note        = {(In press)},
+    keywords    = {OpenMDAO, Dymos},
+    month       = {December},
+    pages       = {109617},
+    pdfurl      = {https://www.researchgate.net/publication/384302581},
+    volume      = {155},
     year        = {2024},
     abstract    = {When designing a vertical takeoff and landing (VTOL) aircraft, it is crucial to consider various operating conditions, including hover, wing-borne cruise, and transition. Takeoff transition and climb phases are critical for vehicle conceptual design because they drive the motor and battery sizing. However, these flight phases are often ignored or simplified in the conceptual design literature due to the complexity of transition dynamics. To address this limitation, we propose simultaneous optimization of VTOL aircraft conceptual design and takeoff trajectory. Simultaneous optimization incorporates the takeoff transition and climb flight dynamics into VTOL design optimization in a fully coupled manner. This paper presents the design-trajectory optimization of lift-plus-cruise and tailsitter UAVs for delivery missions. As a result, simultaneous optimization reduces total energy consumption by 7.4% compared to uncoupled optimization and by 4.8% from iterative sequential
                   optimization in the lift-plus-cruise configuration. It also achieves a 29% energy reduction from uncoupled optimization in the tailsitter configuration. Incorporating takeoff trajectory optimization in UAV sizing enables accurate estimation of takeoff and climb energy, which avoids undersizing or oversizing the battery. Furthermore, simultaneous optimization trades the vehicle weight penalty for a more energy-efficient climb with early transition. These system-level trade-offs can only be captured by simultaneous optimization; they cannot be captured by uncoupled or iterative sequential optimization.}
-}
-
-@Article{Kaneko2024c,
-    author      = {Shugo Kaneko and Joaquim R. R. A. Martins},
-    title       = {Simultaneous optimization of design and takeoff trajectory for an {eVTOL} aircraft},
-    doi         = {10.1016/j.ast.2024.109617},
-    journal     = {Aerospace Science and Technology},
-    keywords    = {OpenMDAO, Dymos},
-    month       = {September},
-    pages       = {109617},
-    volume      = {155},
-    year        = {2024},
-    abstract    = {When designing a vertical takeoff and landing (VTOL) aircraft, it is crucial to consider various operating conditions, including hover, wing-borne cruise, and transition. Takeoff transition and climb phases are critical for vehicle conceptual design because they drive the motor and battery sizing. However, these flight phases are often ignored or simplified in the conceptual design literature due to the complexity of transition dynamics. To address this limitation, we propose simultaneous optimization of VTOL aircraft conceptual design and takeoff trajectory. Simultaneous optimization incorporates the takeoff transition and climb flight dynamics into VTOL design optimization in a fully coupled manner. This paper presents the design-trajectory optimization of lift-plus-cruise and tailsitter UAVs for delivery missions. As a result, simultaneous optimization reduces total energy consumption by 7.4\% compared to uncoupled optimization and by 4.8\% from iterative
-                  sequential optimization in the lift-plus-cruise configuration. It also achieves a 29\% energy reduction from uncoupled optimization in the tailsitter configuration. Incorporating takeoff trajectory optimization in UAV sizing enables accurate estimation of takeoff and climb energy, which avoids undersizing or oversizing the battery. Furthermore, simultaneous optimization trades the vehicle weight penalty for a more energy-efficient climb with early transition. These system-level trade-offs can only be captured by simultaneous optimization; they cannot be captured by uncoupled or iterative sequential optimization.}
 }
 
 @Article{KANG2019,

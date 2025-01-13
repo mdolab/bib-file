@@ -118,7 +118,7 @@
 }
 
 @InProceedings{Abdul-Kaiyoom2024,
-    author      = {M. A. Saja Abdul-Kaiyoom and Anil Yildirim and and Joaquim R. R. A. Martins},
+    author      = {M. A. Saja {Abdul-Kaiyoom} and Anil Yildirim and Joaquim R. R. A. Martins},
     title       = {Robust {S}chur-Complement Solvers and Large-Scale Multidisciplinary Design Optimization},
     address     = {Florence, Italy},
     booktitle   = {34th Congress of the International Council of the Aeronautical Sciences},
@@ -131,7 +131,7 @@
 }
 
 @Article{Abdul-Kaiyoom2024a,
-    author      = {Mohamed Arshath Saja Abdul-Kaiyoom and Anil Yildirim and Alasdair C. Gray and Joaquim R. R. A. Martins},
+    author      = {Mohamed Arshath Saja {Abdul-Kaiyoom} and Anil Yildirim and Alasdair C. Gray and Joaquim R. R. A. Martins},
     title       = {Airfoil Separation Constraint Formulation for Aerodynamic Shape Optimization},
     doi         = {10.2514/1.C037365},
     journal     = {Journal of Aircraft},
@@ -149,7 +149,7 @@
 }
 
 @InProceedings{AbdulKaiyoom2023a,
-    author      = {M. A. Saja Abdul-Kaiyoom and Anil Yildirim and and Joaquim R. R. A. Martins},
+    author      = {M. A. Saja {Abdul-Kaiyoom} and Anil Yildirim and and Joaquim R. R. A. Martins},
     title       = {Coupled Aeropropulsive Design Optimization of an Over-Wing Nacelle Configuration},
     booktitle   = {AIAA SciTech Forum},
     doi         = {10.2514/6.2023-0327},
@@ -659,6 +659,20 @@
     year        = {2024},
     abstract    = {The increasing flexibility of modern aircraft wings makes the consideration of aeroelasticity increasingly important in the earliest stages of the design process. In response to this need, the past decades have seen significant advances in the development of tools for the numerical optimization of aircraft wings considering aeroelastic interactions. These aeroelastic optimization tools optimize the structural sizing, and occasionally surface geometry, of a wing, subject to constraints such as structural failure and flutter stability, computed using aeroelastic analyses. The models used by these tools range from simple lifting line and beam models to RANS CFD and shell finite element models, each with their advantages and drawbacks. However, there have been few, if any, efforts to compare these different frameworks, mainly due to a lack of open benchmark models. In this paper, we propose a new benchmark model intended to be accessible to different researchers while
                   remaining relevant to industrial use cases in modern transport aircraft. The proposed model consists of a wing-only outer mold line, based on that of a small single-aisle transport aircraft, and a moderately detailed conformal wingbox model. We also define a set of aeroelastic optimization problems of varying complexity, ranging from a structural sizing problem with fixed geometry to more complex problems involving optimization of the structural sizing and geometry for minimum fuel burn. We present results for each of the three optimization problems generated using RANS CFD, a shell finite element model, and the MPhys multiphysics coupling library. We show that allowing the wing planform to vary from the baseline results in a 17.5% reduction in fuel burn. These models and optimization problems are intended to act as a starting point for discussions on the choice of benchmark problems for the aeroelastic optimization community.}
+}
+
+@InProceedings{AGray2025a,
+    author      = {Alasdair C. Gray and Joaquim R. R. A. Martins},
+    title       = {Aerostructural Optimization of the Simple Transonic Wing Using {MPhys}, {ADflow}, and {TACS}},
+    address     = {Orlando, FL},
+    booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2025-2813},
+    keywords    = {xsede, ank, OpenMDAO, MPhys},
+    month       = {January},
+    pdfurl      = {https://www.researchgate.net/profile/Alasdair-Christison-Gray/publication/387668601_Aerostructural_Optimization_of_the_Simple_Transonic_Wing_Using_MPhys_ADflow_and_TACS/links/677722afc1b01354650b7322/Aerostructural-Optimization-of-the-Simple-Transonic-Wing-Using-MPhys-ADflow-and-TACS.pdf},
+    year        = {2025},
+    abstract    = {The past decades have seen significant advances in the development of tools for the numerical optimization of aircraft wings considering aeroelastic interactions. These aeroelastic optimization tools optimize the structural sizing, and occasionally surface geometry, of a wing, subject to constraints such as structural failure and flutter stability, computed using aeroelastic analyses. The models used by these tools range from simple lifting line and beam models to RANS CFD and shell finite element models, each with their advantages and drawbacks. Recently, the High-Fidelity Aeroelastic Optimization Benchmark Working Group has been formed to bring together practitioners across the field in order to compare their methods on a common set of optimization problems. In this paper, we present solutions to all three benchmark problems using a set of open source codes developed for high-fidelity gradient-based design optimization. In Case~1, we generate a feasible wingbox
+                  design under aeroelastic loads, in Case~2 we improve the fuel burn over a nominal mission by 3\% by optimizing the wing twist and section shapes along with the structural sizing, and in Case~3 adding planform variables results in a doubling of the wing's aspect ratio and at 10.1\% reduction in fuel burn.}
 }
 
 @Article{Agte1999,
@@ -9214,6 +9228,19 @@
                   high-order computational fluid dynamics simulations.}
 }
 
+@InProceedings{Coppeans2025a,
+    author      = {Alexander W.C. Coppeans and Krzysztof J. Fidkowski and Joaquim R. R. A. Martins},
+    title       = {Aerodynamic Shape Optimization with Curved Mesh Adaptation},
+    address     = {Orlando, FL},
+    booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2025-0782},
+    keywords    = {Mesh Adaptation, High-Order, CFD, optimization, beststudentpaper},
+    month       = {January},
+    year        = {2025},
+    abstract    = {We present an efficient and robust strategy to control discretization error during aerodynamic shape optimization (ASO) using a high-order discretization with curved mesh adaptation. During aerodynamic shape optimization, it is important to have an accurate solution to prevent discretization error from polluting the optimum. High-order methods are promising because they offer increased accuracy for a given mesh. Mesh adaptation further improves the efficiency of high-order methods. These high-order methods require curved meshes to properly capture the simulated geometry and a mesh adaptation process that can generate curved meshes. Adapting these curved meshes needs to be robust as any failures will require human intervention inside the automated optimization loop. In this work, we introduce two key advances. The first advancement is a method for robustly splitting elements on geometric boundaries, which is necessary to properly capture the geometry. The second
+                  advancement is a concurrent mesh adaptation strategy that automatically balances accuracy and computational efficiency throughout the optimization process. Results for transonic airfoil optimization demonstrate that our method reduces the number of expensive fine-mesh evaluations by 75-90\% compared to traditional approaches.}
+}
+
 @Book{Corliss:2001:ADF,
     title       = {Automatic Differentiation: From Simulation to Optimization},
     editor      = {George Corliss and Christele Faure and Andreas Griewank and Laurent Hasco{\"e}t and Uwe Naumann},
@@ -13899,6 +13926,7 @@
     title       = {High-fidelity Hydrodynamic Shape Optimization of a 3-{D} Hydrofoil},
     doi         = {10.5957/JOSR.59.4.150046},
     journal     = {Journal of Ship Research},
+    keywords    = {ONR},
     month       = {December},
     number      = {4},
     pages       = {209--226},
@@ -13928,6 +13956,7 @@
     title       = {High-fidelity Multipoint Hydrostructural Optimization of a {3-D} Hydrofoil},
     doi         = {10.1016/j.jfluidstructs.2017.02.001},
     journal     = {Journal of Fluids and Structures},
+    keywords    = {ONR},
     month       = {May},
     pages       = {15--39},
     volume      = {71},
@@ -13951,7 +13980,7 @@
     title       = {Experimental Investigation of a Hydrofoil Designed via Hydrostructural Optimization},
     doi         = {10.1016/j.jfluidstructs.2018.10.010},
     journal     = {Journal of Fluids and Structures},
-    keywords    = {aerostructures},
+    keywords    = {aerostructures, ONR},
     month       = {January},
     pages       = {243--262},
     volume      = {84},
@@ -21483,8 +21512,12 @@
 @Article{Jiang2024,
     author      = {Boxi Jiang and Mohammad Reza Amini and Yingqian Liao and Kartik Praful Naik and Joaquim R. R. A. Martins and Jing Sun},
     title       = {Control Co-design of Hydrokinetic Turbines Considering Dynamic-hydrodynamic Coupling},
+    doi         = {10.1109/TCST.2024.3440249},
     journal     = {IEEE Transactions on Control Systems Technology},
-    note        = {(In press)},
+    keywords    = {RAFT},
+    number      = {1},
+    pages       = {48--60},
+    volume      = {33},
     year        = {2024}
 }
 
@@ -27345,7 +27378,7 @@
     title       = {Viscous Fluid Structure Interaction Response of Composite Hydrofoils},
     doi         = {10.1016/j.compstruct.2019.01.043},
     journal     = {Composite Structures},
-    keywords    = {ank},
+    keywords    = {ank , ONR},
     month       = {March},
     pages       = {571--585},
     volume      = {212},
@@ -27359,7 +27392,7 @@
     title       = {Sweep and anisotropy effects on the viscous hydroelastic response of composite hydrofoils},
     doi         = {10.1016/j.compstruct.2019.111471},
     journal     = {Composite Structures},
-    keywords    = {ank},
+    keywords    = {ank, ONR},
     month       = {December},
     pages       = {111471},
     volume      = {230},
@@ -27410,6 +27443,7 @@
     title       = {3-{D} High-Fidelity Hydrostructural Optimization of Cavitation-Free Composite Lifting Surfaces},
     doi         = {10.1016/j.compstruct.2021.113937},
     journal     = {Composite Structures},
+    keywords    = {ONR},
     month       = {July},
     pages       = {113937},
     volume      = {268},
@@ -27423,7 +27457,7 @@
     title       = {{RANS}-based Optimization of a {T}-shaped Hydrofoil Considering Junction Design},
     doi         = {10.1016/j.oceaneng.2022.112051},
     journal     = {Ocean Engineering},
-    keywords    = {xsede},
+    keywords    = {xsede, ONR},
     month       = {October},
     pages       = {112051},
     volume      = {262},
@@ -27437,6 +27471,7 @@
     title       = {Hydrostructural Optimization of Single-layer and Multi-layer Composite Lifting Surfaces},
     doi         = {10.1016/j.compstruct.2022.116650},
     journal     = {Composite Structures},
+    keywords    = {ONR},
     month       = {March},
     pages       = {116650},
     pdfurl      = {https://www.researchgate.net/profile/Yingqian-Liao/publication/366853217_Hydrostructural_optimization_of_single-layer_and_multi-layer_composite_lifting_surfaces/links/6555b591b1398a779d909180/Hydrostructural-optimization-of-single-layer-and-multi-layer-composite-lifting-surfaces.pdf?origin=publicationDetail&_sg%5B0%5D=jW1sYat6MunugQTF_U22ViSO8pL6Flwn69PNFxLAq5FEsxGZ7HgZYVduK5Pbk1HEU4UrLt8Mb_5KQ4JLqFNwnA.JXL9M-30ukoFR_CmStn2cX_D4yn1IMdQ-xrG1iEOdqQg5t5aZV-y0P8hKE1BIUBl5cJejbZbRn31KDdX33IXzw&_sg%5B1%5D=fPfHKU2FbxftCfnSg6EFVBH1ICU688Y4oveQYt1qEBA7nxVj9L7fwyDAZx8LgQyZeenHQhwGfu0cH9GmTULv_l_AlNky6dE9LmG-FzktfFzI.JXL9M-30ukoFR_CmStn2cX_D4yn1IMdQ-xrG1iEOdqQg5t5aZV-y0P8hKE1BIUBl5cJejbZbRn31KDdX33IXzw&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoicHVibGljYXRpb24iLCJwcmV2aW91c1BhZ2UiOiJzZWFyY2giLCJwb3NpdGlvbiI6InBhZ2VIZWFkZXIifX0},
@@ -33414,6 +33449,7 @@
     title       = {Dynamic hydroelasticity of composite appendages with reverse-mode algorithmic differentiation},
     doi         = {10.1016/j.compstruct.2024.118367},
     journal     = {Composite Structures},
+    keywords    = {ONR},
     year        = {2024}
 }
 
@@ -33422,6 +33458,7 @@
     title       = {Hydrostructural Optimization of Subcavitating Cambered and Symmetric Composite Foils},
     doi         = {10.1016/j.compstruct.2024.118545},
     journal     = {Composite Structures},
+    keywords    = {ONR},
     month       = {January},
     pages       = {118545},
     pdfurl      = {https://www.researchgate.net/profile/Galen-Ng-3/publication/383646055_Hydrostructural_Optimization_of_Subcavitating_Cambered_and_Symmetric_Composite_Foils/links/66d4ccc1bd2017366766276e/Hydrostructural-Optimization-of-Subcavitating-Cambered-and-Symmetric-Composite-Foils.pdf?origin=publicationDetail&_sg%5B0%5D=DGKZ1nHaKDlrb9N1Hq1_VacyBgCQllG0qeXk-dN-BYl1qbqbMU3hiYSQsScaKDFPerPVDkVHRQwjQzjfCw5r7w.tIjCTEmqPSw48WEfiVy2qOYO5iaQG6ktm14v4Lfug4tllmXj4nzt_fOgUdYc5oZkeRRrk3XiF0WGlhYze5qmcA&_sg%5B1%5D=LgzEyPuGTDNa-UfEmGgtcR0C4ge7WSbIDePmz10zEJjJh4isSAoL848ks4nduFK_QaE5uE3Xo9oRNFK0aj5DwQY03pHEiaIJnw0ggzT1W-iY.tIjCTEmqPSw48WEfiVy2qOYO5iaQG6ktm14v4Lfug4tllmXj4nzt_fOgUdYc5oZkeRRrk3XiF0WGlhYze5qmcA&_iepl=&_rtd=eyJjb250ZW50SW50ZW50IjoibWFpbkl0ZW0ifQ%3D%3D&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIiwicG9zaXRpb24iOiJwYWdlSGVhZGVyIn19},
@@ -39991,6 +40028,13 @@
     pages       = {22--28},
     volume      = {118},
     year        = {1996}
+}
+
+@InProceedings{Sella2025,
+    author      = {Vignesh Sella and ThomasO'Leary-Roseberry and Xiaosong Du and Mengwu Guo and JoaquimR. R. A. Martins and Omar Ghattas and Karen Willcox and Anirban Chaudhuri},
+    title       = {Improving neural network efficiencywith multifidelity and dimensionality reduction techniques},
+    booktitle   = {Proceedings of the {AIAA} {SciTech} Forum},
+    year        = {2025}
 }
 
 @InCollection{Sellar1996,

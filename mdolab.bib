@@ -22840,6 +22840,18 @@
                   optimization in the lift-plus-cruise configuration. It also achieves a 29% energy reduction from uncoupled optimization in the tailsitter configuration. Incorporating takeoff trajectory optimization in UAV sizing enables accurate estimation of takeoff and climb energy, which avoids undersizing or oversizing the battery. Furthermore, simultaneous optimization trades the vehicle weight penalty for a more energy-efficient climb with early transition. These system-level trade-offs can only be captured by simultaneous optimization; they cannot be captured by uncoupled or iterative sequential optimization.}
 }
 
+@Article{Kaneko2025a,
+    author      = {Shugo Kaneko and Joaquim R. R. A. Martins},
+    title       = {Simultaneous Design and Trajectory Optimization Strategies for Computationally Expensive Models},
+    doi         = {10.2514/1.J063976},
+    journal     = {AIAA Journal},
+    keywords    = {OpenMDAO, OpenAeroStruct, Dymos},
+    note        = {(In press)},
+    year        = {2025},
+    abstract    = {Simultaneous design and trajectory optimization aims to find the best possible design of a dynamic engineering system, such as an aircraft, by considering the coupling between a physical system design and its trajectory. Multidisciplinary design optimization (MDO) fully considers this coupling and corresponding design trade-offs. This article discusses the computational efficiency of MDO formulations for design-trajectory optimization. Numerical studies are performed to compare two monolithic MDO architectures and two design-trajectory coupling strategies on aircraft design test problems. The test problems concurrently optimize a climb trajectory, wing design based on a low-fidelity aerostructural analysis, and aircraft sizing variables. The results indicate that surrogate-based coupling is more efficient than direct coupling when there are only a few variables coupling the trajectory and disciplinary models, whereas direct coupling is preferable otherwise. The
+                  simultaneous analysis and design (SAND) architecture outperforms the multidisciplinary feasible (MDF) architecture when using direct coupling, whereas the costs of SAND and MDF are comparable with surrogate-based coupling. The results and discussion in this paper provide general guidelines for selecting a computationally efficient approach for simultaneous design and trajectory optimization.}
+}
+
 @Article{KANG2019,
     author      = {Kyeonghwan Kang and Caiyan Qin and Bongjae Lee and Ikjin Lee},
     title       = {Modified screening-based Kriging method with cross validation and application to engineering design},

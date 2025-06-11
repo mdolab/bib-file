@@ -23036,11 +23036,15 @@
 }
 
 @Article{Kaneko2025b,
-    author      = {Shugo Kaneko and Joaquim R. R. A. Martins},
+    author      = {Shugo Kaneko and Eytan J. Adler and Justin S. Gray and John P. Jasa and Joaquim R. R. A. Martins},
     title       = {Accelerating coupled derivative computations with nested-hierarchical linear solver strategies},
     doi         = {10.1007/s11081-025-09965-0},
     journal     = {Optimization and Engineering},
-    year        = {2025}
+    keywords    = {OpenMDAO, OpenAeroStruct, Dymos},
+    pdfurl      = {https://www.researchgate.net/profile/Shugo-Kaneko/publication/390698149_Accelerating_coupled_derivative_computations_with_nested-hierarchical_linear_solver_strategies/links/67fd2f9bd1054b0207d37fbb/Accelerating-coupled-derivative-computations-with-nested-hierarchical-linear-solver-strategies.pdf?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19},
+    year        = {2025},
+    abstract    = {Gradient-based optimizers can solve optimization problems with more than one thousand design variables. These optimizers require rapid and accurate derivative computation for efficient performance. For coupled multidisciplinary systems, implicit analytic methods (e.g., the adjoint method) offer the best computational efficiency for derivative computation. These methods first compute the partial derivatives of the subsystems (or disciplines) and then solve a linear system to obtain the system-level coupled derivatives. Solving this linear system is computationally intensive, so an efficient linear solver setup is critical. We propose new hierarchical linear solver strategies to accelerate derivative computations for problems with a specific structure. This includes problems with a high degree of embarrassingly parallel computations, such as trajectory optimization and optimization under uncertainty. Our strategies hide subsystem-level states and residuals from the
+                  system-level linear system. Users can independently choose linear solution strategies at the subsystem and system levels to achieve the fastest overall derivative computation. Our approach also dramatically shrinks the size and computational cost of the system-level linear system by doing more work at the subsystem level. This paper discusses when and why the proposed strategies are advantageous. We demonstrate the derivative accelerations on aircraft design optimization problems, which couple an aerostructural model, trajectory, propulsion model, and mission simulation. The proposed strategy computes derivatives up to 10 times faster than existing methods.}
 }
 
 @Article{KANG2019,
@@ -33843,8 +33847,8 @@
     title       = {Experimental Performance Comparison of Ducted and Freestream Hydrokinetic Turbines},
     doi         = {10.1016/j.renene.2025.123308},
     journal     = {Renewable Energy},
-    note        = {(In press)},
     pages       = {123308},
+    volume      = {251},
     year        = {2025},
     abstract    = {Hydrokinetic energy's high energy density and predictable nature make it an effective and reliable renewable resource. Ducted hydrokinetic turbines (HKT) offer benefits such as improved flow conditioning and higher power efficiency for the same reference area compared to an equivalent conventional freestream turbine. We designed and constructed an HKT system to characterize the performance of freestream and ducted turbines at various speeds and blade pitch angles in a state-of-the-art tow tank. When comparing the respective optimal blade pitch settings, the ducted turbine's power efficiency is 19\% higher than that of the freestream one. Our ducted turbine measured a peak power coefficient of $C_P=0.47$ despite unfavorable Reynolds number effects. This system's power and thrust characterization indicates that ducted turbines, with an improved design and more favorable operating conditions, would likely exceed the measured $C_P=0.47$, laying the ground for further
                   design optimization studies.}
@@ -36178,6 +36182,20 @@
     pages       = {108489},
     volume      = {140},
     year        = {2023}
+}
+
+@Article{Park2023a,
+    author      = {Park, Jeongbin and Knight, Bradford G. and Liao, Yingqian and Mangano, Marco and Pacini, Bernardo and Maki, Kevin J. and Martins, Joaquim R. R. A. and Sun, Jing and Pan, Yulin},
+    title       = {{CFD}-based design optimization of ducted hydrokinetic turbines},
+    doi         = {10.1038/s41598-023-43724-4},
+    isbn        = {2045-2322},
+    journal     = {Scientific Reports},
+    number      = {1},
+    pages       = {17968},
+    volume      = {13},
+    year        = {2023},
+    abstract    = {Hydrokinetic turbines extract kinetic energy from moving water to generate renewable electricity, thus contributing to sustainable energy production and reducing reliance on fossil fuels. It has been hypothesized that a duct can accelerate and condition the fluid flow passing the turbine blades, improving the overall energy extraction efficiency. However, no substantial evidence has been provided so far for hydrokinetic turbines. To investigate this problem, we perform a CFD-based optimization study with a blade-resolved Reynolds-averaged Navier--Stokes (RANS) solver to explore the design of a ducted hydrokinetic turbine that maximizes the efficiency of energy extraction. A gradient-based optimization approach is utilized to effectively deal with the high-dimensional design space of the blade and duct geometry, with gradients being calculated through the adjoint method. The final design is re-evaluated through higher-fidelity unsteady RANS (URANS) simulations. Our
+                  optimized ducted turbine achieves an efficiency of about 54{\%} over a range of operating conditions, higher than the typical 46{\%} efficiency of unducted turbines.}
 }
 
 @Article{Park:2005:PVP,

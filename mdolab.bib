@@ -738,6 +738,15 @@
     year        = {2025}
 }
 
+@Article{AGray2025c,
+    author      = {Alasdair C. Gray and Graeme J. Kennedy and Joaquim R. R. A. Martins},
+    title       = {Geometrically Nonlinear High-fidelity Aerostructural Optimization for Highly Flexible Wings},
+    journal     = {Structural and Multidisciplinary Optimization},
+    keywords    = {ank, OpenMDAO, MPhys},
+    note        = {(In press)},
+    year        = {2025}
+}
+
 @Article{Agte1999,
     author      = {Jeremy S. Agte and Jaroslaw Sobieszczanski-Sobieski and Robert R. {Sandusky~Jr.}},
     title       = {Supersonic Business Jet Design Through Bi-level Integrated System Synthesis},
@@ -24849,6 +24858,21 @@
                   meshes. This method should be extensible to higher-order discretizations and higher dimensions. }
 }
 
+@Article{Kleb2026,
+    author      = {Alex Kleb and Krzysztof J. Fidkowski and Joaquim R. R. A. Martins},
+    title       = {Solving high {Reynolds} number flows on {Cartesian} cut-cell meshes using an {ODE} wall function with momentum balance},
+    doi         = {10.1016/j.compfluid.2025.106882},
+    issn        = {0045-7930},
+    journal     = {Computers \& Fluids},
+    keywords    = {Cartesian cut cells, Computational fluid dynamics, Turbulence modeling},
+    pages       = {106882},
+    volume      = {304},
+    year        = {2026},
+    abstract    = {Computational fluid dynamics is essential for designing aircraft, turbines, and other engineering systems. However, generating suitable computational meshes for complex geometries remains the primary bottleneck in analysis workflows, often requiring days of manual effort. Traditional boundary-conforming meshes excel at capturing near-wall physics in viscous flows but demand specialized expertise and extensive preprocessing time. Cartesian cut-cell methods provide automatic mesh generation for complex geometries in minutes, yet they struggle with high Reynolds number viscous flows where boundary layers exhibit rapid velocity changes that require prohibitively fine resolution for isotropic elements. The fundamental challenge is accurately modeling boundary layer physics on automatically generated meshes without sacrificing the computational efficiency that makes such methods attractive. In this work, we show that an ordinary differential equation (ODE) wall function
+                  incorporating pressure-momentum balance enables accurate high Reynolds number viscous flow predictions on coarse Cartesian cut-cell meshes. Our approach solves a one-dimensional boundary value problem at each wall boundary face that accounts for the transition from the viscous dominated near-wall region to the inviscid wake region, allowing forcing points to operate effectively at y+>600. Unlike traditional wall functions, the ODE is not limited to the logarithmic layer and maintains accuracy in strong pressure gradient environments typical of aerodynamic applications. The ODE can achieve correct skin friction predictions on meshes more than four times coarser than analytical wall functions require. The ODE wall functions are solved with a robust Newton--Krylov implementation that utilizes adaptive mesh refinement. It converges reliably across diverse flow conditions while solving hundreds of degrees of freedom in fewer than ten linear iterations. These results
+                  demonstrate that automatic high-fidelity viscous flow analysis is achievable without manual mesh generation expertise.}
+}
+
 @Article{Kleijnen2009,
     author      = {Kleijnen, Jack P. C.},
     title       = {Kriging metamodeling in simulation: A review.},
@@ -34583,17 +34607,14 @@
     author      = {Galen W. Ng},
     title       = {Hydroelastic Optimization of Composite Appendages},
     address     = {Ann Arbor, MI},
+    doi         = {10.7302/27037},
     keywords    = {xsede, OpenMDAO, ONR},
     school      = {University of Michigan},
     year        = {2025},
-    abstract    = {Composite materials technology has advanced significantly since the 2000s, and they are becoming increasingly popular in the construction of modern marine appendages such as hydrofoils. This is because they offer numerous benefits over traditional metallic materials; the main one explored in this thesis is material anisotropy and how one may hydroelastically tailor the performance of a marine appendage to the desired application. These building materials are feasible because of advances in computational modeling and manufacturing techniques. These advances enable the design and construction of highly optimized and complicated geometries, hence now is the time to develop design methods for these novel structures.
-                  
-                  While composites have been deployed in aerospace applications, marine applications are different. Marine composite appendage design is challenging because of the free surface, waves, multiphase flows, body motions, and high loading due to the high water density and harsh environment. Marine composites face unique challenges compared to traditional metallic alloys because of their low structural density, higher flexibility, anisotropic stiffness, and complicated material failure mechanisms. Many challenges are associated with undesired system dynamics such as lock-in, resonance, modal coalescence, dynamic load amplification, and flutter. The primary goal of this thesis is to develop an analysis and design method that handles these unique challenges associated with lightweight materials and advancing geometric complexity of marine appendages where previous methods were insufficiently accurate or the models and algorithms had not yet been developed. A secondary goal is
-                  to gain new insights by using the methods to perform design optimizations.
-                  
-                  The methodology couples numerical models for hydrodynamics, structures, and dynamics to perform gradient-based Multidisciplinary Design Optimization (MDO). Gradient-based optimization combined with efficient derivative computation via adjoint methods and reverse mode algorithmic differentiation make the methodology efficient and scalable to practical engineering problems with many design variables. The novel contribution is a model that considers static and dynamic hydroelasticity of marine composites and can compute gradients of cost functions. The model also uses the modular analysis and unified derivatives architecture to facilitate coupling to pre-existing design optimization modules and other disciplines for future extensions.
-                  
-                  The results show that to minimize the drag objective, there is strong interplay between material variables (e.g., fiber angles in composite layup) and geometric variables (e.g., span, sweep, twist, shape, chord, thickness) to satisfy structural constraints, hydrodynamic constraints, and dynamic constraints. The interplay and hence the optimal selection of design variables varies depending on the operating envelope. There are also penalties in the drag objective associated with satisfying material failure, cavitation, ventilation, and flutter constraints. Gradient-based MDO is an effective means of finding these optimal and feasible designs. The methods developed in this thesis provide the necessary foundation to address design optimization of high-performance composite marine appendages, and the usage of the method provides new design insights into composite marine appendage design problems.}
+    abstract    = {Composite materials technology has advanced significantly since the 2000s, and they are becoming increasingly popular in the construction of modern marine appendages such as hydrofoils. This is because they offer numerous benefits over traditional metallic materials; the main one explored in this thesis is material anisotropy and how one may hydroelastically tailor the performance of a marine appendage to the desired application. These building materials are feasible because of advances in computational modeling and manufacturing techniques. These advances enable the design and construction of highly optimized and complicated geometries, hence now is the time to develop design methods for these novel structures. While composites have been deployed in aerospace applications, marine applications are different. Marine composite appendage design is challenging because of the free surface, waves, multiphase flows, body motions, and high loading due to the high water
+                  density and harsh environment. Marine composites face unique challenges compared to traditional metallic alloys because of their low structural density, higher flexibility, anisotropic stiffness, and complicated material failure mechanisms. Many challenges are associated with undesired system dynamics such as lock-in, resonance, modal coalescence, dynamic load amplification, and flutter. The primary goal of this thesis is to develop an analysis and design method that handles these unique challenges associated with lightweight materials and advancing geometric complexity of marine appendages where previous methods were insufficiently accurate or the models and algorithms had not yet been developed. A secondary goal is to gain new insights by using the methods to perform design optimizations. The methodology couples numerical models for hydrodynamics, structures, and dynamics to perform gradient-based Multidisciplinary Design Optimization (MDO). Gradient-based
+                  optimization combined with efficient derivative computation via adjoint methods and reverse mode algorithmic differentiation make the methodology efficient and scalable to practical engineering problems with many design variables. The novel contribution is a model that considers static and dynamic hydroelasticity of marine composites and can compute gradients of cost functions. The model also uses the modular analysis and unified derivatives architecture to facilitate coupling to pre-existing design optimization modules and other disciplines for future extensions. The results show that to minimize the drag objective, there is strong interplay between material variables (e.g., fiber angles in composite layup) and geometric variables (e.g., span, sweep, twist, shape, chord, thickness) to satisfy structural constraints, hydrodynamic constraints, and dynamic constraints. The interplay and hence the optimal selection of design variables varies depending on the operating
+                  envelope. There are also penalties in the drag objective associated with satisfying material failure, cavitation, ventilation, and flutter constraints. Gradient-based MDO is an effective means of finding these optimal and feasible designs. The methods developed in this thesis provide the necessary foundation to address design optimization of high-performance composite marine appendages, and the usage of the method provides new design insights into composite marine appendage design problems.}
 }
 
 @Article{Ng:2010:A,

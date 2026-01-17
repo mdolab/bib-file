@@ -280,18 +280,6 @@
     abstract    = {THE TECHNOLOGY}
 }
 
-@InProceedings{ACGray2026b,
-    author      = {Alasdair C. Gray and Joaquim R. R. A. Martins and Fabian A. Volle and Brian J. Burke and Sean P. Engelstad and Graeme J. Kennedy},
-    title       = {Comparisons of Results for a High-fidelity Aeroelastic Optimization Benchmark Problem},
-    address     = {Orlando, FL},
-    booktitle   = {AIAA SciTech Forum},
-    doi         = {10.2514/6.2026-0762},
-    month       = {1},
-    year        = {2026},
-    abstract    = {As the aerospace industry looks to improve fuel efficiency and reduce design cycle time, high-fidelity aeroelastic analysis and optimization are becoming increasingly relevant for the more flexible aircraft designs required to achieve sustainable aviation goals. Not having a consistent benchmark optimization problem with a common configuration, set of design variables, objectives, constraints, etc. makes it difficult to compare approaches and creates an obstacle for the aerospace community to collaborate to advance the state of the art for high-fidelity aeroelastic optimization. The High-fidelity Aeroelastic Optimization Benchmark Working Group was established at AIAA SciTech 2024 to create and study a set of benchmark aeroelastic optimization cases that the community can use to compare methods on the same aeroelastic optimization problems. Three benchmark optimization problems were developed and refined during 2024, and participants presented results for these
-                  benchmark problems at AIAA SciTech 2025. In this paper we compare the computational tools, methods, and results across these participants. In general, despite different modeling approaches and design parameterizations, the designs resulting from each participant's optimizations often achieved similar performance. These differences stem from a multitude of choices made by participants in how they modeled the benchmark wing and solved the benchmark optimization problems. In particular, different approaches to modeling the stiffened panels of the wingbox resulted in significantly different structural designs. We end by discussing the most significant challenges and bottlenecks faced by participants.}
-}
-
 @InProceedings{Achard2017a,
     author      = {Timoth{\'e}e Achard and Christophe Blondeau and Roger Ohayon},
     title       = {COMPARISON OF HIGH-FIDELITY AERO-STRUCTURE GRADIENT COMPUTATION TECHNIQUES. APPLICATION ON THE {CRM} WING DESIGN},
@@ -759,6 +747,32 @@
     number      = {6},
     volume      = {69},
     year        = {2026}
+}
+
+@InProceedings{AGray2026a,
+    author      = {Alasdair C. Gray and Joaquim R. R. A. Martins},
+    title       = {Aerostructural Optimization of the {S}imple {T}ransonic {W}ing Considering Buffet and Takeoff Performance},
+    address     = {Orlando, FL},
+    booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2026-1010},
+    keywords    = {ank, OpenMDAO, MPhys},
+    month       = {January},
+    pdfurl      = {https://www.researchgate.net/profile/Alasdair-Christison-Gray/publication/398800374_Aerostructural_Optimization_of_the_Simple_Transonic_Wing_Considering_Buffet_and_Takeoff_Performance/links/694335c406a9ab54f847ec9a/Aerostructural-Optimization-of-the-Simple-Transonic-Wing-Considering-Buffet-and-Takeoff-Performance.pdf},
+    year        = {2026},
+    abstract    = {The past decades have seen significant advances in the development of tools for the numerical optimization of aircraft wings considering aeroelastic interactions. These aeroelastic optimization tools optimize the structural sizing, and occasionally surface geometry, of a wing, subject to constraints such as structural failure and flutter stability, computed using aeroelastic analyses. Recently, the High-Fidelity Aeroelastic Optimization Benchmark Working Group has been formed to bring together practitioners across the field and compare their methods on a common set of optimization problems based on a benchmark model known as the Simple Transonic Wing. Building on the success of our special session at SciTech 2025, the working group has continued to develop the benchmark problems, adding new constraints to the optimization problems with the aim of producing more realistic designs. In this paper, we present our solution to the latest and most complex of these benchmark
+                  problems which includes new constraints on buffet onset, takeoff performance, and ground loads. We find that satisfying these new constraints requires a thinner wing with a larger planform area and a lower aspect ratio compared to our previous results. We also find that designing the wing considering buffet onset increases the wing's optimum cruise Mach number significantly beyond the value it is optimized to operate at.}
+}
+
+@InProceedings{AGray2026b,
+    author      = {Alasdair C. Gray and Joaquim R. R. A. Martins and Fabian A. Volle and Brian J. Burke and Sean P. Engelstad and Graeme J. Kennedy},
+    title       = {Comparisons of Results for a High-fidelity Aeroelastic Optimization Benchmark Problem},
+    address     = {Orlando, FL},
+    booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2026-0762},
+    month       = {1},
+    year        = {2026},
+    abstract    = {As the aerospace industry looks to improve fuel efficiency and reduce design cycle time, high-fidelity aeroelastic analysis and optimization are becoming increasingly relevant for the more flexible aircraft designs required to achieve sustainable aviation goals. Not having a consistent benchmark optimization problem with a common configuration, set of design variables, objectives, constraints, etc. makes it difficult to compare approaches and creates an obstacle for the aerospace community to collaborate to advance the state of the art for high-fidelity aeroelastic optimization. The High-fidelity Aeroelastic Optimization Benchmark Working Group was established at AIAA SciTech 2024 to create and study a set of benchmark aeroelastic optimization cases that the community can use to compare methods on the same aeroelastic optimization problems. Three benchmark optimization problems were developed and refined during 2024, and participants presented results for these
+                  benchmark problems at AIAA SciTech 2025. In this paper we compare the computational tools, methods, and results across these participants. In general, despite different modeling approaches and design parameterizations, the designs resulting from each participant's optimizations often achieved similar performance. These differences stem from a multitude of choices made by participants in how they modeled the benchmark wing and solved the benchmark optimization problems. In particular, different approaches to modeling the stiffened panels of the wingbox resulted in significantly different structural designs. We end by discussing the most significant challenges and bottlenecks faced by participants.}
 }
 
 @Article{Agte1999,
@@ -3011,7 +3025,7 @@
 
 @InProceedings{Bakhshi2025,
     author      = {Safa A. Bakhshi and Shugo Kaneko and Abhinav Sharma and Joaquim R. R. A. Martins},
-    title       = {Coupled Trajectory andAerostructural Optimization of a {UAV} with Modular Morphing Wings},
+    title       = {Coupled Trajectory and Aerostructural Optimization of a {UAV} with Modular Morphing Wings},
     booktitle   = {AIAA Aviation 2025 Forum},
     doi         = {10.2514/6.2025-3626},
     keywords    = {OpenMDAO, OpenAeroStruct, Dymos, Trajectory, Optimization, Morphing},
@@ -16253,20 +16267,6 @@
                   constraint increased the required propulsor shaft power by up to 1.2\% relative to the unconstrained case, and that smaller propulsors suffer lower performance degradation than larger ones. The results underline the importance of using a fully coupled aeropropulsive model to predict BLI performance and demonstrate the power of aeropropulsive optimization in the design of BLI configurations.}
 }
 
-@InProceedings{Gray2026,
-    author      = {Alasdair C. Gray and Joaquim R. R. A. Martins},
-    title       = {Aerostructural Optimization of the {S}imple {T}ransonic {W}ing Considering Buffet and Takeoff Performance},
-    address     = {Orlando, FL},
-    booktitle   = {AIAA SciTech Forum},
-    doi         = {10.2514/6.2026-1010},
-    keywords    = {ank, OpenMDAO, MPhys},
-    month       = {January},
-    pdfurl      = {https://www.researchgate.net/profile/Alasdair-Christison-Gray/publication/398800374_Aerostructural_Optimization_of_the_Simple_Transonic_Wing_Considering_Buffet_and_Takeoff_Performance/links/694335c406a9ab54f847ec9a/Aerostructural-Optimization-of-the-Simple-Transonic-Wing-Considering-Buffet-and-Takeoff-Performance.pdf},
-    year        = {2026},
-    abstract    = {The past decades have seen significant advances in the development of tools for the numerical optimization of aircraft wings considering aeroelastic interactions. These aeroelastic optimization tools optimize the structural sizing, and occasionally surface geometry, of a wing, subject to constraints such as structural failure and flutter stability, computed using aeroelastic analyses. Recently, the High-Fidelity Aeroelastic Optimization Benchmark Working Group has been formed to bring together practitioners across the field and compare their methods on a common set of optimization problems based on a benchmark model known as the Simple Transonic Wing. Building on the success of our special session at SciTech 2025, the working group has continued to develop the benchmark problems, adding new constraints to the optimization problems with the aim of producing more realistic designs. In this paper, we present our solution to the latest and most complex of these benchmark
-                  problems which includes new constraints on buffet onset, takeoff performance, and ground loads. We find that satisfying these new constraints requires a thinner wing with a larger planform area and a lower aspect ratio compared to our previous results. We also find that designing the wing considering buffet onset increases the wing's optimum cruise Mach number significantly beyond the value it is optimized to operate at.}
-}
-
 @Article{Grbic2013,
     author      = {Grbi{\'{c}}, Ratko and Nyarko, Emmanuel Karlo and Scitovski, Rudolf},
     title       = {A modification of the {DIRECT} method for Lipschitz global optimization for a symmetric function},
@@ -23132,6 +23132,19 @@
                   system-level linear system. Users can independently choose linear solution strategies at the subsystem and system levels to achieve the fastest overall derivative computation. Our approach also dramatically shrinks the size and computational cost of the system-level linear system by doing more work at the subsystem level. This paper discusses when and why the proposed strategies are advantageous. We demonstrate the derivative accelerations on aircraft design optimization problems, which couple an aerostructural model, trajectory, propulsion model, and mission simulation. The proposed strategy computes derivatives up to 10 times faster than existing methods.}
 }
 
+@InProceedings{Kaneko2026,
+    author      = {Shugo Kaneko and Maxfield Arnson and Hannah Hajdik and Gokcin Cinar and Joaquim R. R. A. Martins and Alejandra Uranga},
+    title       = {Gradient-Based MDAO Framework for Advanced Aircraft Concepts},
+    address     = {Orlando, FL},
+    booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2026-1010},
+    keywords    = {OpenMDAO},
+    month       = {January},
+    year        = {2026},
+    abstract    = {The past decades have seen significant advances in the development of tools for the numerical optimization of aircraft wings considering aeroelastic interactions. These aeroelastic optimization tools optimize the structural sizing, and occasionally surface geometry, of a wing, subject to constraints such as structural failure and flutter stability, computed using aeroelastic analyses. Recently, the High-Fidelity Aeroelastic Optimization Benchmark Working Group has been formed to bring together practitioners across the field and compare their methods on a common set of optimization problems based on a benchmark model known as the Simple Transonic Wing. Building on the success of our special session at SciTech 2025, the working group has continued to develop the benchmark problems, adding new constraints to the optimization problems with the aim of producing more realistic designs. In this paper, we present our solution to the latest and most complex of these benchmark
+                  problems which includes new constraints on buffet onset, takeoff performance, and ground loads. We find that satisfying these new constraints requires a thinner wing with a larger planform area and a lower aspect ratio compared to our previous results. We also find that designing the wing considering buffet onset increases the wing's optimum cruise Mach number significantly beyond the value it is optimized to operate at.}
+}
+
 @Article{KANG2019,
     author      = {Kyeonghwan Kang and Caiyan Qin and Bongjae Lee and Ikjin Lee},
     title       = {Modified screening-based Kriging method with cross validation and application to engineering design},
@@ -24894,6 +24907,15 @@
     year        = {2025},
     abstract    = {The eikonal equation is a subset of the more general static Hamilton--Jacobi equation. It describes a wave propagating through \(d\)-dimensional space with a specified spatially varying wave speed. Solutions to the eikonal equation have been used in numerous fields, including turbulent flow, geometric optics, and computer vision. Fast methods using the causality of this equation solve the equation in \(\mathcal {O}(N)\) and \(\mathcal {O}(N\log N)\) time. These methods require careful construction of upwind difference operators to approximate the gradient at mesh points. The gradients computed by these operators can be sensitive to skewed, unstructured meshes, resulting in a breakdown of the method without proper care. In this work, we present a unified method for generating first-order accurate solutions in two dimensions on structured meshes, unstructured meshes, or point clouds. We demonstrate that this method does not break down even on highly skewed unstructured
                   meshes. This method should be extensible to higher-order discretizations and higher dimensions. }
+}
+
+@PhDThesis{Kleb2025a,
+    author      = {Alex Kleb},
+    title       = {Cartesian Cut-cell Methods for High {R}eynolds Number Flows},
+    address     = {Ann Arbor, MI},
+    month       = {December},
+    school      = {University of Michigan},
+    year        = {2025}
 }
 
 @Article{Kleb2026,
@@ -40764,7 +40786,7 @@
 }
 
 @Article{Saves2024,
-    author      = {Paul Saves and R{\'e}mi Lafage and Nathalie Bartoli and Youssef Diouane and Jasper Bussemaker and Thierry Lefebvre and John T. Hwang and Joseph Morlier and Joaquim R.R.A. Martins},
+    author      = {Paul Saves and R{\'e}mi Lafage and Nathalie Bartoli and Youssef Diouane and Jasper Bussemaker and Thierry Lefebvre and John T. Hwang and Joseph Morlier and Joaquim R. R. A. Martins},
     title       = {{SMT} 2.0: A Surrogate Modeling Toolbox with a focus on Hierarchical and Mixed Variables {Gaussian} Processes},
     doi         = {10.1016/j.advengsoft.2023.103571},
     journal     = {Advances in Engineering Software},
@@ -42651,6 +42673,19 @@
     pages       = {1--16},
     publisher   = {AIAA AVIATION Forum},
     year        = {2018}
+}
+
+@InProceedings{Silva2026,
+    author      = {Gustavo Padovany da Silva and Shamsheer S. Chauhan and Gustavo L. O. Halila and Joaquim R. R. A. Martins and Jo{\~a}o Luiz F. Azevedo},
+    title       = {The Influence of a Tip Propeller's Vertical Offset on a Trailing Wing with Fixed Lift},
+    address     = {Orlando, FL},
+    booktitle   = {AIAA SciTech Forum},
+    doi         = {10.2514/6.2026-1010},
+    keywords    = {MACH},
+    month       = {January},
+    year        = {2026},
+    abstract    = {The past decades have seen significant advances in the development of tools for the numerical optimization of aircraft wings considering aeroelastic interactions. These aeroelastic optimization tools optimize the structural sizing, and occasionally surface geometry, of a wing, subject to constraints such as structural failure and flutter stability, computed using aeroelastic analyses. Recently, the High-Fidelity Aeroelastic Optimization Benchmark Working Group has been formed to bring together practitioners across the field and compare their methods on a common set of optimization problems based on a benchmark model known as the Simple Transonic Wing. Building on the success of our special session at SciTech 2025, the working group has continued to develop the benchmark problems, adding new constraints to the optimization problems with the aim of producing more realistic designs. In this paper, we present our solution to the latest and most complex of these benchmark
+                  problems which includes new constraints on buffet onset, takeoff performance, and ground loads. We find that satisfying these new constraints requires a thinner wing with a larger planform area and a lower aspect ratio compared to our previous results. We also find that designing the wing considering buffet onset increases the wing's optimum cruise Mach number significantly beyond the value it is optimized to operate at.}
 }
 
 @InProceedings{silver2014deterministic,

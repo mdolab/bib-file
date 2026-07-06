@@ -30762,6 +30762,20 @@
                   conventional parametrizations at equal torque. This framework paves the way for more detailed high-fidelity optimization studies to complement conventional design approaches.}
 }
 
+@Article{Mangano2026,
+    author      = {Marco Mangano and Eirikur Jonsson and Yingqian Liao and Denis-Gabriel Caprace and Andrew Ning and Joaquim R. R. A. Martins},
+    title       = {Multipoint Aerostructural Optimization of Wind Turbine Rotors Using a Coupled Blade-Resolved Aerostructural Solver},
+    doi         = {10.1002/we.70135},
+    journal     = {Wind Energy},
+    keywords    = {aerostructural design, gradient-based optimization, MDO},
+    number      = {7},
+    pages       = {e70135},
+    volume      = {29},
+    year        = {2026},
+    abstract    = {Physics-based design optimization workflows thread the needle between computational cost limitations and simulation complexity, often compromising between modeling detail and the range of operating design conditions. Multipoint aerostructural optimization of wind turbine rotors has so far been confined to low-fidelity analyses or to high-fidelity studies with simplified structural models, leaving the most complex design trade-offs unexplored. We close this gap by performing the first tightly coupled gradient-based multipoint aerostructural rotor optimization using 3D aerodynamic and structural solvers with discrete coupled adjoints. The optimizer simultaneously varies blade planform, airfoil shapes, and structural thickness through more than 270 design variables, minimizing a weighted combination of rotor mass and power across multiple wind speeds. Applied to a modified DTU 10-MW benchmark under conservative structural and aerodynamic constraints, our multipoint
+                  optimization reduces rotor mass by up to 36\% and increases power by 12\%--15\% across the main operating conditions; biasing the objective toward power yields power gains up to 18\% and a 17\% mass reduction. For a nominal wind distribution, 3-point rotor designs accounting for low RPM and high thrust conditions capture dominant trade-offs and outperform single-point designs. Adding two off-design points changes individual-condition power by less than 3\% but leaves the weighted average within 0.5\%, and the mass-power bias has a stronger effect on the final design than the operating-point weighting itself. Our framework extends naturally to richer load cases and site-specific wind distributions, providing a basis for high-fidelity multipoint design earlier in industrial workflows.}
+}
+
 @TechReport{Mangler1938,
     author      = {Mangler, W.},
     title       = {The Lift Distibution of Wings With End Plates},
@@ -33737,6 +33751,17 @@
     month       = {July},
     organization= {MIT Department of Aeronautics and Astronautics},
     year        = {2007}
+}
+
+@Article{Muchandimath2026,
+    author      = {Sanjan C. Muchandimath and Joaquim R. R. A. Martins and Alex A. Gorodetsky},
+    title       = {Accelerating Bayesian Inference via Multifidelity Transport Map Coupling},
+    doi         = {10.2514/1.J066460},
+    journal     = {AIAA Journal},
+    note        = {(In press)},
+    year        = {2026},
+    abstract    = {Mathematical models in computational physics contain uncertain parameters that impact prediction accuracy. In turbulence modeling, this challenge is especially significant: Reynolds averaged Navier-Stokes (RANS) models, such as the Spalart-Allmaras (SA) model, are widely used for their speed and robustness but often suffer from inaccuracies and associated uncertainties due to imperfect model parameters. Reliable quantification of these uncertainties is becoming increasingly important in aircraft certification by analysis, where predictive credibility is critical. Bayesian inference provides a framework to estimate these parameters and quantify output uncertainty, but traditional methods are prohibitively expensive, especially when relying on high-fidelity simulations. We address the challenge of expensive Bayesian parameter estimation by developing a multi-fidelity framework that combines Markov chain Monte Carlo (MCMC) methods with multilevel Monte Carlo (MLMC)
+                  estimators to efficiently solve inverse problems. The MLMC approach requires correlated samples across different fidelity levels, achieved through a novel transport map-based coupling algorithm. We demonstrate a 50\% reduction in inference cost compared to traditional single-fidelity methods on the challenging NACA0012 airfoil at high angles of attack near stall, while delivering realistic uncertainty bounds for model predictions in complex separated flow regimes. These results demonstrate that multi-fidelity approaches significantly improve turbulence parameter calibration, paving the way for more accurate and efficient aircraft certification by analysis.}
 }
 
 @InProceedings{Mudigere2015a,
